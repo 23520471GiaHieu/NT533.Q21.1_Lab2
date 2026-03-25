@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\nt533.q21.1_lab2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\nt533.q21.1_lab2\\createinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -70,24 +78,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.Designer.cs",
-              "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.Designer.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Login.Designer.cs",
-              "ToolTip": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.Designer.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\Login.Designer.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAowEEAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CreateLoadBalancer.Designer.cs",
+              "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
+              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
+              "ToolTip": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
+              "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T03:44:05.724Z",
+              "WhenOpened": "2026-03-25T03:55:01.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.cs",
+              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Login.cs",
+              "ToolTip": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.cs",
+              "RelativeToolTip": "NT533.Q21.1_Lab2\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T03:52:14.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Login.cs",
@@ -99,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CreateLoadBalancer.cs [Design]",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
@@ -112,6 +133,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Login.Designer.cs",
+              "ToolTip": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Login.Designer.cs",
+              "RelativeToolTip": "NT533.Q21.1_Lab2\\Login.Designer.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T03:44:05.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CreateInstance.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateInstance.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateInstance.cs",
@@ -123,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CreateInstance.cs [Design]",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateInstance.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateInstance.cs",
@@ -134,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AddRule.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\AddRule.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\AddRule.cs",
@@ -146,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CreateInstance.Designer.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateInstance.Designer.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateInstance.Designer.cs",
@@ -158,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Main.cs",
@@ -168,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ImageService.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Compute\\ImageService.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Compute\\ImageService.cs",
@@ -180,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "VolumeService.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Volume\\VolumeService.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Volume\\VolumeService.cs",
@@ -192,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "InstanceService.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Compute\\InstanceService.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Compute\\InstanceService.cs",
@@ -204,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "FlavorService.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Compute\\FlavorService.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Compute\\FlavorService.cs",
@@ -216,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Main.cs",
@@ -228,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AvailabilityZoneService.cs",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Volume\\AvailabilityZoneService.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Volume\\AvailabilityZoneService.cs",
@@ -240,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "AddRule.cs [Design]",
               "DocumentMoniker": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\AddRule.cs",
               "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\AddRule.cs",
