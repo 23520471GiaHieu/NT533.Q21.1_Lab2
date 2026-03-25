@@ -32,36 +32,36 @@ namespace NT533.Q21._1_Lab2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Tokens");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Identity", new System.Windows.Forms.TreeNode[] {
-            treeNode16});
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Flavors");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Images");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Instances");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Key Pairs");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Compute", new System.Windows.Forms.TreeNode[] {
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Volumes");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Volume", new System.Windows.Forms.TreeNode[] {
-            treeNode23});
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Networks");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Routers");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Security Groups");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Floating IPs");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Load Balancers");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Network", new System.Windows.Forms.TreeNode[] {
-            treeNode25,
-            treeNode26,
-            treeNode27,
-            treeNode28,
-            treeNode29});
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Tokens");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Identity", new System.Windows.Forms.TreeNode[] {
+            treeNode1});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Flavors");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Images");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Instances");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Key Pairs");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Compute", new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Volumes");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Volume", new System.Windows.Forms.TreeNode[] {
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Networks");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Routers");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Security Groups");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Floating IPs");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Load Balancers");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Network", new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14});
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SplitContainer = new System.Windows.Forms.SplitContainer();
             this.TrView_Menu = new System.Windows.Forms.TreeView();
             this.PageControl = new System.Windows.Forms.TabControl();
@@ -371,41 +371,41 @@ namespace NT533.Q21._1_Lab2
             this.TrView_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.TrView_Menu.Location = new System.Drawing.Point(0, 0);
             this.TrView_Menu.Name = "TrView_Menu";
-            treeNode16.Name = "Tokens";
-            treeNode16.Text = "Tokens";
-            treeNode17.Name = "Identity";
-            treeNode17.Text = "Identity";
-            treeNode18.Name = "Flavors";
-            treeNode18.Text = "Flavors";
-            treeNode19.Name = "Images";
-            treeNode19.Text = "Images";
-            treeNode20.Name = "Instances";
-            treeNode20.Text = "Instances";
-            treeNode21.Name = "Key Pairs";
-            treeNode21.Text = "Key Pairs";
-            treeNode22.Name = "Compute";
-            treeNode22.Text = "Compute";
-            treeNode23.Name = "Volumes";
-            treeNode23.Text = "Volumes";
-            treeNode24.Name = "Volume";
-            treeNode24.Text = "Volume";
-            treeNode25.Name = "Networks";
-            treeNode25.Text = "Networks";
-            treeNode26.Name = "Routers";
-            treeNode26.Text = "Routers";
-            treeNode27.Name = "Security Groups";
-            treeNode27.Text = "Security Groups";
-            treeNode28.Name = "Floating IPs";
-            treeNode28.Text = "Floating IPs";
-            treeNode29.Name = "Load Balancers";
-            treeNode29.Text = "Load Balancers";
-            treeNode30.Name = "Network";
-            treeNode30.Text = "Network";
+            treeNode1.Name = "Tokens";
+            treeNode1.Text = "Tokens";
+            treeNode2.Name = "Identity";
+            treeNode2.Text = "Identity";
+            treeNode3.Name = "Flavors";
+            treeNode3.Text = "Flavors";
+            treeNode4.Name = "Images";
+            treeNode4.Text = "Images";
+            treeNode5.Name = "Instances";
+            treeNode5.Text = "Instances";
+            treeNode6.Name = "Key Pairs";
+            treeNode6.Text = "Key Pairs";
+            treeNode7.Name = "Compute";
+            treeNode7.Text = "Compute";
+            treeNode8.Name = "Volumes";
+            treeNode8.Text = "Volumes";
+            treeNode9.Name = "Volume";
+            treeNode9.Text = "Volume";
+            treeNode10.Name = "Networks";
+            treeNode10.Text = "Networks";
+            treeNode11.Name = "Routers";
+            treeNode11.Text = "Routers";
+            treeNode12.Name = "Security Groups";
+            treeNode12.Text = "Security Groups";
+            treeNode13.Name = "Floating IPs";
+            treeNode13.Text = "Floating IPs";
+            treeNode14.Name = "Load Balancers";
+            treeNode14.Text = "Load Balancers";
+            treeNode15.Name = "Network";
+            treeNode15.Text = "Network";
             this.TrView_Menu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode22,
-            treeNode24,
-            treeNode30});
+            treeNode2,
+            treeNode7,
+            treeNode9,
+            treeNode15});
             this.TrView_Menu.Size = new System.Drawing.Size(313, 501);
             this.TrView_Menu.TabIndex = 0;
             this.TrView_Menu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TrView_Menu_AfterSelect);
@@ -1105,7 +1105,6 @@ namespace NT533.Q21._1_Lab2
             this.DGV_Volume.Name = "DGV_Volume";
             this.DGV_Volume.Size = new System.Drawing.Size(613, 336);
             this.DGV_Volume.TabIndex = 0;
-            this.DGV_Volume.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Volume_CellContentClick);
             // 
             // VL_Col_Select
             // 
@@ -1288,10 +1287,10 @@ namespace NT533.Q21._1_Lab2
             // Net_Col_Name
             // 
             this.Net_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Net_Col_Name.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Net_Col_Name.DefaultCellStyle = dataGridViewCellStyle1;
             this.Net_Col_Name.HeaderText = "Name";
             this.Net_Col_Name.Name = "Net_Col_Name";
             this.Net_Col_Name.ReadOnly = true;
@@ -1937,6 +1936,7 @@ namespace NT533.Q21._1_Lab2
             this.B_Del_LoadBalancer.TabIndex = 2;
             this.B_Del_LoadBalancer.Text = "Delete";
             this.B_Del_LoadBalancer.UseVisualStyleBackColor = true;
+            this.B_Del_LoadBalancer.Click += new System.EventHandler(this.B_Del_LoadBalancer_Click);
             // 
             // B_Cr_LoadBalancer
             // 
@@ -1946,6 +1946,7 @@ namespace NT533.Q21._1_Lab2
             this.B_Cr_LoadBalancer.TabIndex = 1;
             this.B_Cr_LoadBalancer.Text = "Create";
             this.B_Cr_LoadBalancer.UseVisualStyleBackColor = true;
+            this.B_Cr_LoadBalancer.Click += new System.EventHandler(this.B_Cr_LoadBalancer_Click);
             // 
             // P_L_LoadBalancer
             // 
@@ -2028,10 +2029,10 @@ namespace NT533.Q21._1_Lab2
             // Sub_Col_Name
             // 
             this.Sub_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Sub_Col_Name.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Sub_Col_Name.DefaultCellStyle = dataGridViewCellStyle2;
             this.Sub_Col_Name.HeaderText = "Name";
             this.Sub_Col_Name.Name = "Sub_Col_Name";
             this.Sub_Col_Name.ReadOnly = true;
@@ -2183,10 +2184,10 @@ namespace NT533.Q21._1_Lab2
             // RI_Col_Name
             // 
             this.RI_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.RI_Col_Name.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.RI_Col_Name.DefaultCellStyle = dataGridViewCellStyle3;
             this.RI_Col_Name.HeaderText = "Name";
             this.RI_Col_Name.Name = "RI_Col_Name";
             this.RI_Col_Name.ReadOnly = true;
@@ -2346,10 +2347,10 @@ namespace NT533.Q21._1_Lab2
             // Ru_Col_Direction
             // 
             this.Ru_Col_Direction.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Ru_Col_Direction.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Ru_Col_Direction.DefaultCellStyle = dataGridViewCellStyle4;
             this.Ru_Col_Direction.HeaderText = "Direction";
             this.Ru_Col_Direction.Name = "Ru_Col_Direction";
             this.Ru_Col_Direction.ReadOnly = true;

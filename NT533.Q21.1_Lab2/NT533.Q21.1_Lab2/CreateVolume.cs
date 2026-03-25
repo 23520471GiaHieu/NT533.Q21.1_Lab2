@@ -148,7 +148,6 @@ namespace NT533.Q21._1_Lab2
             }
             cB_SourceType.SelectedIndex = 0;
         }
-
         private async void B_Cr_CVolume_Click(object sender, EventArgs e)
         {
             string size = null, availability_zone = null, source_volid = null, description = null, name = null, imageRef = null;
@@ -209,12 +208,10 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Tạo Volume thất bại!\n" + result.Item2);
             }
         }
-
         private void B_C_CVolume_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void cB_VolumeSource_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(cB_VolumeSource.SelectedItem.ToString() == "Image")
@@ -246,7 +243,6 @@ namespace NT533.Q21._1_Lab2
                 cB_AZone.Visible = true;
             }
         }
-
         private async void cB_SourceType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (selectedVolumeSource == "Volume")

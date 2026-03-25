@@ -80,69 +80,23 @@
             this.FlavourPage = new System.Windows.Forms.TabPage();
             this.P_Choosed_Flavour = new System.Windows.Forms.Panel();
             this.DGV_Choosed_Flavour = new System.Windows.Forms.DataGridView();
-            this.Choosed_Flavour_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_VCPUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_RAM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_TotalDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_RootDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_EphemeralDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_Public = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Flavour_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_Choose_Flavour = new System.Windows.Forms.Panel();
             this.DGV_Choose_Flavour = new System.Windows.Forms.DataGridView();
-            this.Choose_Flavour_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_VCPUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_RAM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_TotalDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_RootDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_EphemeralDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_Public = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Flavour_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.NetworkPage = new System.Windows.Forms.TabPage();
             this.P_Choosed_Network = new System.Windows.Forms.Panel();
             this.DGV_Choosed_Network = new System.Windows.Forms.DataGridView();
-            this.Choosed_Network_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_Network = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_SubnetsAssociated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_Shared = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_AdminState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_Network_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_Choose_Network = new System.Windows.Forms.Panel();
             this.DGV_Choose_Network = new System.Windows.Forms.DataGridView();
-            this.Choose_Network_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_Network = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_SubnetsAssociated = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_Shared = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_AdminState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_Network_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.SecGroupPage = new System.Windows.Forms.TabPage();
             this.P_Choosed_SecGroup = new System.Windows.Forms.Panel();
             this.DGV_Choosed_SecGroup = new System.Windows.Forms.DataGridView();
-            this.Choosed_SecGroup_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_SecGroup_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_SecGroup_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_Choose_SecGroup = new System.Windows.Forms.Panel();
             this.DGV_Choose_SecGroup = new System.Windows.Forms.DataGridView();
-            this.Choose_SecGroup_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_SecGroup_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_SecGroup_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.KeyPairPage = new System.Windows.Forms.TabPage();
             this.P_Choosed_KeyPair = new System.Windows.Forms.Panel();
             this.DGV_Choosed_KeyPair = new System.Windows.Forms.DataGridView();
-            this.Choosed_KeyPair_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_KeyPair_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_KeyPair_Col_Fingerprint = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_KeyPair_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_Choose_KeyPair = new System.Windows.Forms.Panel();
             this.DGV_Choose_KeyPair = new System.Windows.Forms.DataGridView();
-            this.Choose_KeyPair_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_KeyPair_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_KeyPair_Col_Fingerprint = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_KeyPair_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_B_Cr_Im_KeyPair = new System.Windows.Forms.Panel();
             this.B_Im_KeyPair = new System.Windows.Forms.Button();
             this.B_Cr_KeyPair = new System.Windows.Forms.Button();
@@ -155,22 +109,44 @@
             this.LoadBalancerPage = new System.Windows.Forms.TabPage();
             this.P_Choose_LoadBalancer = new System.Windows.Forms.Panel();
             this.DGV_Choose_LoadBalancer = new System.Windows.Forms.DataGridView();
-            this.Choose_LoadBalancer_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_IPAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_OperatingStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_ProvisioningStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_AdminStateUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_LoadBalancer_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_Choosed_LoadBalancer = new System.Windows.Forms.Panel();
             this.DGV_Choosed_LoadBalancer = new System.Windows.Forms.DataGridView();
-            this.Choosed_LoadBalancer_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_IPAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_OperatingStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_ProvisioningStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_AdminStateUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_LoadBalancer_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_Flavour_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_VCPUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_RAM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_TotalDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_RootDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_EphemeralDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_Public = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Flavour_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_Flavour_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_VCPUS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_RAM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_TotalDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_RootDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_EphemeralDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_Public = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Flavour_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_VolSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_VolSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_VolSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_VolSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Choosed_ImageSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choosed_ImageSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choosed_ImageSource_Col_MinDisk = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -178,6 +154,7 @@
             this.Choosed_ImageSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choosed_ImageSource_Col_Format = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choosed_ImageSource_Col_Visibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_ImageSource_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choosed_ImageSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Choose_ImageSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choose_ImageSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -186,21 +163,62 @@
             this.Choose_ImageSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choose_ImageSource_Col_Format = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choose_ImageSource_Col_Visibility = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_ImageSource_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Choose_ImageSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Choosed_VolSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choosed_VolSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Choose_VolSource_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Choose_VolSource_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_Network_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_Network = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_SubnetsAssociated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_Shared = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_AdminState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_Network_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_Network_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_Network = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_SubnetsAssociated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_Shared = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_AdminState = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_Network_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_SecGroup_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_SecGroup_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_SecGroup_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_SecGroup_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_SecGroup_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_SecGroup_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_SecGroup_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_SecGroup_Col_Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_SecGroup_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_SecGroup_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_KeyPair_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_KeyPair_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_KeyPair_Col_Fingerprint = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_KeyPair_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_KeyPair_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_KeyPair_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_KeyPair_Col_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_KeyPair_Col_Fingerprint = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_KeyPair_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_KeyPair_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choosed_LoadBalancer_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_IPAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_OperatingStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_ProvisioningStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_AdminStateUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choosed_LoadBalancer_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Choose_LoadBalancer_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_IPAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_AvailabilityZone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_OperatingStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_ProvisioningStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_AdminStateUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Choose_LoadBalancer_Col_Choose = new System.Windows.Forms.DataGridViewButtonColumn();
             this.P_L_LaunchInstance.SuspendLayout();
             this.P_B_Cr_Can_Instance.SuspendLayout();
             this.P_Menu.SuspendLayout();
@@ -553,6 +571,7 @@
             this.tb_ProjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.tb_ProjectName.Location = new System.Drawing.Point(51, 152);
             this.tb_ProjectName.Name = "tb_ProjectName";
+            this.tb_ProjectName.ReadOnly = true;
             this.tb_ProjectName.Size = new System.Drawing.Size(250, 23);
             this.tb_ProjectName.TabIndex = 1;
             this.tb_ProjectName.Text = "NT533.Q21.G3";
@@ -634,6 +653,7 @@
             this.Choosed_ImageSource_Col_Size,
             this.Choosed_ImageSource_Col_Format,
             this.Choosed_ImageSource_Col_Visibility,
+            this.Choosed_ImageSource_Col_STT,
             this.Choosed_ImageSource_Col_Choose});
             this.DGV_Choosed_ImageSource.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_ImageSource.Location = new System.Drawing.Point(0, 0);
@@ -662,6 +682,7 @@
             this.Choose_ImageSource_Col_Size,
             this.Choose_ImageSource_Col_Format,
             this.Choose_ImageSource_Col_Visibility,
+            this.Choose_ImageSource_Col_STT,
             this.Choose_ImageSource_Col_Choose});
             this.DGV_Choose_ImageSource.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_ImageSource.Location = new System.Drawing.Point(0, 0);
@@ -701,6 +722,7 @@
             this.Choosed_VolSource_Col_Size,
             this.Choosed_VolSource_Col_Type,
             this.Choosed_VolSource_Col_AvailabilityZone,
+            this.Choosed_VolSource_Col_STT,
             this.Choosed_VolSource_Col_Choose});
             this.DGV_Choosed_VolSource.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_VolSource.Location = new System.Drawing.Point(0, 0);
@@ -728,6 +750,7 @@
             this.Choose_VolSource_Col_Size,
             this.Choose_VolSource_Col_Type,
             this.Choose_VolSource_Col_AvailabilityZone,
+            this.Choose_VolSource_Col_STT,
             this.Choose_VolSource_Col_Choose});
             this.DGV_Choose_VolSource.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_VolSource.Location = new System.Drawing.Point(0, 0);
@@ -860,6 +883,7 @@
             this.Choosed_Flavour_Col_RootDisk,
             this.Choosed_Flavour_Col_EphemeralDisk,
             this.Choosed_Flavour_Col_Public,
+            this.Choosed_Flavour_Col_STT,
             this.Choosed_Flavour_Col_Choose});
             this.DGV_Choosed_Flavour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_Flavour.Location = new System.Drawing.Point(0, 0);
@@ -867,56 +891,6 @@
             this.DGV_Choosed_Flavour.Size = new System.Drawing.Size(726, 116);
             this.DGV_Choosed_Flavour.TabIndex = 0;
             this.DGV_Choosed_Flavour.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_Flavour_CellContentClick);
-            // 
-            // Choosed_Flavour_Col_ID
-            // 
-            this.Choosed_Flavour_Col_ID.HeaderText = "ID";
-            this.Choosed_Flavour_Col_ID.Name = "Choosed_Flavour_Col_ID";
-            this.Choosed_Flavour_Col_ID.Visible = false;
-            // 
-            // Choosed_Flavour_Col_Name
-            // 
-            this.Choosed_Flavour_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Choosed_Flavour_Col_Name.HeaderText = "Name";
-            this.Choosed_Flavour_Col_Name.Name = "Choosed_Flavour_Col_Name";
-            this.Choosed_Flavour_Col_Name.Width = 60;
-            // 
-            // Choosed_Flavour_Col_VCPUS
-            // 
-            this.Choosed_Flavour_Col_VCPUS.HeaderText = "VCPUS";
-            this.Choosed_Flavour_Col_VCPUS.Name = "Choosed_Flavour_Col_VCPUS";
-            // 
-            // Choosed_Flavour_Col_RAM
-            // 
-            this.Choosed_Flavour_Col_RAM.HeaderText = "RAM";
-            this.Choosed_Flavour_Col_RAM.Name = "Choosed_Flavour_Col_RAM";
-            // 
-            // Choosed_Flavour_Col_TotalDisk
-            // 
-            this.Choosed_Flavour_Col_TotalDisk.HeaderText = "Total Disk";
-            this.Choosed_Flavour_Col_TotalDisk.Name = "Choosed_Flavour_Col_TotalDisk";
-            // 
-            // Choosed_Flavour_Col_RootDisk
-            // 
-            this.Choosed_Flavour_Col_RootDisk.HeaderText = "Root Disk";
-            this.Choosed_Flavour_Col_RootDisk.Name = "Choosed_Flavour_Col_RootDisk";
-            // 
-            // Choosed_Flavour_Col_EphemeralDisk
-            // 
-            this.Choosed_Flavour_Col_EphemeralDisk.HeaderText = "Ephemeral Disk";
-            this.Choosed_Flavour_Col_EphemeralDisk.Name = "Choosed_Flavour_Col_EphemeralDisk";
-            // 
-            // Choosed_Flavour_Col_Public
-            // 
-            this.Choosed_Flavour_Col_Public.HeaderText = "Public";
-            this.Choosed_Flavour_Col_Public.Name = "Choosed_Flavour_Col_Public";
-            // 
-            // Choosed_Flavour_Col_Choose
-            // 
-            this.Choosed_Flavour_Col_Choose.HeaderText = "";
-            this.Choosed_Flavour_Col_Choose.Name = "Choosed_Flavour_Col_Choose";
-            this.Choosed_Flavour_Col_Choose.Text = "Choose";
-            this.Choosed_Flavour_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // P_Choose_Flavour
             // 
@@ -939,6 +913,7 @@
             this.Choose_Flavour_Col_RootDisk,
             this.Choose_Flavour_Col_EphemeralDisk,
             this.Choose_Flavour_Col_Public,
+            this.Choose_Flavour_Col_STT,
             this.Choose_Flavour_Col_Choose});
             this.DGV_Choose_Flavour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_Flavour.Location = new System.Drawing.Point(0, 0);
@@ -946,55 +921,6 @@
             this.DGV_Choose_Flavour.Size = new System.Drawing.Size(726, 400);
             this.DGV_Choose_Flavour.TabIndex = 1;
             this.DGV_Choose_Flavour.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_Flavour_CellContentClick);
-            // 
-            // Choose_Flavour_Col_ID
-            // 
-            this.Choose_Flavour_Col_ID.HeaderText = "ID";
-            this.Choose_Flavour_Col_ID.Name = "Choose_Flavour_Col_ID";
-            this.Choose_Flavour_Col_ID.Visible = false;
-            // 
-            // Choose_Flavour_Col_Name
-            // 
-            this.Choose_Flavour_Col_Name.HeaderText = "Name";
-            this.Choose_Flavour_Col_Name.Name = "Choose_Flavour_Col_Name";
-            this.Choose_Flavour_Col_Name.Width = 60;
-            // 
-            // Choose_Flavour_Col_VCPUS
-            // 
-            this.Choose_Flavour_Col_VCPUS.HeaderText = "VCPUS";
-            this.Choose_Flavour_Col_VCPUS.Name = "Choose_Flavour_Col_VCPUS";
-            // 
-            // Choose_Flavour_Col_RAM
-            // 
-            this.Choose_Flavour_Col_RAM.HeaderText = "RAM";
-            this.Choose_Flavour_Col_RAM.Name = "Choose_Flavour_Col_RAM";
-            // 
-            // Choose_Flavour_Col_TotalDisk
-            // 
-            this.Choose_Flavour_Col_TotalDisk.HeaderText = "Total Disk";
-            this.Choose_Flavour_Col_TotalDisk.Name = "Choose_Flavour_Col_TotalDisk";
-            // 
-            // Choose_Flavour_Col_RootDisk
-            // 
-            this.Choose_Flavour_Col_RootDisk.HeaderText = "Root Disk";
-            this.Choose_Flavour_Col_RootDisk.Name = "Choose_Flavour_Col_RootDisk";
-            // 
-            // Choose_Flavour_Col_EphemeralDisk
-            // 
-            this.Choose_Flavour_Col_EphemeralDisk.HeaderText = "Ephemeral Disk";
-            this.Choose_Flavour_Col_EphemeralDisk.Name = "Choose_Flavour_Col_EphemeralDisk";
-            // 
-            // Choose_Flavour_Col_Public
-            // 
-            this.Choose_Flavour_Col_Public.HeaderText = "Public";
-            this.Choose_Flavour_Col_Public.Name = "Choose_Flavour_Col_Public";
-            // 
-            // Choose_Flavour_Col_Choose
-            // 
-            this.Choose_Flavour_Col_Choose.HeaderText = "";
-            this.Choose_Flavour_Col_Choose.Name = "Choose_Flavour_Col_Choose";
-            this.Choose_Flavour_Col_Choose.Text = "Choose";
-            this.Choose_Flavour_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // NetworkPage
             // 
@@ -1027,6 +953,7 @@
             this.Choosed_Network_Col_Shared,
             this.Choosed_Network_Col_AdminState,
             this.Choosed_Network_Col_Status,
+            this.Choosed_Network_Col_STT,
             this.Choosed_Network_Col_Choose});
             this.DGV_Choosed_Network.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_Network.Location = new System.Drawing.Point(0, 0);
@@ -1034,44 +961,6 @@
             this.DGV_Choosed_Network.Size = new System.Drawing.Size(726, 116);
             this.DGV_Choosed_Network.TabIndex = 0;
             this.DGV_Choosed_Network.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_Network_CellContentClick);
-            // 
-            // Choosed_Network_Col_ID
-            // 
-            this.Choosed_Network_Col_ID.HeaderText = "ID";
-            this.Choosed_Network_Col_ID.Name = "Choosed_Network_Col_ID";
-            this.Choosed_Network_Col_ID.Visible = false;
-            // 
-            // Choosed_Network_Col_Network
-            // 
-            this.Choosed_Network_Col_Network.HeaderText = "Network";
-            this.Choosed_Network_Col_Network.Name = "Choosed_Network_Col_Network";
-            // 
-            // Choosed_Network_Col_SubnetsAssociated
-            // 
-            this.Choosed_Network_Col_SubnetsAssociated.HeaderText = "Subnets Associated";
-            this.Choosed_Network_Col_SubnetsAssociated.Name = "Choosed_Network_Col_SubnetsAssociated";
-            // 
-            // Choosed_Network_Col_Shared
-            // 
-            this.Choosed_Network_Col_Shared.HeaderText = "Shared";
-            this.Choosed_Network_Col_Shared.Name = "Choosed_Network_Col_Shared";
-            // 
-            // Choosed_Network_Col_AdminState
-            // 
-            this.Choosed_Network_Col_AdminState.HeaderText = "Admin State";
-            this.Choosed_Network_Col_AdminState.Name = "Choosed_Network_Col_AdminState";
-            // 
-            // Choosed_Network_Col_Status
-            // 
-            this.Choosed_Network_Col_Status.HeaderText = "Status";
-            this.Choosed_Network_Col_Status.Name = "Choosed_Network_Col_Status";
-            // 
-            // Choosed_Network_Col_Choose
-            // 
-            this.Choosed_Network_Col_Choose.HeaderText = "";
-            this.Choosed_Network_Col_Choose.Name = "Choosed_Network_Col_Choose";
-            this.Choosed_Network_Col_Choose.Text = "Choose";
-            this.Choosed_Network_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // P_Choose_Network
             // 
@@ -1092,6 +981,7 @@
             this.Choose_Network_Col_Shared,
             this.Choose_Network_Col_AdminState,
             this.Choose_Network_Col_Status,
+            this.Choose_Network_Col_STT,
             this.Choose_Network_Col_Choose});
             this.DGV_Choose_Network.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_Network.Location = new System.Drawing.Point(0, 0);
@@ -1099,46 +989,6 @@
             this.DGV_Choose_Network.Size = new System.Drawing.Size(726, 400);
             this.DGV_Choose_Network.TabIndex = 1;
             this.DGV_Choose_Network.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_Network_CellContentClick);
-            // 
-            // Choose_Network_Col_ID
-            // 
-            this.Choose_Network_Col_ID.HeaderText = "ID";
-            this.Choose_Network_Col_ID.Name = "Choose_Network_Col_ID";
-            this.Choose_Network_Col_ID.Visible = false;
-            // 
-            // Choose_Network_Col_Network
-            // 
-            this.Choose_Network_Col_Network.HeaderText = "Network";
-            this.Choose_Network_Col_Network.Name = "Choose_Network_Col_Network";
-            // 
-            // Choose_Network_Col_SubnetsAssociated
-            // 
-            this.Choose_Network_Col_SubnetsAssociated.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Choose_Network_Col_SubnetsAssociated.HeaderText = "Subnets Associated";
-            this.Choose_Network_Col_SubnetsAssociated.Name = "Choose_Network_Col_SubnetsAssociated";
-            this.Choose_Network_Col_SubnetsAssociated.Width = 115;
-            // 
-            // Choose_Network_Col_Shared
-            // 
-            this.Choose_Network_Col_Shared.HeaderText = "Shared";
-            this.Choose_Network_Col_Shared.Name = "Choose_Network_Col_Shared";
-            // 
-            // Choose_Network_Col_AdminState
-            // 
-            this.Choose_Network_Col_AdminState.HeaderText = "Admin State";
-            this.Choose_Network_Col_AdminState.Name = "Choose_Network_Col_AdminState";
-            // 
-            // Choose_Network_Col_Status
-            // 
-            this.Choose_Network_Col_Status.HeaderText = "Status";
-            this.Choose_Network_Col_Status.Name = "Choose_Network_Col_Status";
-            // 
-            // Choose_Network_Col_Choose
-            // 
-            this.Choose_Network_Col_Choose.HeaderText = "";
-            this.Choose_Network_Col_Choose.Name = "Choose_Network_Col_Choose";
-            this.Choose_Network_Col_Choose.Text = "Choose";
-            this.Choose_Network_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // SecGroupPage
             // 
@@ -1165,30 +1015,17 @@
             // 
             this.DGV_Choosed_SecGroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Choosed_SecGroup.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Choosed_SecGroup_Col_ID,
             this.Choosed_SecGroup_Col_Name,
             this.Choosed_SecGroup_Col_Description,
+            this.Choosed_SecGroup_Col_STT,
             this.Choosed_SecGroup_Col_Choose});
             this.DGV_Choosed_SecGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_SecGroup.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choosed_SecGroup.Name = "DGV_Choosed_SecGroup";
             this.DGV_Choosed_SecGroup.Size = new System.Drawing.Size(726, 116);
             this.DGV_Choosed_SecGroup.TabIndex = 0;
-            // 
-            // Choosed_SecGroup_Col_Name
-            // 
-            this.Choosed_SecGroup_Col_Name.HeaderText = "Name";
-            this.Choosed_SecGroup_Col_Name.Name = "Choosed_SecGroup_Col_Name";
-            // 
-            // Choosed_SecGroup_Col_Description
-            // 
-            this.Choosed_SecGroup_Col_Description.HeaderText = "Description";
-            this.Choosed_SecGroup_Col_Description.Name = "Choosed_SecGroup_Col_Description";
-            // 
-            // Choosed_SecGroup_Col_Choose
-            // 
-            this.Choosed_SecGroup_Col_Choose.HeaderText = "";
-            this.Choosed_SecGroup_Col_Choose.Name = "Choosed_SecGroup_Col_Choose";
-            this.Choosed_SecGroup_Col_Choose.Text = "Choose";
+            this.DGV_Choosed_SecGroup.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_SecGroup_CellContentClick);
             // 
             // P_Choose_SecGroup
             // 
@@ -1203,30 +1040,17 @@
             // 
             this.DGV_Choose_SecGroup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Choose_SecGroup.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Choose_SecGroup_Col_ID,
             this.Choose_SecGroup_Col_Name,
             this.Choose_SecGroup_Col_Description,
+            this.Choose_SecGroup_Col_STT,
             this.Choose_SecGroup_Col_Choose});
             this.DGV_Choose_SecGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_SecGroup.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choose_SecGroup.Name = "DGV_Choose_SecGroup";
             this.DGV_Choose_SecGroup.Size = new System.Drawing.Size(726, 400);
             this.DGV_Choose_SecGroup.TabIndex = 1;
-            // 
-            // Choose_SecGroup_Col_Name
-            // 
-            this.Choose_SecGroup_Col_Name.HeaderText = "Name";
-            this.Choose_SecGroup_Col_Name.Name = "Choose_SecGroup_Col_Name";
-            // 
-            // Choose_SecGroup_Col_Description
-            // 
-            this.Choose_SecGroup_Col_Description.HeaderText = "Description";
-            this.Choose_SecGroup_Col_Description.Name = "Choose_SecGroup_Col_Description";
-            // 
-            // Choose_SecGroup_Col_Choose
-            // 
-            this.Choose_SecGroup_Col_Choose.HeaderText = "";
-            this.Choose_SecGroup_Col_Choose.Name = "Choose_SecGroup_Col_Choose";
-            this.Choose_SecGroup_Col_Choose.Text = "Choose";
+            this.DGV_Choose_SecGroup.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_SecGroup_CellContentClick);
             // 
             // KeyPairPage
             // 
@@ -1257,33 +1081,14 @@
             this.Choosed_KeyPair_Col_Name,
             this.Choosed_KeyPair_Col_Type,
             this.Choosed_KeyPair_Col_Fingerprint,
+            this.Choosed_KeyPair_Col_STT,
             this.Choosed_KeyPair_Col_Choose});
             this.DGV_Choosed_KeyPair.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_KeyPair.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choosed_KeyPair.Name = "DGV_Choosed_KeyPair";
             this.DGV_Choosed_KeyPair.Size = new System.Drawing.Size(726, 116);
             this.DGV_Choosed_KeyPair.TabIndex = 0;
-            // 
-            // Choosed_KeyPair_Col_Name
-            // 
-            this.Choosed_KeyPair_Col_Name.HeaderText = "Name";
-            this.Choosed_KeyPair_Col_Name.Name = "Choosed_KeyPair_Col_Name";
-            // 
-            // Choosed_KeyPair_Col_Type
-            // 
-            this.Choosed_KeyPair_Col_Type.HeaderText = "Type";
-            this.Choosed_KeyPair_Col_Type.Name = "Choosed_KeyPair_Col_Type";
-            // 
-            // Choosed_KeyPair_Col_Fingerprint
-            // 
-            this.Choosed_KeyPair_Col_Fingerprint.HeaderText = "Fingerprint";
-            this.Choosed_KeyPair_Col_Fingerprint.Name = "Choosed_KeyPair_Col_Fingerprint";
-            // 
-            // Choosed_KeyPair_Col_Choose
-            // 
-            this.Choosed_KeyPair_Col_Choose.HeaderText = "";
-            this.Choosed_KeyPair_Col_Choose.Name = "Choosed_KeyPair_Col_Choose";
-            this.Choosed_KeyPair_Col_Choose.Text = "Choose";
+            this.DGV_Choosed_KeyPair.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_KeyPair_CellContentClick);
             // 
             // P_Choose_KeyPair
             // 
@@ -1301,33 +1106,14 @@
             this.Choose_KeyPair_Col_Name,
             this.Choose_KeyPair_Col_Type,
             this.Choose_KeyPair_Col_Fingerprint,
+            this.Choose_KeyPair_Col_STT,
             this.Choose_KeyPair_Col_Choose});
             this.DGV_Choose_KeyPair.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_KeyPair.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choose_KeyPair.Name = "DGV_Choose_KeyPair";
             this.DGV_Choose_KeyPair.Size = new System.Drawing.Size(726, 325);
             this.DGV_Choose_KeyPair.TabIndex = 1;
-            // 
-            // Choose_KeyPair_Col_Name
-            // 
-            this.Choose_KeyPair_Col_Name.HeaderText = "Name";
-            this.Choose_KeyPair_Col_Name.Name = "Choose_KeyPair_Col_Name";
-            // 
-            // Choose_KeyPair_Col_Type
-            // 
-            this.Choose_KeyPair_Col_Type.HeaderText = "Type";
-            this.Choose_KeyPair_Col_Type.Name = "Choose_KeyPair_Col_Type";
-            // 
-            // Choose_KeyPair_Col_Fingerprint
-            // 
-            this.Choose_KeyPair_Col_Fingerprint.HeaderText = "Fingerprint";
-            this.Choose_KeyPair_Col_Fingerprint.Name = "Choose_KeyPair_Col_Fingerprint";
-            // 
-            // Choose_KeyPair_Col_Choose
-            // 
-            this.Choose_KeyPair_Col_Choose.HeaderText = "";
-            this.Choose_KeyPair_Col_Choose.Name = "Choose_KeyPair_Col_Choose";
-            this.Choose_KeyPair_Col_Choose.Text = "Choose";
+            this.DGV_Choose_KeyPair.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_KeyPair_CellContentClick);
             // 
             // P_B_Cr_Im_KeyPair
             // 
@@ -1348,6 +1134,7 @@
             this.B_Im_KeyPair.TabIndex = 16;
             this.B_Im_KeyPair.Text = "Import Key Pair";
             this.B_Im_KeyPair.UseVisualStyleBackColor = true;
+            this.B_Im_KeyPair.Click += new System.EventHandler(this.B_Im_KeyPair_Click);
             // 
             // B_Cr_KeyPair
             // 
@@ -1358,6 +1145,7 @@
             this.B_Cr_KeyPair.TabIndex = 15;
             this.B_Cr_KeyPair.Text = "Create Key Pair";
             this.B_Cr_KeyPair.UseVisualStyleBackColor = true;
+            this.B_Cr_KeyPair.Click += new System.EventHandler(this.B_Cr_KeyPair_Click);
             // 
             // ConfigurationPage
             // 
@@ -1402,6 +1190,7 @@
             this.B_ChooseFile.TabIndex = 3;
             this.B_ChooseFile.Text = "Choose file";
             this.B_ChooseFile.UseVisualStyleBackColor = true;
+            this.B_ChooseFile.Click += new System.EventHandler(this.B_ChooseFile_Click);
             // 
             // L_CustomScript
             // 
@@ -1448,54 +1237,21 @@
             // 
             this.DGV_Choose_LoadBalancer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Choose_LoadBalancer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Choose_LoadBalancer_Col_ID,
             this.Choose_LoadBalancer_Col_Name,
             this.Choose_LoadBalancer_Col_IPAddress,
             this.Choose_LoadBalancer_Col_AvailabilityZone,
             this.Choose_LoadBalancer_Col_OperatingStatus,
             this.Choose_LoadBalancer_Col_ProvisioningStatus,
             this.Choose_LoadBalancer_Col_AdminStateUp,
+            this.Choose_LoadBalancer_Col_STT,
             this.Choose_LoadBalancer_Col_Choose});
             this.DGV_Choose_LoadBalancer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choose_LoadBalancer.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choose_LoadBalancer.Name = "DGV_Choose_LoadBalancer";
             this.DGV_Choose_LoadBalancer.Size = new System.Drawing.Size(726, 400);
             this.DGV_Choose_LoadBalancer.TabIndex = 1;
-            // 
-            // Choose_LoadBalancer_Col_Name
-            // 
-            this.Choose_LoadBalancer_Col_Name.HeaderText = "Name";
-            this.Choose_LoadBalancer_Col_Name.Name = "Choose_LoadBalancer_Col_Name";
-            // 
-            // Choose_LoadBalancer_Col_IPAddress
-            // 
-            this.Choose_LoadBalancer_Col_IPAddress.HeaderText = "IP Address";
-            this.Choose_LoadBalancer_Col_IPAddress.Name = "Choose_LoadBalancer_Col_IPAddress";
-            // 
-            // Choose_LoadBalancer_Col_AvailabilityZone
-            // 
-            this.Choose_LoadBalancer_Col_AvailabilityZone.HeaderText = "Availability Zone";
-            this.Choose_LoadBalancer_Col_AvailabilityZone.Name = "Choose_LoadBalancer_Col_AvailabilityZone";
-            // 
-            // Choose_LoadBalancer_Col_OperatingStatus
-            // 
-            this.Choose_LoadBalancer_Col_OperatingStatus.HeaderText = "Operating Status";
-            this.Choose_LoadBalancer_Col_OperatingStatus.Name = "Choose_LoadBalancer_Col_OperatingStatus";
-            // 
-            // Choose_LoadBalancer_Col_ProvisioningStatus
-            // 
-            this.Choose_LoadBalancer_Col_ProvisioningStatus.HeaderText = "Provisioning Status";
-            this.Choose_LoadBalancer_Col_ProvisioningStatus.Name = "Choose_LoadBalancer_Col_ProvisioningStatus";
-            // 
-            // Choose_LoadBalancer_Col_AdminStateUp
-            // 
-            this.Choose_LoadBalancer_Col_AdminStateUp.HeaderText = "Admin State Up";
-            this.Choose_LoadBalancer_Col_AdminStateUp.Name = "Choose_LoadBalancer_Col_AdminStateUp";
-            // 
-            // Choose_LoadBalancer_Col_Choose
-            // 
-            this.Choose_LoadBalancer_Col_Choose.HeaderText = "";
-            this.Choose_LoadBalancer_Col_Choose.Name = "Choose_LoadBalancer_Col_Choose";
-            this.Choose_LoadBalancer_Col_Choose.Text = "Choose";
+            this.DGV_Choose_LoadBalancer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_LoadBalancer_CellContentClick);
             // 
             // P_Choosed_LoadBalancer
             // 
@@ -1510,54 +1266,220 @@
             // 
             this.DGV_Choosed_LoadBalancer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_Choosed_LoadBalancer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Choosed_LoadBalancer_Col_ID,
             this.Choosed_LoadBalancer_Col_Name,
             this.Choosed_LoadBalancer_Col_IPAddress,
             this.Choosed_LoadBalancer_Col_AvailabilityZone,
             this.Choosed_LoadBalancer_Col_OperatingStatus,
             this.Choosed_LoadBalancer_Col_ProvisioningStatus,
             this.Choosed_LoadBalancer_Col_AdminStateUp,
+            this.Choosed_LoadBalancer_Col_STT,
             this.Choosed_LoadBalancer_Col_Choose});
             this.DGV_Choosed_LoadBalancer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Choosed_LoadBalancer.Location = new System.Drawing.Point(0, 0);
             this.DGV_Choosed_LoadBalancer.Name = "DGV_Choosed_LoadBalancer";
             this.DGV_Choosed_LoadBalancer.Size = new System.Drawing.Size(726, 516);
             this.DGV_Choosed_LoadBalancer.TabIndex = 0;
+            this.DGV_Choosed_LoadBalancer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_LoadBalancer_CellContentClick);
             // 
-            // Choosed_LoadBalancer_Col_Name
+            // Choosed_Flavour_Col_ID
             // 
-            this.Choosed_LoadBalancer_Col_Name.HeaderText = "Name";
-            this.Choosed_LoadBalancer_Col_Name.Name = "Choosed_LoadBalancer_Col_Name";
+            this.Choosed_Flavour_Col_ID.HeaderText = "ID";
+            this.Choosed_Flavour_Col_ID.Name = "Choosed_Flavour_Col_ID";
+            this.Choosed_Flavour_Col_ID.Visible = false;
             // 
-            // Choosed_LoadBalancer_Col_IPAddress
+            // Choosed_Flavour_Col_Name
             // 
-            this.Choosed_LoadBalancer_Col_IPAddress.HeaderText = "IP Address";
-            this.Choosed_LoadBalancer_Col_IPAddress.Name = "Choosed_LoadBalancer_Col_IPAddress";
+            this.Choosed_Flavour_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Flavour_Col_Name.HeaderText = "Name";
+            this.Choosed_Flavour_Col_Name.Name = "Choosed_Flavour_Col_Name";
+            this.Choosed_Flavour_Col_Name.Width = 60;
             // 
-            // Choosed_LoadBalancer_Col_AvailabilityZone
+            // Choosed_Flavour_Col_VCPUS
             // 
-            this.Choosed_LoadBalancer_Col_AvailabilityZone.HeaderText = "Availability Zone";
-            this.Choosed_LoadBalancer_Col_AvailabilityZone.Name = "Choosed_LoadBalancer_Col_AvailabilityZone";
+            this.Choosed_Flavour_Col_VCPUS.HeaderText = "VCPUS";
+            this.Choosed_Flavour_Col_VCPUS.Name = "Choosed_Flavour_Col_VCPUS";
             // 
-            // Choosed_LoadBalancer_Col_OperatingStatus
+            // Choosed_Flavour_Col_RAM
             // 
-            this.Choosed_LoadBalancer_Col_OperatingStatus.HeaderText = "Operating Status";
-            this.Choosed_LoadBalancer_Col_OperatingStatus.Name = "Choosed_LoadBalancer_Col_OperatingStatus";
+            this.Choosed_Flavour_Col_RAM.HeaderText = "RAM";
+            this.Choosed_Flavour_Col_RAM.Name = "Choosed_Flavour_Col_RAM";
             // 
-            // Choosed_LoadBalancer_Col_ProvisioningStatus
+            // Choosed_Flavour_Col_TotalDisk
             // 
-            this.Choosed_LoadBalancer_Col_ProvisioningStatus.HeaderText = "Provisioning Status";
-            this.Choosed_LoadBalancer_Col_ProvisioningStatus.Name = "Choosed_LoadBalancer_Col_ProvisioningStatus";
+            this.Choosed_Flavour_Col_TotalDisk.HeaderText = "Total Disk";
+            this.Choosed_Flavour_Col_TotalDisk.Name = "Choosed_Flavour_Col_TotalDisk";
             // 
-            // Choosed_LoadBalancer_Col_AdminStateUp
+            // Choosed_Flavour_Col_RootDisk
             // 
-            this.Choosed_LoadBalancer_Col_AdminStateUp.HeaderText = "Admin State Up";
-            this.Choosed_LoadBalancer_Col_AdminStateUp.Name = "Choosed_LoadBalancer_Col_AdminStateUp";
+            this.Choosed_Flavour_Col_RootDisk.HeaderText = "Root Disk";
+            this.Choosed_Flavour_Col_RootDisk.Name = "Choosed_Flavour_Col_RootDisk";
             // 
-            // Choosed_LoadBalancer_Col_Choose
+            // Choosed_Flavour_Col_EphemeralDisk
             // 
-            this.Choosed_LoadBalancer_Col_Choose.HeaderText = "";
-            this.Choosed_LoadBalancer_Col_Choose.Name = "Choosed_LoadBalancer_Col_Choose";
-            this.Choosed_LoadBalancer_Col_Choose.Text = "Choose";
+            this.Choosed_Flavour_Col_EphemeralDisk.HeaderText = "Ephemeral Disk";
+            this.Choosed_Flavour_Col_EphemeralDisk.Name = "Choosed_Flavour_Col_EphemeralDisk";
+            // 
+            // Choosed_Flavour_Col_Public
+            // 
+            this.Choosed_Flavour_Col_Public.HeaderText = "Public";
+            this.Choosed_Flavour_Col_Public.Name = "Choosed_Flavour_Col_Public";
+            // 
+            // Choosed_Flavour_Col_STT
+            // 
+            this.Choosed_Flavour_Col_STT.HeaderText = "STT";
+            this.Choosed_Flavour_Col_STT.Name = "Choosed_Flavour_Col_STT";
+            this.Choosed_Flavour_Col_STT.Visible = false;
+            // 
+            // Choosed_Flavour_Col_Choose
+            // 
+            this.Choosed_Flavour_Col_Choose.HeaderText = "";
+            this.Choosed_Flavour_Col_Choose.Name = "Choosed_Flavour_Col_Choose";
+            this.Choosed_Flavour_Col_Choose.Text = "Choose";
+            this.Choosed_Flavour_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choose_Flavour_Col_ID
+            // 
+            this.Choose_Flavour_Col_ID.HeaderText = "ID";
+            this.Choose_Flavour_Col_ID.Name = "Choose_Flavour_Col_ID";
+            this.Choose_Flavour_Col_ID.Visible = false;
+            // 
+            // Choose_Flavour_Col_Name
+            // 
+            this.Choose_Flavour_Col_Name.HeaderText = "Name";
+            this.Choose_Flavour_Col_Name.Name = "Choose_Flavour_Col_Name";
+            this.Choose_Flavour_Col_Name.Width = 60;
+            // 
+            // Choose_Flavour_Col_VCPUS
+            // 
+            this.Choose_Flavour_Col_VCPUS.HeaderText = "VCPUS";
+            this.Choose_Flavour_Col_VCPUS.Name = "Choose_Flavour_Col_VCPUS";
+            // 
+            // Choose_Flavour_Col_RAM
+            // 
+            this.Choose_Flavour_Col_RAM.HeaderText = "RAM";
+            this.Choose_Flavour_Col_RAM.Name = "Choose_Flavour_Col_RAM";
+            // 
+            // Choose_Flavour_Col_TotalDisk
+            // 
+            this.Choose_Flavour_Col_TotalDisk.HeaderText = "Total Disk";
+            this.Choose_Flavour_Col_TotalDisk.Name = "Choose_Flavour_Col_TotalDisk";
+            // 
+            // Choose_Flavour_Col_RootDisk
+            // 
+            this.Choose_Flavour_Col_RootDisk.HeaderText = "Root Disk";
+            this.Choose_Flavour_Col_RootDisk.Name = "Choose_Flavour_Col_RootDisk";
+            // 
+            // Choose_Flavour_Col_EphemeralDisk
+            // 
+            this.Choose_Flavour_Col_EphemeralDisk.HeaderText = "Ephemeral Disk";
+            this.Choose_Flavour_Col_EphemeralDisk.Name = "Choose_Flavour_Col_EphemeralDisk";
+            // 
+            // Choose_Flavour_Col_Public
+            // 
+            this.Choose_Flavour_Col_Public.HeaderText = "Public";
+            this.Choose_Flavour_Col_Public.Name = "Choose_Flavour_Col_Public";
+            // 
+            // Choose_Flavour_Col_STT
+            // 
+            this.Choose_Flavour_Col_STT.HeaderText = "STT";
+            this.Choose_Flavour_Col_STT.Name = "Choose_Flavour_Col_STT";
+            this.Choose_Flavour_Col_STT.Visible = false;
+            // 
+            // Choose_Flavour_Col_Choose
+            // 
+            this.Choose_Flavour_Col_Choose.HeaderText = "";
+            this.Choose_Flavour_Col_Choose.Name = "Choose_Flavour_Col_Choose";
+            this.Choose_Flavour_Col_Choose.Text = "Choose";
+            this.Choose_Flavour_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choosed_VolSource_Col_ID
+            // 
+            this.Choosed_VolSource_Col_ID.HeaderText = "ID";
+            this.Choosed_VolSource_Col_ID.Name = "Choosed_VolSource_Col_ID";
+            this.Choosed_VolSource_Col_ID.Visible = false;
+            // 
+            // Choosed_VolSource_Col_Name
+            // 
+            this.Choosed_VolSource_Col_Name.HeaderText = "Name";
+            this.Choosed_VolSource_Col_Name.Name = "Choosed_VolSource_Col_Name";
+            // 
+            // Choosed_VolSource_Col_Description
+            // 
+            this.Choosed_VolSource_Col_Description.HeaderText = "Description";
+            this.Choosed_VolSource_Col_Description.Name = "Choosed_VolSource_Col_Description";
+            // 
+            // Choosed_VolSource_Col_Size
+            // 
+            this.Choosed_VolSource_Col_Size.HeaderText = "Size";
+            this.Choosed_VolSource_Col_Size.Name = "Choosed_VolSource_Col_Size";
+            // 
+            // Choosed_VolSource_Col_Type
+            // 
+            this.Choosed_VolSource_Col_Type.HeaderText = "Type";
+            this.Choosed_VolSource_Col_Type.Name = "Choosed_VolSource_Col_Type";
+            // 
+            // Choosed_VolSource_Col_AvailabilityZone
+            // 
+            this.Choosed_VolSource_Col_AvailabilityZone.HeaderText = "Availability Zone";
+            this.Choosed_VolSource_Col_AvailabilityZone.Name = "Choosed_VolSource_Col_AvailabilityZone";
+            // 
+            // Choosed_VolSource_Col_STT
+            // 
+            this.Choosed_VolSource_Col_STT.HeaderText = "STT";
+            this.Choosed_VolSource_Col_STT.Name = "Choosed_VolSource_Col_STT";
+            this.Choosed_VolSource_Col_STT.Visible = false;
+            // 
+            // Choosed_VolSource_Col_Choose
+            // 
+            this.Choosed_VolSource_Col_Choose.HeaderText = "";
+            this.Choosed_VolSource_Col_Choose.Name = "Choosed_VolSource_Col_Choose";
+            this.Choosed_VolSource_Col_Choose.Text = "Choose";
+            this.Choosed_VolSource_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choose_VolSource_Col_ID
+            // 
+            this.Choose_VolSource_Col_ID.HeaderText = "ID";
+            this.Choose_VolSource_Col_ID.Name = "Choose_VolSource_Col_ID";
+            this.Choose_VolSource_Col_ID.Visible = false;
+            // 
+            // Choose_VolSource_Col_Name
+            // 
+            this.Choose_VolSource_Col_Name.HeaderText = "Name";
+            this.Choose_VolSource_Col_Name.Name = "Choose_VolSource_Col_Name";
+            // 
+            // Choose_VolSource_Col_Description
+            // 
+            this.Choose_VolSource_Col_Description.HeaderText = "Description";
+            this.Choose_VolSource_Col_Description.Name = "Choose_VolSource_Col_Description";
+            // 
+            // Choose_VolSource_Col_Size
+            // 
+            this.Choose_VolSource_Col_Size.HeaderText = "Size";
+            this.Choose_VolSource_Col_Size.Name = "Choose_VolSource_Col_Size";
+            // 
+            // Choose_VolSource_Col_Type
+            // 
+            this.Choose_VolSource_Col_Type.HeaderText = "Type";
+            this.Choose_VolSource_Col_Type.Name = "Choose_VolSource_Col_Type";
+            // 
+            // Choose_VolSource_Col_AvailabilityZone
+            // 
+            this.Choose_VolSource_Col_AvailabilityZone.HeaderText = "Availability Zone";
+            this.Choose_VolSource_Col_AvailabilityZone.Name = "Choose_VolSource_Col_AvailabilityZone";
+            // 
+            // Choose_VolSource_Col_STT
+            // 
+            this.Choose_VolSource_Col_STT.HeaderText = "STT";
+            this.Choose_VolSource_Col_STT.Name = "Choose_VolSource_Col_STT";
+            this.Choose_VolSource_Col_STT.Visible = false;
+            // 
+            // Choose_VolSource_Col_Choose
+            // 
+            this.Choose_VolSource_Col_Choose.HeaderText = "";
+            this.Choose_VolSource_Col_Choose.Name = "Choose_VolSource_Col_Choose";
+            this.Choose_VolSource_Col_Choose.Text = "Choose";
+            this.Choose_VolSource_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // Choosed_ImageSource_Col_ID
             // 
@@ -1595,6 +1517,12 @@
             // 
             this.Choosed_ImageSource_Col_Visibility.HeaderText = "Visibility";
             this.Choosed_ImageSource_Col_Visibility.Name = "Choosed_ImageSource_Col_Visibility";
+            // 
+            // Choosed_ImageSource_Col_STT
+            // 
+            this.Choosed_ImageSource_Col_STT.HeaderText = "STT";
+            this.Choosed_ImageSource_Col_STT.Name = "Choosed_ImageSource_Col_STT";
+            this.Choosed_ImageSource_Col_STT.Visible = false;
             // 
             // Choosed_ImageSource_Col_Choose
             // 
@@ -1640,6 +1568,12 @@
             this.Choose_ImageSource_Col_Visibility.HeaderText = "Visibility";
             this.Choose_ImageSource_Col_Visibility.Name = "Choose_ImageSource_Col_Visibility";
             // 
+            // Choose_ImageSource_Col_STT
+            // 
+            this.Choose_ImageSource_Col_STT.HeaderText = "STT";
+            this.Choose_ImageSource_Col_STT.Name = "Choose_ImageSource_Col_STT";
+            this.Choose_ImageSource_Col_STT.Visible = false;
+            // 
             // Choose_ImageSource_Col_Choose
             // 
             this.Choose_ImageSource_Col_Choose.HeaderText = "";
@@ -1647,81 +1581,337 @@
             this.Choose_ImageSource_Col_Choose.Text = "Choose";
             this.Choose_ImageSource_Col_Choose.UseColumnTextForButtonValue = true;
             // 
-            // Choosed_VolSource_Col_ID
+            // Choose_Network_Col_ID
             // 
-            this.Choosed_VolSource_Col_ID.HeaderText = "ID";
-            this.Choosed_VolSource_Col_ID.Name = "Choosed_VolSource_Col_ID";
-            this.Choosed_VolSource_Col_ID.Visible = false;
+            this.Choose_Network_Col_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_ID.HeaderText = "ID";
+            this.Choose_Network_Col_ID.Name = "Choose_Network_Col_ID";
+            this.Choose_Network_Col_ID.Visible = false;
+            this.Choose_Network_Col_ID.Width = 43;
             // 
-            // Choosed_VolSource_Col_Name
+            // Choose_Network_Col_Network
             // 
-            this.Choosed_VolSource_Col_Name.HeaderText = "Name";
-            this.Choosed_VolSource_Col_Name.Name = "Choosed_VolSource_Col_Name";
+            this.Choose_Network_Col_Network.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_Network.HeaderText = "Network";
+            this.Choose_Network_Col_Network.Name = "Choose_Network_Col_Network";
+            this.Choose_Network_Col_Network.Width = 72;
             // 
-            // Choosed_VolSource_Col_Description
+            // Choose_Network_Col_SubnetsAssociated
             // 
-            this.Choosed_VolSource_Col_Description.HeaderText = "Description";
-            this.Choosed_VolSource_Col_Description.Name = "Choosed_VolSource_Col_Description";
+            this.Choose_Network_Col_SubnetsAssociated.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_SubnetsAssociated.HeaderText = "Subnets Associated";
+            this.Choose_Network_Col_SubnetsAssociated.Name = "Choose_Network_Col_SubnetsAssociated";
+            this.Choose_Network_Col_SubnetsAssociated.Width = 115;
             // 
-            // Choosed_VolSource_Col_Size
+            // Choose_Network_Col_Shared
             // 
-            this.Choosed_VolSource_Col_Size.HeaderText = "Size";
-            this.Choosed_VolSource_Col_Size.Name = "Choosed_VolSource_Col_Size";
+            this.Choose_Network_Col_Shared.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_Shared.HeaderText = "Shared";
+            this.Choose_Network_Col_Shared.Name = "Choose_Network_Col_Shared";
+            this.Choose_Network_Col_Shared.Width = 66;
             // 
-            // Choosed_VolSource_Col_Type
+            // Choose_Network_Col_AdminState
             // 
-            this.Choosed_VolSource_Col_Type.HeaderText = "Type";
-            this.Choosed_VolSource_Col_Type.Name = "Choosed_VolSource_Col_Type";
+            this.Choose_Network_Col_AdminState.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_AdminState.HeaderText = "Admin State";
+            this.Choose_Network_Col_AdminState.Name = "Choose_Network_Col_AdminState";
+            this.Choose_Network_Col_AdminState.Width = 82;
             // 
-            // Choosed_VolSource_Col_AvailabilityZone
+            // Choose_Network_Col_Status
             // 
-            this.Choosed_VolSource_Col_AvailabilityZone.HeaderText = "Availability Zone";
-            this.Choosed_VolSource_Col_AvailabilityZone.Name = "Choosed_VolSource_Col_AvailabilityZone";
+            this.Choose_Network_Col_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_Status.HeaderText = "Status";
+            this.Choose_Network_Col_Status.Name = "Choose_Network_Col_Status";
+            this.Choose_Network_Col_Status.Width = 62;
             // 
-            // Choosed_VolSource_Col_Choose
+            // Choose_Network_Col_STT
             // 
-            this.Choosed_VolSource_Col_Choose.HeaderText = "";
-            this.Choosed_VolSource_Col_Choose.Name = "Choosed_VolSource_Col_Choose";
-            this.Choosed_VolSource_Col_Choose.Text = "Choose";
-            this.Choosed_VolSource_Col_Choose.UseColumnTextForButtonValue = true;
+            this.Choose_Network_Col_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_STT.HeaderText = "STT";
+            this.Choose_Network_Col_STT.Name = "Choose_Network_Col_STT";
+            this.Choose_Network_Col_STT.Visible = false;
+            this.Choose_Network_Col_STT.Width = 53;
             // 
-            // Choose_VolSource_Col_ID
+            // Choose_Network_Col_Choose
             // 
-            this.Choose_VolSource_Col_ID.HeaderText = "ID";
-            this.Choose_VolSource_Col_ID.Name = "Choose_VolSource_Col_ID";
-            this.Choose_VolSource_Col_ID.Visible = false;
+            this.Choose_Network_Col_Choose.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choose_Network_Col_Choose.HeaderText = "";
+            this.Choose_Network_Col_Choose.Name = "Choose_Network_Col_Choose";
+            this.Choose_Network_Col_Choose.Text = "Choose";
+            this.Choose_Network_Col_Choose.UseColumnTextForButtonValue = true;
+            this.Choose_Network_Col_Choose.Width = 21;
             // 
-            // Choose_VolSource_Col_Name
+            // Choosed_Network_Col_ID
             // 
-            this.Choose_VolSource_Col_Name.HeaderText = "Name";
-            this.Choose_VolSource_Col_Name.Name = "Choose_VolSource_Col_Name";
+            this.Choosed_Network_Col_ID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_ID.HeaderText = "ID";
+            this.Choosed_Network_Col_ID.Name = "Choosed_Network_Col_ID";
+            this.Choosed_Network_Col_ID.Visible = false;
+            this.Choosed_Network_Col_ID.Width = 43;
             // 
-            // Choose_VolSource_Col_Description
+            // Choosed_Network_Col_Network
             // 
-            this.Choose_VolSource_Col_Description.HeaderText = "Description";
-            this.Choose_VolSource_Col_Description.Name = "Choose_VolSource_Col_Description";
+            this.Choosed_Network_Col_Network.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_Network.HeaderText = "Network";
+            this.Choosed_Network_Col_Network.Name = "Choosed_Network_Col_Network";
+            this.Choosed_Network_Col_Network.Width = 72;
             // 
-            // Choose_VolSource_Col_Size
+            // Choosed_Network_Col_SubnetsAssociated
             // 
-            this.Choose_VolSource_Col_Size.HeaderText = "Size";
-            this.Choose_VolSource_Col_Size.Name = "Choose_VolSource_Col_Size";
+            this.Choosed_Network_Col_SubnetsAssociated.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_SubnetsAssociated.HeaderText = "Subnets Associated";
+            this.Choosed_Network_Col_SubnetsAssociated.Name = "Choosed_Network_Col_SubnetsAssociated";
+            this.Choosed_Network_Col_SubnetsAssociated.Width = 115;
             // 
-            // Choose_VolSource_Col_Type
+            // Choosed_Network_Col_Shared
             // 
-            this.Choose_VolSource_Col_Type.HeaderText = "Type";
-            this.Choose_VolSource_Col_Type.Name = "Choose_VolSource_Col_Type";
+            this.Choosed_Network_Col_Shared.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_Shared.HeaderText = "Shared";
+            this.Choosed_Network_Col_Shared.Name = "Choosed_Network_Col_Shared";
+            this.Choosed_Network_Col_Shared.Width = 66;
             // 
-            // Choose_VolSource_Col_AvailabilityZone
+            // Choosed_Network_Col_AdminState
             // 
-            this.Choose_VolSource_Col_AvailabilityZone.HeaderText = "Availability Zone";
-            this.Choose_VolSource_Col_AvailabilityZone.Name = "Choose_VolSource_Col_AvailabilityZone";
+            this.Choosed_Network_Col_AdminState.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_AdminState.HeaderText = "Admin State";
+            this.Choosed_Network_Col_AdminState.Name = "Choosed_Network_Col_AdminState";
+            this.Choosed_Network_Col_AdminState.Width = 82;
             // 
-            // Choose_VolSource_Col_Choose
+            // Choosed_Network_Col_Status
             // 
-            this.Choose_VolSource_Col_Choose.HeaderText = "";
-            this.Choose_VolSource_Col_Choose.Name = "Choose_VolSource_Col_Choose";
-            this.Choose_VolSource_Col_Choose.Text = "Choose";
-            this.Choose_VolSource_Col_Choose.UseColumnTextForButtonValue = true;
+            this.Choosed_Network_Col_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_Status.HeaderText = "Status";
+            this.Choosed_Network_Col_Status.Name = "Choosed_Network_Col_Status";
+            this.Choosed_Network_Col_Status.Width = 62;
+            // 
+            // Choosed_Network_Col_STT
+            // 
+            this.Choosed_Network_Col_STT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_STT.HeaderText = "STT";
+            this.Choosed_Network_Col_STT.Name = "Choosed_Network_Col_STT";
+            this.Choosed_Network_Col_STT.Visible = false;
+            this.Choosed_Network_Col_STT.Width = 53;
+            // 
+            // Choosed_Network_Col_Choose
+            // 
+            this.Choosed_Network_Col_Choose.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Choosed_Network_Col_Choose.HeaderText = "";
+            this.Choosed_Network_Col_Choose.Name = "Choosed_Network_Col_Choose";
+            this.Choosed_Network_Col_Choose.Text = "Choose";
+            this.Choosed_Network_Col_Choose.UseColumnTextForButtonValue = true;
+            this.Choosed_Network_Col_Choose.Width = 21;
+            // 
+            // Choose_SecGroup_Col_ID
+            // 
+            this.Choose_SecGroup_Col_ID.HeaderText = "ID";
+            this.Choose_SecGroup_Col_ID.Name = "Choose_SecGroup_Col_ID";
+            this.Choose_SecGroup_Col_ID.Visible = false;
+            // 
+            // Choose_SecGroup_Col_Name
+            // 
+            this.Choose_SecGroup_Col_Name.HeaderText = "Name";
+            this.Choose_SecGroup_Col_Name.Name = "Choose_SecGroup_Col_Name";
+            // 
+            // Choose_SecGroup_Col_Description
+            // 
+            this.Choose_SecGroup_Col_Description.HeaderText = "Description";
+            this.Choose_SecGroup_Col_Description.Name = "Choose_SecGroup_Col_Description";
+            // 
+            // Choose_SecGroup_Col_STT
+            // 
+            this.Choose_SecGroup_Col_STT.HeaderText = "STT";
+            this.Choose_SecGroup_Col_STT.Name = "Choose_SecGroup_Col_STT";
+            this.Choose_SecGroup_Col_STT.Visible = false;
+            // 
+            // Choose_SecGroup_Col_Choose
+            // 
+            this.Choose_SecGroup_Col_Choose.HeaderText = "";
+            this.Choose_SecGroup_Col_Choose.Name = "Choose_SecGroup_Col_Choose";
+            this.Choose_SecGroup_Col_Choose.Text = "Choose";
+            this.Choose_SecGroup_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choosed_SecGroup_Col_ID
+            // 
+            this.Choosed_SecGroup_Col_ID.HeaderText = "ID";
+            this.Choosed_SecGroup_Col_ID.Name = "Choosed_SecGroup_Col_ID";
+            this.Choosed_SecGroup_Col_ID.Visible = false;
+            // 
+            // Choosed_SecGroup_Col_Name
+            // 
+            this.Choosed_SecGroup_Col_Name.HeaderText = "Name";
+            this.Choosed_SecGroup_Col_Name.Name = "Choosed_SecGroup_Col_Name";
+            // 
+            // Choosed_SecGroup_Col_Description
+            // 
+            this.Choosed_SecGroup_Col_Description.HeaderText = "Description";
+            this.Choosed_SecGroup_Col_Description.Name = "Choosed_SecGroup_Col_Description";
+            // 
+            // Choosed_SecGroup_Col_STT
+            // 
+            this.Choosed_SecGroup_Col_STT.HeaderText = "STT";
+            this.Choosed_SecGroup_Col_STT.Name = "Choosed_SecGroup_Col_STT";
+            this.Choosed_SecGroup_Col_STT.Visible = false;
+            // 
+            // Choosed_SecGroup_Col_Choose
+            // 
+            this.Choosed_SecGroup_Col_Choose.HeaderText = "";
+            this.Choosed_SecGroup_Col_Choose.Name = "Choosed_SecGroup_Col_Choose";
+            this.Choosed_SecGroup_Col_Choose.Text = "Choose";
+            this.Choosed_SecGroup_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choosed_KeyPair_Col_Name
+            // 
+            this.Choosed_KeyPair_Col_Name.HeaderText = "Name";
+            this.Choosed_KeyPair_Col_Name.Name = "Choosed_KeyPair_Col_Name";
+            // 
+            // Choosed_KeyPair_Col_Type
+            // 
+            this.Choosed_KeyPair_Col_Type.HeaderText = "Type";
+            this.Choosed_KeyPair_Col_Type.Name = "Choosed_KeyPair_Col_Type";
+            // 
+            // Choosed_KeyPair_Col_Fingerprint
+            // 
+            this.Choosed_KeyPair_Col_Fingerprint.HeaderText = "Fingerprint";
+            this.Choosed_KeyPair_Col_Fingerprint.Name = "Choosed_KeyPair_Col_Fingerprint";
+            // 
+            // Choosed_KeyPair_Col_STT
+            // 
+            this.Choosed_KeyPair_Col_STT.HeaderText = "STT";
+            this.Choosed_KeyPair_Col_STT.Name = "Choosed_KeyPair_Col_STT";
+            this.Choosed_KeyPair_Col_STT.Visible = false;
+            // 
+            // Choosed_KeyPair_Col_Choose
+            // 
+            this.Choosed_KeyPair_Col_Choose.HeaderText = "";
+            this.Choosed_KeyPair_Col_Choose.Name = "Choosed_KeyPair_Col_Choose";
+            this.Choosed_KeyPair_Col_Choose.Text = "Choose";
+            this.Choosed_KeyPair_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choose_KeyPair_Col_Name
+            // 
+            this.Choose_KeyPair_Col_Name.HeaderText = "Name";
+            this.Choose_KeyPair_Col_Name.Name = "Choose_KeyPair_Col_Name";
+            // 
+            // Choose_KeyPair_Col_Type
+            // 
+            this.Choose_KeyPair_Col_Type.HeaderText = "Type";
+            this.Choose_KeyPair_Col_Type.Name = "Choose_KeyPair_Col_Type";
+            // 
+            // Choose_KeyPair_Col_Fingerprint
+            // 
+            this.Choose_KeyPair_Col_Fingerprint.HeaderText = "Fingerprint";
+            this.Choose_KeyPair_Col_Fingerprint.Name = "Choose_KeyPair_Col_Fingerprint";
+            // 
+            // Choose_KeyPair_Col_STT
+            // 
+            this.Choose_KeyPair_Col_STT.HeaderText = "STT";
+            this.Choose_KeyPair_Col_STT.Name = "Choose_KeyPair_Col_STT";
+            this.Choose_KeyPair_Col_STT.Visible = false;
+            // 
+            // Choose_KeyPair_Col_Choose
+            // 
+            this.Choose_KeyPair_Col_Choose.HeaderText = "";
+            this.Choose_KeyPair_Col_Choose.Name = "Choose_KeyPair_Col_Choose";
+            this.Choose_KeyPair_Col_Choose.Text = "Choose";
+            this.Choose_KeyPair_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choosed_LoadBalancer_Col_ID
+            // 
+            this.Choosed_LoadBalancer_Col_ID.HeaderText = "ID";
+            this.Choosed_LoadBalancer_Col_ID.Name = "Choosed_LoadBalancer_Col_ID";
+            this.Choosed_LoadBalancer_Col_ID.Visible = false;
+            // 
+            // Choosed_LoadBalancer_Col_Name
+            // 
+            this.Choosed_LoadBalancer_Col_Name.HeaderText = "Name";
+            this.Choosed_LoadBalancer_Col_Name.Name = "Choosed_LoadBalancer_Col_Name";
+            // 
+            // Choosed_LoadBalancer_Col_IPAddress
+            // 
+            this.Choosed_LoadBalancer_Col_IPAddress.HeaderText = "IP Address";
+            this.Choosed_LoadBalancer_Col_IPAddress.Name = "Choosed_LoadBalancer_Col_IPAddress";
+            // 
+            // Choosed_LoadBalancer_Col_AvailabilityZone
+            // 
+            this.Choosed_LoadBalancer_Col_AvailabilityZone.HeaderText = "Availability Zone";
+            this.Choosed_LoadBalancer_Col_AvailabilityZone.Name = "Choosed_LoadBalancer_Col_AvailabilityZone";
+            // 
+            // Choosed_LoadBalancer_Col_OperatingStatus
+            // 
+            this.Choosed_LoadBalancer_Col_OperatingStatus.HeaderText = "Operating Status";
+            this.Choosed_LoadBalancer_Col_OperatingStatus.Name = "Choosed_LoadBalancer_Col_OperatingStatus";
+            // 
+            // Choosed_LoadBalancer_Col_ProvisioningStatus
+            // 
+            this.Choosed_LoadBalancer_Col_ProvisioningStatus.HeaderText = "Provisioning Status";
+            this.Choosed_LoadBalancer_Col_ProvisioningStatus.Name = "Choosed_LoadBalancer_Col_ProvisioningStatus";
+            // 
+            // Choosed_LoadBalancer_Col_AdminStateUp
+            // 
+            this.Choosed_LoadBalancer_Col_AdminStateUp.HeaderText = "Admin State Up";
+            this.Choosed_LoadBalancer_Col_AdminStateUp.Name = "Choosed_LoadBalancer_Col_AdminStateUp";
+            // 
+            // Choosed_LoadBalancer_Col_STT
+            // 
+            this.Choosed_LoadBalancer_Col_STT.HeaderText = "STT";
+            this.Choosed_LoadBalancer_Col_STT.Name = "Choosed_LoadBalancer_Col_STT";
+            this.Choosed_LoadBalancer_Col_STT.Visible = false;
+            // 
+            // Choosed_LoadBalancer_Col_Choose
+            // 
+            this.Choosed_LoadBalancer_Col_Choose.HeaderText = "";
+            this.Choosed_LoadBalancer_Col_Choose.Name = "Choosed_LoadBalancer_Col_Choose";
+            this.Choosed_LoadBalancer_Col_Choose.Text = "Choose";
+            this.Choosed_LoadBalancer_Col_Choose.UseColumnTextForButtonValue = true;
+            // 
+            // Choose_LoadBalancer_Col_ID
+            // 
+            this.Choose_LoadBalancer_Col_ID.HeaderText = "ID";
+            this.Choose_LoadBalancer_Col_ID.Name = "Choose_LoadBalancer_Col_ID";
+            this.Choose_LoadBalancer_Col_ID.Visible = false;
+            // 
+            // Choose_LoadBalancer_Col_Name
+            // 
+            this.Choose_LoadBalancer_Col_Name.HeaderText = "Name";
+            this.Choose_LoadBalancer_Col_Name.Name = "Choose_LoadBalancer_Col_Name";
+            // 
+            // Choose_LoadBalancer_Col_IPAddress
+            // 
+            this.Choose_LoadBalancer_Col_IPAddress.HeaderText = "IP Address";
+            this.Choose_LoadBalancer_Col_IPAddress.Name = "Choose_LoadBalancer_Col_IPAddress";
+            // 
+            // Choose_LoadBalancer_Col_AvailabilityZone
+            // 
+            this.Choose_LoadBalancer_Col_AvailabilityZone.HeaderText = "Availability Zone";
+            this.Choose_LoadBalancer_Col_AvailabilityZone.Name = "Choose_LoadBalancer_Col_AvailabilityZone";
+            // 
+            // Choose_LoadBalancer_Col_OperatingStatus
+            // 
+            this.Choose_LoadBalancer_Col_OperatingStatus.HeaderText = "Operating Status";
+            this.Choose_LoadBalancer_Col_OperatingStatus.Name = "Choose_LoadBalancer_Col_OperatingStatus";
+            // 
+            // Choose_LoadBalancer_Col_ProvisioningStatus
+            // 
+            this.Choose_LoadBalancer_Col_ProvisioningStatus.HeaderText = "Provisioning Status";
+            this.Choose_LoadBalancer_Col_ProvisioningStatus.Name = "Choose_LoadBalancer_Col_ProvisioningStatus";
+            // 
+            // Choose_LoadBalancer_Col_AdminStateUp
+            // 
+            this.Choose_LoadBalancer_Col_AdminStateUp.HeaderText = "Admin State Up";
+            this.Choose_LoadBalancer_Col_AdminStateUp.Name = "Choose_LoadBalancer_Col_AdminStateUp";
+            // 
+            // Choose_LoadBalancer_Col_STT
+            // 
+            this.Choose_LoadBalancer_Col_STT.HeaderText = "STT";
+            this.Choose_LoadBalancer_Col_STT.Name = "Choose_LoadBalancer_Col_STT";
+            this.Choose_LoadBalancer_Col_STT.Visible = false;
+            // 
+            // Choose_LoadBalancer_Col_Choose
+            // 
+            this.Choose_LoadBalancer_Col_Choose.HeaderText = "";
+            this.Choose_LoadBalancer_Col_Choose.Name = "Choose_LoadBalancer_Col_Choose";
+            this.Choose_LoadBalancer_Col_Choose.Text = "Choose";
+            this.Choose_LoadBalancer_Col_Choose.UseColumnTextForButtonValue = true;
             // 
             // CreateInstance
             // 
@@ -1864,22 +2054,8 @@
         private System.Windows.Forms.DataGridView DGV_Choose_VolSource;
         private System.Windows.Forms.DataGridView DGV_Choose_Flavour;
         private System.Windows.Forms.DataGridView DGV_Choose_Network;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_Description;
-        private System.Windows.Forms.DataGridViewButtonColumn Choosed_SecGroup_Col_Choose;
         private System.Windows.Forms.DataGridView DGV_Choose_SecGroup;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_Description;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_SecGroup_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Fingerprint;
-        private System.Windows.Forms.DataGridViewButtonColumn Choosed_KeyPair_Col_Choose;
         private System.Windows.Forms.DataGridView DGV_Choose_KeyPair;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Fingerprint;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_KeyPair_Col_Choose;
         private System.Windows.Forms.RichTextBox rtb_CustomScript;
         private System.Windows.Forms.Label L_ChooseFile;
         private System.Windows.Forms.Button B_ChooseFile;
@@ -1889,29 +2065,6 @@
         private System.Windows.Forms.Panel P_Choosed_LoadBalancer;
         private System.Windows.Forms.DataGridView DGV_Choosed_LoadBalancer;
         private System.Windows.Forms.DataGridView DGV_Choose_LoadBalancer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_IPAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_AvailabilityZone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_OperatingStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_ProvisioningStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_AdminStateUp;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_LoadBalancer_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_IPAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_AvailabilityZone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_OperatingStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_ProvisioningStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_AdminStateUp;
-        private System.Windows.Forms.DataGridViewButtonColumn Choosed_LoadBalancer_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_VCPUS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_RAM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_TotalDisk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_RootDisk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_EphemeralDisk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_Public;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_Flavour_Col_Choose;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_VCPUS;
@@ -1920,21 +2073,34 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_RootDisk;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_EphemeralDisk;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_Public;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Flavour_Col_STT;
         private System.Windows.Forms.DataGridViewButtonColumn Choosed_Flavour_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Network;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_SubnetsAssociated;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Shared;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_AdminState;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Status;
-        private System.Windows.Forms.DataGridViewButtonColumn Choosed_Network_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Network;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_SubnetsAssociated;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Shared;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_AdminState;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Status;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_Network_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_VCPUS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_RAM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_TotalDisk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_RootDisk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_EphemeralDisk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_Public;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Flavour_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_Flavour_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Size;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_AvailabilityZone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosed_VolSource_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Size;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_AvailabilityZone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_VolSource_Col_Choose;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_MinDisk;
@@ -1942,6 +2108,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_Size;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_Format;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_Visibility;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_ImageSource_Col_STT;
         private System.Windows.Forms.DataGridViewButtonColumn Choosed_ImageSource_Col_Choose;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_Name;
@@ -1950,20 +2117,61 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_Size;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_Format;
         private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_Visibility;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_ImageSource_Col_STT;
         private System.Windows.Forms.DataGridViewButtonColumn Choose_ImageSource_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Size;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_VolSource_Col_AvailabilityZone;
-        private System.Windows.Forms.DataGridViewButtonColumn Choosed_VolSource_Col_Choose;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Size;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_VolSource_Col_AvailabilityZone;
-        private System.Windows.Forms.DataGridViewButtonColumn Choose_VolSource_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Network;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_SubnetsAssociated;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Shared;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_AdminState;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_Network_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosed_Network_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Network;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_SubnetsAssociated;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Shared;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_AdminState;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_Network_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_Network_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_SecGroup_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosed_SecGroup_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_SecGroup_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_SecGroup_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_Fingerprint;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_KeyPair_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosed_KeyPair_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_Fingerprint;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_KeyPair_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_KeyPair_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_IPAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_AvailabilityZone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_OperatingStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_ProvisioningStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_AdminStateUp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choose_LoadBalancer_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choose_LoadBalancer_Col_Choose;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_IPAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_AvailabilityZone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_OperatingStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_ProvisioningStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_AdminStateUp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Choosed_LoadBalancer_Col_STT;
+        private System.Windows.Forms.DataGridViewButtonColumn Choosed_LoadBalancer_Col_Choose;
     }
 }

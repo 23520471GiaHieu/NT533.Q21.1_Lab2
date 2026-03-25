@@ -153,7 +153,6 @@ namespace NT533.Q21._1_Lab2
                     break;
             }
         }
-
         private void cB_Remote_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = cB_Remote.SelectedIndex;
@@ -167,7 +166,6 @@ namespace NT533.Q21._1_Lab2
                     break;
             }
         }
-
         private void cB_OpenPort_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = cB_OpenPort.SelectedIndex;
@@ -184,7 +182,6 @@ namespace NT533.Q21._1_Lab2
                     break;
             }
         }
-
         private async void B_AddRule_Click(object sender, EventArgs e)
         {
             string direction = "Ingress";
@@ -604,7 +601,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Tạo Rule thất bại!\n" + result.Item2);
             }
         }
-
         private void B_CancelRule_Click(object sender, EventArgs e)
         {
             this.Close();

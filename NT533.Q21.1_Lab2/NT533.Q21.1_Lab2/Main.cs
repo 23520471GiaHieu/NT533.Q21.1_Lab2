@@ -27,6 +27,7 @@ using static NT533.Q21._1_Lab2.Compute.InstanceService;
 using static NT533.Q21._1_Lab2.Compute.KeyPairService;
 using static NT533.Q21._1_Lab2.Dialog.CreateKeyPairDialog;
 using static NT533.Q21._1_Lab2.Network.InterfaceService;
+using static NT533.Q21._1_Lab2.Network.LoadBalancerService;
 using static NT533.Q21._1_Lab2.Network.NetworkService;
 using static NT533.Q21._1_Lab2.Network.RouterService;
 using static NT533.Q21._1_Lab2.Network.RuleService;
@@ -114,7 +115,6 @@ namespace NT533.Q21._1_Lab2
             L_Instances.Left = (P_L_Instances.Width - L_Instances.Width) / 2;
             L_Instances.Top = (P_L_Instances.Height - L_Instances.Height) / 2;
         }
-
         private void P_B_Cr_Del_Instances_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Instances.Left = (P_B_Cr_Del_Instances.Width - B_Cr_Instances.Width) / 2 - 50;
@@ -141,7 +141,6 @@ namespace NT533.Q21._1_Lab2
             L_Volume.Left = (P_L_Volume.Width - L_Volume.Width) / 2;
             L_Volume.Top = (P_L_Volume.Height - L_Volume.Height) / 2;
         }
-
         private void P_B_Cr_De_Volume_Resize(object sender = null, EventArgs e = null)
         {
             B_Create_Volume.Left = (P_B_Cr_De_Volume.Width - B_Create_Volume.Width) / 2 - 50;
@@ -154,7 +153,6 @@ namespace NT533.Q21._1_Lab2
             L_Networks.Left = (P_L_Networks.Width - L_Networks.Width) / 2;
             L_Networks.Top = (P_L_Networks.Height - L_Networks.Height) / 2;
         }
-
         private void P_B_Cr_Del_Net_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Net.Left = (P_B_Cr_Del_Net.Width - B_Cr_Net.Width) / 2 - 50;
@@ -167,13 +165,11 @@ namespace NT533.Q21._1_Lab2
             L_Sub_Networks.Left = (P_L_Sub_Networks.Width - L_Sub_Networks.Width) / 2;
             L_Sub_Networks.Top = (P_L_Sub_Networks.Height - L_Sub_Networks.Height) / 2;
         }
-
         private void P_L_Subnet_Resize(object sender = null, EventArgs e = null)
         {
             L_Subnet.Left = (P_L_Subnet.Width - L_Subnet.Width) / 2;
             L_Subnet.Top = (P_L_Subnet.Height - L_Subnet.Height) / 2;
         }
-
         private void P_B_Cr_Del_Subnets_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Subnets.Left = (P_B_Cr_Del_Subnets.Width - B_Cr_Subnets.Width) / 2 - 50;
@@ -186,7 +182,6 @@ namespace NT533.Q21._1_Lab2
             L_Routers.Left = (P_L_Routers.Width - L_Routers.Width) / 2;
             L_Routers.Top = (P_L_Routers.Height - L_Routers.Height) / 2;
         }
-
         private void P_B_Cr_Del_Routers_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Routers.Left = (P_B_Cr_Del_Routers.Width - B_Cr_Routers.Width) / 2 - 50;
@@ -194,19 +189,16 @@ namespace NT533.Q21._1_Lab2
             B_Del_Routers.Left = (P_B_Cr_Del_Routers.Width - B_Del_Routers.Width) / 2 + 50;
             B_Del_Routers.Top = (P_B_Cr_Del_Routers.Height - B_Del_Routers.Height) / 2;
         }
-
         private void P_L_In_Router_Resize(object sender = null, EventArgs e = null)
         {
             L_In_Router.Left = (P_L_In_Router.Width - L_In_Router.Width) / 2;
             L_In_Router.Top = (P_L_In_Router.Height - L_In_Router.Height) / 2;
         }
-
         private void P_L_Interface_Resize(object sender = null, EventArgs e = null)
         {
             L_Interface.Left = (P_L_Interface.Width - L_Interface.Width) / 2;
             L_Interface.Top = (P_L_Interface.Height - L_Interface.Height) / 2;
         }
-
         private void P_B_Cr_Del_Interface_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Interface.Left = (P_B_Cr_Del_Interface.Width - B_Cr_Interface.Width) / 2 - 50;
@@ -219,7 +211,6 @@ namespace NT533.Q21._1_Lab2
             L_SecurityGroup.Left = (P_L_SecurityGroup.Width - L_SecurityGroup.Width) / 2;
             L_SecurityGroup.Top = (P_L_SecurityGroup.Height - L_SecurityGroup.Height) / 2;
         }
-
         private void P_B_Cr_Del_SecurityGroup_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_SecurityGroup.Left = (P_B_Cr_Del_SecurityGroup.Width - B_Cr_SecurityGroup.Width) / 2 - 50;
@@ -232,7 +223,6 @@ namespace NT533.Q21._1_Lab2
             L_Rule.Left = (P_L_Rule.Width - L_Rule.Width) / 2;
             L_Rule.Top = (P_L_Rule.Height - L_Rule.Height) / 2;
         }
-
         private void P_B_Cr_Del_Rule_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_Rule.Left = (P_B_Cr_Del_Rule.Width - B_Cr_Rule.Width) / 2 - 50;
@@ -245,7 +235,6 @@ namespace NT533.Q21._1_Lab2
             L_FloatingIP.Left = (P_L_IP.Width - L_FloatingIP.Width) / 2;
             L_FloatingIP.Top = (P_L_IP.Height - L_FloatingIP.Height) / 2;
         }
-
         private void P_B_Al_Re_IP_Resize(object sender = null, EventArgs e = null)
         {
             B_AllocateIP.Left = (P_B_Al_Re_IP.Width - B_AllocateIP.Width) / 2 - 50;
@@ -258,7 +247,6 @@ namespace NT533.Q21._1_Lab2
             L_LoadBalancer.Left = (P_L_LoadBalancer.Width - L_LoadBalancer.Width) / 2;
             L_LoadBalancer.Top = (P_L_LoadBalancer.Height - L_LoadBalancer.Height) / 2;
         }
-
         private void P_B_Cr_Del_LoadBalancer_Resize(object sender = null, EventArgs e = null)
         {
             B_Cr_LoadBalancer.Left = (P_B_Cr_Del_LoadBalancer.Width - B_Cr_LoadBalancer.Width) / 2 - 50;
@@ -399,7 +387,6 @@ namespace NT533.Q21._1_Lab2
         #endregion
         // Các phương thức Load và Unload dữ liệu cho từng trang khi chuyển tab
         #region LoadUnloadPages
-
         //Load Identity
         #region LoadIdentity
         private void LoadTokenPage()
@@ -454,7 +441,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách Flavors thất bại!\n" + result.Item2);
             }
         }
-
         private void UnloadFlavorPage()
         {
             P_L_Flavor.Resize -= P_L_Flavor_Resize;
@@ -636,7 +622,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách Key Pairs thất bại!\n" + result.Item2);
             }
         }
-
         private void UnloadKeyPairPage()
         {
             P_L_KeyPair.Resize -= P_L_KeyPair_Resize;
@@ -805,7 +790,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách Networks thất bại!\n" + result.Item2);
             }
         }
-
         private void UnloadNetworkPage()
         {
             P_L_Networks.Resize -= P_L_Networks_Resize;
@@ -875,7 +859,6 @@ namespace NT533.Q21._1_Lab2
             P_B_Cr_Del_Subnets.Resize -= P_B_Cr_Del_Subnets_Resize;
             DGV_Subnets.Rows.Clear();
         }
-
         private async void LoadRouterPage()
         {
             P_L_Routers.Resize -= P_L_Routers_Resize;
@@ -912,7 +895,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách routers thất bại!\n" + routerresponse.Item2);
             }
         }
-
         private void UnloadRouterPage()
         {
             P_L_Routers.Resize -= P_L_Routers_Resize;
@@ -992,7 +974,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách SecurityGroup thất bại!\n" + result.Item2);
             }
         }
-
         private void UnloadSecurityGroupPage()
         {
             P_L_SecurityGroup.Resize -= P_L_SecurityGroup_Resize;
@@ -1069,14 +1050,12 @@ namespace NT533.Q21._1_Lab2
                 }
             }
         }
-
         private void UnloadRulePage()
         {
             P_L_Rule.Resize -= P_L_Rule_Resize;
             P_B_Cr_Del_Rule.Resize -= P_B_Cr_Del_Rule_Resize;
             DGV_Rule.Rows.Clear();
         }
-
         private async void LoadFloatingIPPage()
         {
             P_L_IP.Resize -= P_L_IP_Resize;
@@ -1123,20 +1102,43 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách Floating IPs thất bại!\n" + result.Item2);
             }
         }
-
         private void UnloadFloatingIPPage()
         {
             P_L_IP.Resize -= P_L_IP_Resize;
             P_B_Al_Re_IP.Resize -= P_B_Al_Re_IP_Resize;
             DGV_FlIP.Rows.Clear();
         }
-
-        private void LoadLoadBalancerPage()
+        private async void LoadLoadBalancerPage()
         {
             P_L_LoadBalancer.Resize -= P_L_LoadBalancer_Resize;
             P_B_Cr_Del_LoadBalancer.Resize -= P_B_Cr_Del_LoadBalancer_Resize;
             P_L_LoadBalancer.Resize += P_L_LoadBalancer_Resize;
             P_B_Cr_Del_LoadBalancer.Resize += P_B_Cr_Del_LoadBalancer_Resize;
+
+            DGV_LoadBalancer.Rows.Clear();
+            LoadBalancerService loadBalancerService = new LoadBalancerService();
+            var lbres = await loadBalancerService.GetLoadBalancerAsync(_token);
+            if(lbres.Item1)
+            {
+                var lbdata = Newtonsoft.Json.JsonConvert.DeserializeObject<LoadBalancerResponse>(lbres.Item2);
+                foreach (var item in lbdata.loadbalancers)
+                {
+                    int index = DGV_LoadBalancer.Rows.Add(
+                        false,
+                        item.name,
+                        item.vip_address,
+                        item.availability_zone==null? "-": item.availability_zone,
+                        item.operating_status,
+                        item.provisioning_status,
+                        item.admin_state_up
+                        );
+                    DGV_LoadBalancer.Rows[index].Cells[1].Tag = item.id;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lấy danh sách Load Balancer thất bại!\n" + lbres.Item2);
+            }
         }
         private void UnloadLoadBalancerPage()
         {
@@ -1144,7 +1146,6 @@ namespace NT533.Q21._1_Lab2
             P_B_Cr_Del_LoadBalancer.Resize -= P_B_Cr_Del_LoadBalancer_Resize;
         }
         #endregion
-
         // Phương thức UnloadPage sẽ được gọi trước khi chuyển sang tab mới, giúp xóa dữ liệu khỏi tab hiện tại để tránh việc dữ liệu cũ vẫn hiển thị khi quay lại tab đó.
         #region UnloadPage
         private void UnloadPage()
@@ -1217,7 +1218,54 @@ namespace NT533.Q21._1_Lab2
             }
         }
 
-        private async void B_Create_KeyPair_Click(object sender, EventArgs e)
+        private void B_Cr_Instances_Click(object sender, EventArgs e)
+        {
+            CreateInstance createInstance = new CreateInstance(this);
+
+            if (createInstance.ShowDialog() == DialogResult.OK)
+            {
+                bool addresult = createInstance.Result;
+                if (addresult)
+                {
+                    LoadInstancePage();
+                }
+            }
+        }
+        private async void B_Del_Instances_Click(object sender, EventArgs e)
+        {
+            var selectedRows = DGV_Instances.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
+                .ToList();
+
+            if (selectedRows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn instance nào!");
+                return;
+            }
+
+            string[] insids = selectedRows
+                .Select(r => r.Cells[1].Tag.ToString())
+                .ToArray();
+
+            var InstanceService = new InstanceService();
+            var result = await InstanceService.DeleteInstanceAsync(_token, insids);
+
+            if (result.Item1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    DGV_Instances.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                LoadInstancePage();
+                MessageBox.Show("Xóa Instances thất bại!\n" + result.Item2);
+            }
+        }
+
+        public async void B_Create_KeyPair_Click(object sender, EventArgs e)
         {
             string keyName = Interaction.InputBox(
                 "Nhập tên KeyPair:",
@@ -1275,8 +1323,7 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Tạo Key Pairs thất bại!\n" + result.Item2);
             }
         }
-
-        private async void B_Import_KeyPair_Click(object sender, EventArgs e)
+        public async void B_Import_KeyPair_Click(object sender, EventArgs e)
         {
             var input = CreateKeyPairDialog.CreateKeyPairForm();
 
@@ -1316,7 +1363,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Tạo Key Pairs thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_Delete_KeyPair_Click(object sender, EventArgs e)
         {
             var selectedRows = DGV_KeyPair.Rows
@@ -1350,6 +1396,7 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa Key Pairs thất bại!\n" + result.Item2);
             }
         }
+
         private void B_Create_Volume_Click(object sender, EventArgs e)
         {
             CreateVolume volume = new CreateVolume();
@@ -1397,101 +1444,11 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa Volumes thất bại!\n" + result.Item2);
             }
         }
-        
-        private void DGV_Volume_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private async void B_AllocateIP_Click(object sender, EventArgs e)
-        {
-            NetworkService networkService = new NetworkService();
-            var networkResult = await networkService.GetNetworkAsync(_token);
-            if (networkResult.Item1)
-            {
-                var networkData = Newtonsoft.Json.JsonConvert.DeserializeObject<NetworkResponse>(networkResult.Item2);
-                var pools = networkData.networks
-                .Where(n => n.external == "true")
-                .Select(n => new { n.id, n.name })
-                .ToList();
-
-                var poolNames = pools.Select(p => p.name).ToList();
-                var result = AllocateFloatingIPDialog.AllocateIPForm(poolNames);
-
-                if (result != null)
-                {
-                    var (pool, ip, desc, dnsDomain, dnsName) = result.Value;
-
-
-                    var selectedPool = pools.FirstOrDefault(p => p.name == pool);
-                    string poolId = selectedPool?.id;
-                    
-                    FloatingIPService floatingipService = new FloatingIPService();
-                    if(!string.IsNullOrEmpty(ip))
-                    {
-                        var checkIPResult = await floatingipService.PostFloatingIPAsync(_token, poolId, ip);
-                        if (!checkIPResult.Item1)
-                        {
-                            MessageBox.Show("Địa chỉ IP không hợp lệ hoặc đã được sử dụng!\n" + checkIPResult.Item2);
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        var allocateResult = await floatingipService.PostFloatingIPAsync(_token, poolId, null,result?.desc, result?.dnsDomain, result?.dnsName);
-                        if (allocateResult.Item1)
-                        {
-                            MessageBox.Show("Allocate Floating IP thành công!");
-                            LoadFloatingIPPage();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Allocate Floating IP thất bại!\n" + allocateResult.Item2);
-                        }
-                    }
-                }
-            }
-        }
-
-        private async void B_ReleaseIP_Click(object sender, EventArgs e)
-        {
-            var selectedRows = DGV_FlIP.Rows
-                .Cast<DataGridViewRow>()
-                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
-                .ToList();
-
-            if (selectedRows.Count == 0)
-            {
-                MessageBox.Show("Chưa chọn floating id nào!");
-                return;
-            }
-
-            string[] ids = selectedRows
-                .Select(r => r.Cells[1].Tag?.ToString())
-                .Where(id => !string.IsNullOrEmpty(id))
-                .ToArray();
-
-            var FloatingipService = new FloatingIPService();
-            var result = await FloatingipService.DeleteFloatingIPAsync(_token, ids);
-
-            if (result.Item1)
-            {
-                foreach (var row in selectedRows)
-                {
-                    DGV_FlIP.Rows.Remove(row);
-                }
-            }
-            else
-            {
-                LoadFloatingIPPage();
-                MessageBox.Show("Xóa FloatingIP thất bại!\n" + result.Item2);
-            }
-        }
 
         private async void B_Cr_Net_Click(object sender, EventArgs e)
         {
             var networkresult = CreateNetworkDialog.CreateNetworkForm();
-            if(networkresult != null)
+            if (networkresult != null)
             {
                 var inputnetwork = networkresult.Value;
                 NetworkService networkservice = new NetworkService();
@@ -1531,11 +1488,44 @@ namespace NT533.Q21._1_Lab2
 
             }
         }
+        private async void B_Del_Net_Click(object sender, EventArgs e)
+        {
+            var selectedRows = DGV_Net.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
+                .ToList();
 
+            if (selectedRows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn network nào!");
+                return;
+            }
+
+            string[] ids = selectedRows
+                .Select(r => r.Cells[1].Tag?.ToString())
+                .Where(id => !string.IsNullOrEmpty(id))
+                .ToArray();
+
+            var NetworkService = new NetworkService();
+            var result = await NetworkService.DeleteNetworkAsync(_token, ids);
+
+            if (result.Item1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    DGV_Net.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                LoadSubnetPage();
+                MessageBox.Show("Xóa subnet thất bại!\n" + result.Item2);
+            }
+        }
         private async void B_Cr_Subnets_Click(object sender, EventArgs e)
         {
             var result = CreateSubnetDialog.CreateSubnetForm();
-            if(result!= null)
+            if (result != null)
             {
                 (string subname, string cidr, string ipver, string gateway) input = result.Value;
                 (string networkid, string[] subnetids, string external) data = ((string, string[], string))L_Sub_Networks.Tag;
@@ -1560,8 +1550,6 @@ namespace NT533.Q21._1_Lab2
                 }
             }
         }
-        #endregion
-
         private async void B_Del_Subnets_Click(object sender, EventArgs e)
         {
             var selectedRows = DGV_Subnets.Rows
@@ -1597,50 +1585,15 @@ namespace NT533.Q21._1_Lab2
             }
         }
 
-        private async void B_Del_Net_Click(object sender, EventArgs e)
-        {
-            var selectedRows = DGV_Net.Rows
-                .Cast<DataGridViewRow>()
-                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
-                .ToList();
-
-            if (selectedRows.Count == 0)
-            {
-                MessageBox.Show("Chưa chọn network nào!");
-                return;
-            }
-
-            string[] ids = selectedRows
-                .Select(r => r.Cells[1].Tag?.ToString())
-                .Where(id => !string.IsNullOrEmpty(id))
-                .ToArray();
-
-            var NetworkService = new NetworkService();
-            var result = await NetworkService.DeleteNetworkAsync(_token, ids);
-
-            if (result.Item1)
-            {
-                foreach (var row in selectedRows)
-                {
-                    DGV_Net.Rows.Remove(row);
-                }
-            }
-            else
-            {
-                LoadSubnetPage();
-                MessageBox.Show("Xóa subnet thất bại!\n" + result.Item2);
-            }
-        }
-
         private async void B_Cr_Routers_Click(object sender, EventArgs e)
         {
             var result = await CreateRouterDialog.CreateRouterForm(_token);
-            if(result!=null)
+            if (result != null)
             {
                 var routerdata = result.Value;
                 RouterService routerService = new RouterService();
-                var routerresponse = await routerService.PostRouterAsync(_token, routerdata.routerName,routerdata.adminState,routerdata.externalNetId);
-                if(routerresponse.Item1)
+                var routerresponse = await routerService.PostRouterAsync(_token, routerdata.routerName, routerdata.adminState, routerdata.externalNetId);
+                if (routerresponse.Item1)
                 {
                     LoadRouterPage();
                 }
@@ -1650,7 +1603,6 @@ namespace NT533.Q21._1_Lab2
                 }
             }
         }
-
         private async void B_Del_Routers_Click(object sender, EventArgs e)
         {
             var selectedRows = DGV_Routers.Rows
@@ -1685,10 +1637,9 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa router thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_Cr_Interface_Click(object sender, EventArgs e)
         {
-            List<(string,string)> combobox= new List<(string, string)>();
+            List<(string, string)> combobox = new List<(string, string)>();
             HashSet<string> existingSubnetIds = new HashSet<string>();
             foreach (DataGridViewRow row in DGV_Interface.Rows)
             {
@@ -1749,7 +1700,7 @@ namespace NT533.Q21._1_Lab2
                 string ip = interfaceData.Value.ipAddress;
                 string routerid = (string)L_In_Router.Tag;
                 InterfaceService interfaceService = new InterfaceService();
-                var interfaceresult = await interfaceService.PostInterfaceAsync(_token, selectedsubnetid, routerid,ip);
+                var interfaceresult = await interfaceService.PostInterfaceAsync(_token, selectedsubnetid, routerid, ip);
                 if (interfaceresult.Item1)
                 {
                     var interfacedata = Newtonsoft.Json.JsonConvert.DeserializeObject<InterfaceResponse>(interfaceresult.Item2);
@@ -1757,7 +1708,6 @@ namespace NT533.Q21._1_Lab2
                 }
             }
         }
-
         private async void B_Del_Interface_Click(object sender, EventArgs e)
         {
             var selectedRows = DGV_Interface.Rows
@@ -1775,7 +1725,7 @@ namespace NT533.Q21._1_Lab2
                 .Select(r => r.Cells[2].Tag?.ToString())
                 .Where(id => !string.IsNullOrEmpty(id))
                 .ToArray();
-            
+
             string routerid = (string)L_In_Router.Tag;
 
             var InterfaceService = new InterfaceService();
@@ -1795,6 +1745,59 @@ namespace NT533.Q21._1_Lab2
             }
         }
 
+        private async void B_Cr_SecurityGroup_Click(object sender, EventArgs e)
+        {
+            var sg = CreateSecurityGroupDialog.CreateSecurityGroupForm();
+
+            if (sg != null)
+            {
+                var data = sg.Value;
+                SecurityGroupService securityGroupService = new SecurityGroupService();
+                var response = await securityGroupService.PostSecurityGroupAsync(_token, data.name, data.description);
+                if (response.Item1)
+                {
+                    LoadSecurityGroupPage();
+                }
+                else
+                {
+                    MessageBox.Show("Tạo SecurityGroup thất bại!\n" + response.Item2);
+                }
+            }
+        }
+        private async void B_Del_SecurityGroup_Click(object sender, EventArgs e)
+        {
+            var selectedRows = DGV_SecurityGroup.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
+                .ToList();
+
+            if (selectedRows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn securitygroup nào!");
+                return;
+            }
+
+            string[] ids = selectedRows
+                .Select(r => r.Cells[2].Value?.ToString())
+                .Where(id => !string.IsNullOrEmpty(id))
+                .ToArray();
+
+            var SecurityGroupService = new SecurityGroupService();
+            var result = await SecurityGroupService.DeleteSecurityGroupAsync(_token, ids);
+
+            if (result.Item1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    DGV_SecurityGroup.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                LoadSecurityGroupPage();
+                MessageBox.Show("Xóa SecurityGroup thất bại!\n" + result.Item2);
+            }
+        }
         private async void B_Cr_Rule_Click(object sender, EventArgs e)
         {
             SecurityGroupService securityGroupService = new SecurityGroupService();
@@ -1804,7 +1807,7 @@ namespace NT533.Q21._1_Lab2
                 var data = Newtonsoft.Json.JsonConvert.DeserializeObject<SecurityGroupResponse>(result.Item2);
                 string securityname = L_Rule.Text.Split(':')[1].Trim();
                 string securityid = L_Rule.Tag.ToString();
-                AddRule addRule = new AddRule(data.security_groups,securityname,securityid);
+                AddRule addRule = new AddRule(data.security_groups, securityname, securityid);
 
                 if (addRule.ShowDialog() == DialogResult.OK)
                 {
@@ -1820,9 +1823,8 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Lấy danh sách SecurityGroup thất bại!\n" + result.Item2);
             }
 
-            
-        }
 
+        }
         private async void B_Del_Rule_Click(object sender, EventArgs e)
         {
             var selectedRows = DGV_Rule.Rows
@@ -1858,78 +1860,100 @@ namespace NT533.Q21._1_Lab2
             }
         }
 
-        private async void B_Cr_SecurityGroup_Click(object sender, EventArgs e)
+        private async void B_AllocateIP_Click(object sender, EventArgs e)
         {
-            var sg = CreateSecurityGroupDialog.CreateSecurityGroupForm();
-
-            if (sg != null)
+            NetworkService networkService = new NetworkService();
+            var networkResult = await networkService.GetNetworkAsync(_token);
+            if (networkResult.Item1)
             {
-                var data = sg.Value;
-                SecurityGroupService securityGroupService = new SecurityGroupService();
-                var response = await securityGroupService.PostSecurityGroupAsync(_token, data.name, data.description);
-                if(response.Item1)
+                var networkData = Newtonsoft.Json.JsonConvert.DeserializeObject<NetworkResponse>(networkResult.Item2);
+                var pools = networkData.networks
+                .Where(n => n.external == "true")
+                .Select(n => new { n.id, n.name })
+                .ToList();
+
+                var poolNames = pools.Select(p => p.name).ToList();
+                var result = AllocateFloatingIPDialog.AllocateIPForm(poolNames);
+
+                if (result != null)
                 {
-                    LoadSecurityGroupPage();
-                }
-                else
-                {
-                    MessageBox.Show("Tạo SecurityGroup thất bại!\n" + response.Item2);
+                    var (pool, ip, desc, dnsDomain, dnsName) = result.Value;
+
+
+                    var selectedPool = pools.FirstOrDefault(p => p.name == pool);
+                    string poolId = selectedPool?.id;
+                    
+                    FloatingIPService floatingipService = new FloatingIPService();
+                    if(!string.IsNullOrEmpty(ip))
+                    {
+                        var checkIPResult = await floatingipService.PostFloatingIPAsync(_token, poolId, ip);
+                        if (!checkIPResult.Item1)
+                        {
+                            MessageBox.Show("Địa chỉ IP không hợp lệ hoặc đã được sử dụng!\n" + checkIPResult.Item2);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        var allocateResult = await floatingipService.PostFloatingIPAsync(_token, poolId, null,result?.desc, result?.dnsDomain, result?.dnsName);
+                        if (allocateResult.Item1)
+                        {
+                            MessageBox.Show("Allocate Floating IP thành công!");
+                            LoadFloatingIPPage();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Allocate Floating IP thất bại!\n" + allocateResult.Item2);
+                        }
+                    }
                 }
             }
         }
-
-        private async void B_Del_SecurityGroup_Click(object sender, EventArgs e)
+        private async void B_ReleaseIP_Click(object sender, EventArgs e)
         {
-            var selectedRows = DGV_SecurityGroup.Rows
+            var selectedRows = DGV_FlIP.Rows
                 .Cast<DataGridViewRow>()
                 .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
                 .ToList();
 
             if (selectedRows.Count == 0)
             {
-                MessageBox.Show("Chưa chọn securitygroup nào!");
+                MessageBox.Show("Chưa chọn floating id nào!");
                 return;
             }
 
             string[] ids = selectedRows
-                .Select(r => r.Cells[2].Value?.ToString())
+                .Select(r => r.Cells[1].Tag?.ToString())
                 .Where(id => !string.IsNullOrEmpty(id))
                 .ToArray();
 
-            var SecurityGroupService = new SecurityGroupService();
-            var result = await SecurityGroupService.DeleteSecurityGroupAsync(_token, ids);
+            var FloatingipService = new FloatingIPService();
+            var result = await FloatingipService.DeleteFloatingIPAsync(_token, ids);
 
             if (result.Item1)
             {
                 foreach (var row in selectedRows)
                 {
-                    DGV_SecurityGroup.Rows.Remove(row);
+                    DGV_FlIP.Rows.Remove(row);
                 }
             }
             else
             {
-                LoadSecurityGroupPage();
-                MessageBox.Show("Xóa SecurityGroup thất bại!\n" + result.Item2);
+                LoadFloatingIPPage();
+                MessageBox.Show("Xóa FloatingIP thất bại!\n" + result.Item2);
             }
         }
 
-        private void B_Cr_Instances_Click(object sender, EventArgs e)
-        {
-            CreateInstance createInstance = new CreateInstance();
-
-            if (createInstance.ShowDialog() == DialogResult.OK)
-            {
-                bool addresult = createInstance.Result;
-                if (addresult)
-                {
-                    LoadInstancePage();
-                }
-            }
-        }
-
-        private void B_Del_Instances_Click(object sender, EventArgs e)
+        private void B_Cr_LoadBalancer_Click(object sender, EventArgs e)
         {
 
         }
+        private void B_Del_LoadBalancer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        #endregion
     }
 }
