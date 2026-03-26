@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|c:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -69,8 +69,7 @@
               "ToolTip": "C:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs [Design]",
               "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T14:26:09.501Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-03-25T14:26:09.501Z"
             },
             {
               "$type": "Document",
@@ -151,8 +150,7 @@
               "RelativeToolTip": "NT533.Q21.1_Lab2\\Main.cs",
               "ViewState": "AgIAAOsBAAAAAAAAAAAwwNMEAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T13:37:30.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T13:37:30.723Z"
             },
             {
               "$type": "Document",
