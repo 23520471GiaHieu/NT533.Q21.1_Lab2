@@ -58,88 +58,88 @@
             this.tb_LB_Name = new System.Windows.Forms.TextBox();
             this.L_LB_Name = new System.Windows.Forms.Label();
             this.Lis_Details_Page = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.P_Lis_L_B_ASUp = new System.Windows.Forms.Panel();
+            this.B_Lis_ASUp_Yes = new System.Windows.Forms.Button();
+            this.L_Lis_ASUp = new System.Windows.Forms.Label();
+            this.B_Lis_ASUp_No = new System.Windows.Forms.Button();
+            this.P_Lis_L_cb_Insert_Header = new System.Windows.Forms.Panel();
+            this.cb_Lis_XForwProto = new System.Windows.Forms.CheckBox();
+            this.cb_Lis_XForwPort = new System.Windows.Forms.CheckBox();
+            this.cb_Lis_XForwFor = new System.Windows.Forms.CheckBox();
+            this.L_Lis_Insert_Header = new System.Windows.Forms.Label();
+            this.P_Lis_Detail_Information = new System.Windows.Forms.Panel();
+            this.cob_Lis_Proto = new System.Windows.Forms.ComboBox();
+            this.tb_Lis_Allow_cidr = new System.Windows.Forms.TextBox();
+            this.tb_Lis_Port = new System.Windows.Forms.TextBox();
+            this.L_Lis_Proto = new System.Windows.Forms.Label();
+            this.L_Lis_Con_Limit = new System.Windows.Forms.Label();
+            this.L_Lis_Port = new System.Windows.Forms.Label();
+            this.L_Lis_Allow_cidr = new System.Windows.Forms.Label();
+            this.tb_Lis_Con_Limit = new System.Windows.Forms.TextBox();
+            this.tb_Lis_Mem_Timeout = new System.Windows.Forms.TextBox();
+            this.L_Lis_Mem_Con_Timeout = new System.Windows.Forms.Label();
+            this.L_Lis_Mem_Timeout = new System.Windows.Forms.Label();
+            this.tb_Lis_Mem_Con_Timeout = new System.Windows.Forms.TextBox();
+            this.tb_Lis_TCPTimeout = new System.Windows.Forms.TextBox();
+            this.L_Lis_ClientTimeout = new System.Windows.Forms.Label();
+            this.L_Lis_TCPTimeout = new System.Windows.Forms.Label();
+            this.tb_Lis_ClientTimeout = new System.Windows.Forms.TextBox();
+            this.P_Lis_L_tb_Name_Des = new System.Windows.Forms.Panel();
+            this.tb_Lis_Des = new System.Windows.Forms.TextBox();
+            this.L_Lis_Name = new System.Windows.Forms.Label();
+            this.L_Lis_Des = new System.Windows.Forms.Label();
+            this.tb_Lis_Name = new System.Windows.Forms.TextBox();
+            this.B_Cr_Lis_Yes = new System.Windows.Forms.Button();
+            this.B_Cr_Lis_No = new System.Windows.Forms.Button();
+            this.L_Cr_Lis = new System.Windows.Forms.Label();
             this.Pool_Details_Page = new System.Windows.Forms.TabPage();
+            this.cob_Pool_Session = new System.Windows.Forms.ComboBox();
+            this.cob_Pool_Algorithm = new System.Windows.Forms.ComboBox();
+            this.B_Pool_ASUp_Yes = new System.Windows.Forms.Button();
+            this.B_Pool_ASUp_No = new System.Windows.Forms.Button();
+            this.L_Pool_ASUp = new System.Windows.Forms.Label();
+            this.B_Pool_TLFEn_Yes = new System.Windows.Forms.Button();
+            this.B_Pool_TLFEn_No = new System.Windows.Forms.Button();
+            this.L_Pool_TLFEn = new System.Windows.Forms.Label();
+            this.tb_Pool_Cookie_Name = new System.Windows.Forms.TextBox();
+            this.L_Pool_Cookie_Name = new System.Windows.Forms.Label();
+            this.L_Pool_Session = new System.Windows.Forms.Label();
+            this.L_Pool_Algorithm = new System.Windows.Forms.Label();
+            this.tb_Pool_Des = new System.Windows.Forms.TextBox();
+            this.L_Pool_Des = new System.Windows.Forms.Label();
+            this.tb_Pool_Name = new System.Windows.Forms.TextBox();
+            this.L_Pool_Name = new System.Windows.Forms.Label();
+            this.B_Cr_Pool_Yes = new System.Windows.Forms.Button();
+            this.B_Cr_Pool_No = new System.Windows.Forms.Button();
+            this.L_Cr_Pool = new System.Windows.Forms.Label();
             this.Pool_Mem_Page = new System.Windows.Forms.TabPage();
+            this.DGV_Choose_PoolMem = new System.Windows.Forms.DataGridView();
+            this.DGV_Choosed_PoolMem = new System.Windows.Forms.DataGridView();
             this.Mon_Details_Page = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label21 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label32 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cob_Mon_HTTPMethod = new System.Windows.Forms.ComboBox();
+            this.cob_Mon_Type = new System.Windows.Forms.ComboBox();
+            this.B_Mon_ASUp_Yes = new System.Windows.Forms.Button();
+            this.B_Mon_ASUp_No = new System.Windows.Forms.Button();
+            this.L_Mon_ASUp = new System.Windows.Forms.Label();
+            this.tb_Mon_URL = new System.Windows.Forms.TextBox();
+            this.L_Mon_URL = new System.Windows.Forms.Label();
+            this.tb_Mon_Codes = new System.Windows.Forms.TextBox();
+            this.L_Mon_Codes = new System.Windows.Forms.Label();
+            this.L_Mon_HTTPMethod = new System.Windows.Forms.Label();
+            this.tb_Mon_Timeout = new System.Windows.Forms.TextBox();
+            this.L_Mon_Timeeout = new System.Windows.Forms.Label();
+            this.tb_Mon_MaxRetry = new System.Windows.Forms.TextBox();
+            this.L_Mon_MaxRetry = new System.Windows.Forms.Label();
+            this.tb_Mon_Delay = new System.Windows.Forms.TextBox();
+            this.L_Mon_Delay = new System.Windows.Forms.Label();
+            this.tb_Mon_MaxRetryDown = new System.Windows.Forms.TextBox();
+            this.L_Mon_MaxRetryDown = new System.Windows.Forms.Label();
+            this.L_Mon_Type = new System.Windows.Forms.Label();
+            this.tb_Mon_Name = new System.Windows.Forms.TextBox();
+            this.L_Mon_Name = new System.Windows.Forms.Label();
+            this.B_Cr_Mon_Yes = new System.Windows.Forms.Button();
+            this.B_Cr_Mon_No = new System.Windows.Forms.Button();
+            this.L_Cr_Mon = new System.Windows.Forms.Label();
             this.P_L_Cr_LB.SuspendLayout();
             this.P_B_Cr_Cancel_LB.SuspendLayout();
             this.P_Menu.SuspendLayout();
@@ -150,15 +150,15 @@
             this.PageControl.SuspendLayout();
             this.LB_Details_Page.SuspendLayout();
             this.Lis_Details_Page.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.P_Lis_L_B_ASUp.SuspendLayout();
+            this.P_Lis_L_cb_Insert_Header.SuspendLayout();
+            this.P_Lis_Detail_Information.SuspendLayout();
+            this.P_Lis_L_tb_Name_Des.SuspendLayout();
             this.Pool_Details_Page.SuspendLayout();
             this.Pool_Mem_Page.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Choose_PoolMem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Choosed_PoolMem)).BeginInit();
             this.Mon_Details_Page.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // P_L_Cr_LB
@@ -476,13 +476,13 @@
             // 
             // Lis_Details_Page
             // 
-            this.Lis_Details_Page.Controls.Add(this.panel2);
-            this.Lis_Details_Page.Controls.Add(this.panel4);
-            this.Lis_Details_Page.Controls.Add(this.panel3);
-            this.Lis_Details_Page.Controls.Add(this.panel1);
-            this.Lis_Details_Page.Controls.Add(this.button2);
-            this.Lis_Details_Page.Controls.Add(this.button1);
-            this.Lis_Details_Page.Controls.Add(this.label1);
+            this.Lis_Details_Page.Controls.Add(this.P_Lis_L_B_ASUp);
+            this.Lis_Details_Page.Controls.Add(this.P_Lis_L_cb_Insert_Header);
+            this.Lis_Details_Page.Controls.Add(this.P_Lis_Detail_Information);
+            this.Lis_Details_Page.Controls.Add(this.P_Lis_L_tb_Name_Des);
+            this.Lis_Details_Page.Controls.Add(this.B_Cr_Lis_Yes);
+            this.Lis_Details_Page.Controls.Add(this.B_Cr_Lis_No);
+            this.Lis_Details_Page.Controls.Add(this.L_Cr_Lis);
             this.Lis_Details_Page.Location = new System.Drawing.Point(4, 5);
             this.Lis_Details_Page.Name = "Lis_Details_Page";
             this.Lis_Details_Page.Padding = new System.Windows.Forms.Padding(3);
@@ -491,357 +491,367 @@
             this.Lis_Details_Page.Text = "tabPage2";
             this.Lis_Details_Page.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button3.Location = new System.Drawing.Point(37, 50);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(50, 25);
-            this.button3.TabIndex = 27;
-            this.button3.Text = "Yes";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button4.Location = new System.Drawing.Point(98, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 25);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "No";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label13.Location = new System.Drawing.Point(34, 17);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 17);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Admin State Up";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.checkBox3);
-            this.panel4.Controls.Add(this.checkBox2);
-            this.panel4.Controls.Add(this.checkBox1);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Location = new System.Drawing.Point(545, 121);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(179, 267);
-            this.panel4.TabIndex = 24;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(18, 125);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(114, 17);
-            this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "X-Forwarded-Proto";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(18, 94);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(108, 17);
-            this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "X-Forwarded-Port";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(18, 59);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 17);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "X-Forwarded-For";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label12.Location = new System.Drawing.Point(15, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 17);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Insert Headers";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.textBox8);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox9);
-            this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Location = new System.Drawing.Point(6, 121);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(533, 395);
-            this.panel3.TabIndex = 23;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox8.Location = new System.Drawing.Point(300, 334);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 23);
-            this.textBox8.TabIndex = 29;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label10.Location = new System.Drawing.Point(39, 293);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 17);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Connection Limit ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label11.Location = new System.Drawing.Point(297, 293);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 17);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Allowed Cidrs";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox9.Location = new System.Drawing.Point(42, 335);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(200, 23);
-            this.textBox9.TabIndex = 27;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox6.Location = new System.Drawing.Point(300, 238);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 25;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label8.Location = new System.Drawing.Point(39, 205);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(170, 17);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Member Connect Timeout";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label9.Location = new System.Drawing.Point(297, 205);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(148, 17);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Member Data Timeout";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox7.Location = new System.Drawing.Point(42, 239);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 23);
-            this.textBox7.TabIndex = 23;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox4.Location = new System.Drawing.Point(300, 155);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 23);
-            this.textBox4.TabIndex = 21;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(39, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 17);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Client Data Timeout";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label7.Location = new System.Drawing.Point(297, 122);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 17);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "TCP Inspect Timeout";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox5.Location = new System.Drawing.Point(42, 156);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 23);
-            this.textBox5.TabIndex = 19;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(42, 68);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 22;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox3.Location = new System.Drawing.Point(300, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 23);
-            this.textBox3.TabIndex = 21;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(39, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 17);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Protocol ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(297, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 17);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Port";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(183, 6);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 109);
-            this.panel1.TabIndex = 22;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox2.Location = new System.Drawing.Point(300, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 21;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(39, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 17);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label3.Location = new System.Drawing.Point(297, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Description";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox1.Location = new System.Drawing.Point(42, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 19;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button2.Location = new System.Drawing.Point(41, 66);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 25);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Yes";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(102, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 25);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "No";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.Location = new System.Drawing.Point(38, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 17);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Create Listener";
+            // P_Lis_L_B_ASUp
+            // 
+            this.P_Lis_L_B_ASUp.Controls.Add(this.B_Lis_ASUp_Yes);
+            this.P_Lis_L_B_ASUp.Controls.Add(this.L_Lis_ASUp);
+            this.P_Lis_L_B_ASUp.Controls.Add(this.B_Lis_ASUp_No);
+            this.P_Lis_L_B_ASUp.Location = new System.Drawing.Point(545, 394);
+            this.P_Lis_L_B_ASUp.Name = "P_Lis_L_B_ASUp";
+            this.P_Lis_L_B_ASUp.Size = new System.Drawing.Size(179, 122);
+            this.P_Lis_L_B_ASUp.TabIndex = 28;
+            // 
+            // B_Lis_ASUp_Yes
+            // 
+            this.B_Lis_ASUp_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Lis_ASUp_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Lis_ASUp_Yes.Location = new System.Drawing.Point(37, 50);
+            this.B_Lis_ASUp_Yes.Name = "B_Lis_ASUp_Yes";
+            this.B_Lis_ASUp_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Lis_ASUp_Yes.TabIndex = 27;
+            this.B_Lis_ASUp_Yes.Text = "Yes";
+            this.B_Lis_ASUp_Yes.UseVisualStyleBackColor = false;
+            // 
+            // L_Lis_ASUp
+            // 
+            this.L_Lis_ASUp.AutoSize = true;
+            this.L_Lis_ASUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_ASUp.Location = new System.Drawing.Point(34, 17);
+            this.L_Lis_ASUp.Name = "L_Lis_ASUp";
+            this.L_Lis_ASUp.Size = new System.Drawing.Size(106, 17);
+            this.L_Lis_ASUp.TabIndex = 25;
+            this.L_Lis_ASUp.Text = "Admin State Up";
+            // 
+            // B_Lis_ASUp_No
+            // 
+            this.B_Lis_ASUp_No.BackColor = System.Drawing.Color.White;
+            this.B_Lis_ASUp_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Lis_ASUp_No.Location = new System.Drawing.Point(98, 50);
+            this.B_Lis_ASUp_No.Name = "B_Lis_ASUp_No";
+            this.B_Lis_ASUp_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Lis_ASUp_No.TabIndex = 26;
+            this.B_Lis_ASUp_No.Text = "No";
+            this.B_Lis_ASUp_No.UseVisualStyleBackColor = false;
+            // 
+            // P_Lis_L_cb_Insert_Header
+            // 
+            this.P_Lis_L_cb_Insert_Header.Controls.Add(this.cb_Lis_XForwProto);
+            this.P_Lis_L_cb_Insert_Header.Controls.Add(this.cb_Lis_XForwPort);
+            this.P_Lis_L_cb_Insert_Header.Controls.Add(this.cb_Lis_XForwFor);
+            this.P_Lis_L_cb_Insert_Header.Controls.Add(this.L_Lis_Insert_Header);
+            this.P_Lis_L_cb_Insert_Header.Location = new System.Drawing.Point(545, 121);
+            this.P_Lis_L_cb_Insert_Header.Name = "P_Lis_L_cb_Insert_Header";
+            this.P_Lis_L_cb_Insert_Header.Size = new System.Drawing.Size(179, 267);
+            this.P_Lis_L_cb_Insert_Header.TabIndex = 24;
+            // 
+            // cb_Lis_XForwProto
+            // 
+            this.cb_Lis_XForwProto.AutoSize = true;
+            this.cb_Lis_XForwProto.Location = new System.Drawing.Point(18, 125);
+            this.cb_Lis_XForwProto.Name = "cb_Lis_XForwProto";
+            this.cb_Lis_XForwProto.Size = new System.Drawing.Size(114, 17);
+            this.cb_Lis_XForwProto.TabIndex = 26;
+            this.cb_Lis_XForwProto.Text = "X-Forwarded-Proto";
+            this.cb_Lis_XForwProto.UseVisualStyleBackColor = true;
+            // 
+            // cb_Lis_XForwPort
+            // 
+            this.cb_Lis_XForwPort.AutoSize = true;
+            this.cb_Lis_XForwPort.Location = new System.Drawing.Point(18, 94);
+            this.cb_Lis_XForwPort.Name = "cb_Lis_XForwPort";
+            this.cb_Lis_XForwPort.Size = new System.Drawing.Size(108, 17);
+            this.cb_Lis_XForwPort.TabIndex = 25;
+            this.cb_Lis_XForwPort.Text = "X-Forwarded-Port";
+            this.cb_Lis_XForwPort.UseVisualStyleBackColor = true;
+            // 
+            // cb_Lis_XForwFor
+            // 
+            this.cb_Lis_XForwFor.AutoSize = true;
+            this.cb_Lis_XForwFor.Location = new System.Drawing.Point(18, 59);
+            this.cb_Lis_XForwFor.Name = "cb_Lis_XForwFor";
+            this.cb_Lis_XForwFor.Size = new System.Drawing.Size(104, 17);
+            this.cb_Lis_XForwFor.TabIndex = 24;
+            this.cb_Lis_XForwFor.Text = "X-Forwarded-For";
+            this.cb_Lis_XForwFor.UseVisualStyleBackColor = true;
+            // 
+            // L_Lis_Insert_Header
+            // 
+            this.L_Lis_Insert_Header.AutoSize = true;
+            this.L_Lis_Insert_Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Insert_Header.Location = new System.Drawing.Point(15, 21);
+            this.L_Lis_Insert_Header.Name = "L_Lis_Insert_Header";
+            this.L_Lis_Insert_Header.Size = new System.Drawing.Size(101, 17);
+            this.L_Lis_Insert_Header.TabIndex = 23;
+            this.L_Lis_Insert_Header.Text = "Insert Headers";
+            // 
+            // P_Lis_Detail_Information
+            // 
+            this.P_Lis_Detail_Information.Controls.Add(this.cob_Lis_Proto);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_Allow_cidr);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_Port);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Proto);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Con_Limit);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Port);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Allow_cidr);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_Con_Limit);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_Mem_Timeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Mem_Con_Timeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_Mem_Timeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_Mem_Con_Timeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_TCPTimeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_ClientTimeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.L_Lis_TCPTimeout);
+            this.P_Lis_Detail_Information.Controls.Add(this.tb_Lis_ClientTimeout);
+            this.P_Lis_Detail_Information.Location = new System.Drawing.Point(6, 121);
+            this.P_Lis_Detail_Information.Name = "P_Lis_Detail_Information";
+            this.P_Lis_Detail_Information.Size = new System.Drawing.Size(533, 395);
+            this.P_Lis_Detail_Information.TabIndex = 23;
+            // 
+            // cob_Lis_Proto
+            // 
+            this.cob_Lis_Proto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Lis_Proto.FormattingEnabled = true;
+            this.cob_Lis_Proto.Location = new System.Drawing.Point(42, 68);
+            this.cob_Lis_Proto.Name = "cob_Lis_Proto";
+            this.cob_Lis_Proto.Size = new System.Drawing.Size(200, 24);
+            this.cob_Lis_Proto.TabIndex = 22;
+            // 
+            // tb_Lis_Allow_cidr
+            // 
+            this.tb_Lis_Allow_cidr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Allow_cidr.Location = new System.Drawing.Point(300, 334);
+            this.tb_Lis_Allow_cidr.Name = "tb_Lis_Allow_cidr";
+            this.tb_Lis_Allow_cidr.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Allow_cidr.TabIndex = 29;
+            // 
+            // tb_Lis_Port
+            // 
+            this.tb_Lis_Port.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Port.Location = new System.Drawing.Point(300, 66);
+            this.tb_Lis_Port.Name = "tb_Lis_Port";
+            this.tb_Lis_Port.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Port.TabIndex = 21;
+            // 
+            // L_Lis_Proto
+            // 
+            this.L_Lis_Proto.AutoSize = true;
+            this.L_Lis_Proto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Proto.Location = new System.Drawing.Point(39, 33);
+            this.L_Lis_Proto.Name = "L_Lis_Proto";
+            this.L_Lis_Proto.Size = new System.Drawing.Size(64, 17);
+            this.L_Lis_Proto.TabIndex = 18;
+            this.L_Lis_Proto.Text = "Protocol ";
+            // 
+            // L_Lis_Con_Limit
+            // 
+            this.L_Lis_Con_Limit.AutoSize = true;
+            this.L_Lis_Con_Limit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Con_Limit.Location = new System.Drawing.Point(39, 293);
+            this.L_Lis_Con_Limit.Name = "L_Lis_Con_Limit";
+            this.L_Lis_Con_Limit.Size = new System.Drawing.Size(116, 17);
+            this.L_Lis_Con_Limit.TabIndex = 26;
+            this.L_Lis_Con_Limit.Text = "Connection Limit ";
+            // 
+            // L_Lis_Port
+            // 
+            this.L_Lis_Port.AutoSize = true;
+            this.L_Lis_Port.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Port.Location = new System.Drawing.Point(297, 33);
+            this.L_Lis_Port.Name = "L_Lis_Port";
+            this.L_Lis_Port.Size = new System.Drawing.Size(34, 17);
+            this.L_Lis_Port.TabIndex = 20;
+            this.L_Lis_Port.Text = "Port";
+            // 
+            // L_Lis_Allow_cidr
+            // 
+            this.L_Lis_Allow_cidr.AutoSize = true;
+            this.L_Lis_Allow_cidr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Allow_cidr.Location = new System.Drawing.Point(297, 293);
+            this.L_Lis_Allow_cidr.Name = "L_Lis_Allow_cidr";
+            this.L_Lis_Allow_cidr.Size = new System.Drawing.Size(92, 17);
+            this.L_Lis_Allow_cidr.TabIndex = 28;
+            this.L_Lis_Allow_cidr.Text = "Allowed Cidrs";
+            // 
+            // tb_Lis_Con_Limit
+            // 
+            this.tb_Lis_Con_Limit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Con_Limit.Location = new System.Drawing.Point(42, 335);
+            this.tb_Lis_Con_Limit.Name = "tb_Lis_Con_Limit";
+            this.tb_Lis_Con_Limit.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Con_Limit.TabIndex = 27;
+            // 
+            // tb_Lis_Mem_Timeout
+            // 
+            this.tb_Lis_Mem_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Mem_Timeout.Location = new System.Drawing.Point(300, 238);
+            this.tb_Lis_Mem_Timeout.Name = "tb_Lis_Mem_Timeout";
+            this.tb_Lis_Mem_Timeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Mem_Timeout.TabIndex = 25;
+            // 
+            // L_Lis_Mem_Con_Timeout
+            // 
+            this.L_Lis_Mem_Con_Timeout.AutoSize = true;
+            this.L_Lis_Mem_Con_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Mem_Con_Timeout.Location = new System.Drawing.Point(39, 205);
+            this.L_Lis_Mem_Con_Timeout.Name = "L_Lis_Mem_Con_Timeout";
+            this.L_Lis_Mem_Con_Timeout.Size = new System.Drawing.Size(170, 17);
+            this.L_Lis_Mem_Con_Timeout.TabIndex = 22;
+            this.L_Lis_Mem_Con_Timeout.Text = "Member Connect Timeout";
+            // 
+            // L_Lis_Mem_Timeout
+            // 
+            this.L_Lis_Mem_Timeout.AutoSize = true;
+            this.L_Lis_Mem_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Mem_Timeout.Location = new System.Drawing.Point(297, 205);
+            this.L_Lis_Mem_Timeout.Name = "L_Lis_Mem_Timeout";
+            this.L_Lis_Mem_Timeout.Size = new System.Drawing.Size(148, 17);
+            this.L_Lis_Mem_Timeout.TabIndex = 24;
+            this.L_Lis_Mem_Timeout.Text = "Member Data Timeout";
+            // 
+            // tb_Lis_Mem_Con_Timeout
+            // 
+            this.tb_Lis_Mem_Con_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Mem_Con_Timeout.Location = new System.Drawing.Point(42, 239);
+            this.tb_Lis_Mem_Con_Timeout.Name = "tb_Lis_Mem_Con_Timeout";
+            this.tb_Lis_Mem_Con_Timeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Mem_Con_Timeout.TabIndex = 23;
+            // 
+            // tb_Lis_TCPTimeout
+            // 
+            this.tb_Lis_TCPTimeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_TCPTimeout.Location = new System.Drawing.Point(300, 155);
+            this.tb_Lis_TCPTimeout.Name = "tb_Lis_TCPTimeout";
+            this.tb_Lis_TCPTimeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_TCPTimeout.TabIndex = 21;
+            // 
+            // L_Lis_ClientTimeout
+            // 
+            this.L_Lis_ClientTimeout.AutoSize = true;
+            this.L_Lis_ClientTimeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_ClientTimeout.Location = new System.Drawing.Point(39, 122);
+            this.L_Lis_ClientTimeout.Name = "L_Lis_ClientTimeout";
+            this.L_Lis_ClientTimeout.Size = new System.Drawing.Size(132, 17);
+            this.L_Lis_ClientTimeout.TabIndex = 18;
+            this.L_Lis_ClientTimeout.Text = "Client Data Timeout";
+            // 
+            // L_Lis_TCPTimeout
+            // 
+            this.L_Lis_TCPTimeout.AutoSize = true;
+            this.L_Lis_TCPTimeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_TCPTimeout.Location = new System.Drawing.Point(297, 122);
+            this.L_Lis_TCPTimeout.Name = "L_Lis_TCPTimeout";
+            this.L_Lis_TCPTimeout.Size = new System.Drawing.Size(139, 17);
+            this.L_Lis_TCPTimeout.TabIndex = 20;
+            this.L_Lis_TCPTimeout.Text = "TCP Inspect Timeout";
+            // 
+            // tb_Lis_ClientTimeout
+            // 
+            this.tb_Lis_ClientTimeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_ClientTimeout.Location = new System.Drawing.Point(42, 156);
+            this.tb_Lis_ClientTimeout.Name = "tb_Lis_ClientTimeout";
+            this.tb_Lis_ClientTimeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_ClientTimeout.TabIndex = 19;
+            // 
+            // P_Lis_L_tb_Name_Des
+            // 
+            this.P_Lis_L_tb_Name_Des.Controls.Add(this.tb_Lis_Des);
+            this.P_Lis_L_tb_Name_Des.Controls.Add(this.L_Lis_Name);
+            this.P_Lis_L_tb_Name_Des.Controls.Add(this.L_Lis_Des);
+            this.P_Lis_L_tb_Name_Des.Controls.Add(this.tb_Lis_Name);
+            this.P_Lis_L_tb_Name_Des.Location = new System.Drawing.Point(183, 6);
+            this.P_Lis_L_tb_Name_Des.Name = "P_Lis_L_tb_Name_Des";
+            this.P_Lis_L_tb_Name_Des.Size = new System.Drawing.Size(541, 109);
+            this.P_Lis_L_tb_Name_Des.TabIndex = 22;
+            // 
+            // tb_Lis_Des
+            // 
+            this.tb_Lis_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Des.Location = new System.Drawing.Point(300, 51);
+            this.tb_Lis_Des.Name = "tb_Lis_Des";
+            this.tb_Lis_Des.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Des.TabIndex = 21;
+            // 
+            // L_Lis_Name
+            // 
+            this.L_Lis_Name.AutoSize = true;
+            this.L_Lis_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Name.Location = new System.Drawing.Point(39, 18);
+            this.L_Lis_Name.Name = "L_Lis_Name";
+            this.L_Lis_Name.Size = new System.Drawing.Size(45, 17);
+            this.L_Lis_Name.TabIndex = 18;
+            this.L_Lis_Name.Text = "Name";
+            // 
+            // L_Lis_Des
+            // 
+            this.L_Lis_Des.AutoSize = true;
+            this.L_Lis_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Lis_Des.Location = new System.Drawing.Point(297, 18);
+            this.L_Lis_Des.Name = "L_Lis_Des";
+            this.L_Lis_Des.Size = new System.Drawing.Size(79, 17);
+            this.L_Lis_Des.TabIndex = 20;
+            this.L_Lis_Des.Text = "Description";
+            // 
+            // tb_Lis_Name
+            // 
+            this.tb_Lis_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Lis_Name.Location = new System.Drawing.Point(42, 52);
+            this.tb_Lis_Name.Name = "tb_Lis_Name";
+            this.tb_Lis_Name.Size = new System.Drawing.Size(200, 23);
+            this.tb_Lis_Name.TabIndex = 19;
+            // 
+            // B_Cr_Lis_Yes
+            // 
+            this.B_Cr_Lis_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Cr_Lis_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Lis_Yes.Location = new System.Drawing.Point(41, 66);
+            this.B_Cr_Lis_Yes.Name = "B_Cr_Lis_Yes";
+            this.B_Cr_Lis_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Lis_Yes.TabIndex = 17;
+            this.B_Cr_Lis_Yes.Text = "Yes";
+            this.B_Cr_Lis_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Cr_Lis_No
+            // 
+            this.B_Cr_Lis_No.BackColor = System.Drawing.Color.White;
+            this.B_Cr_Lis_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Lis_No.Location = new System.Drawing.Point(102, 66);
+            this.B_Cr_Lis_No.Name = "B_Cr_Lis_No";
+            this.B_Cr_Lis_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Lis_No.TabIndex = 16;
+            this.B_Cr_Lis_No.Text = "No";
+            this.B_Cr_Lis_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Cr_Lis
+            // 
+            this.L_Cr_Lis.AutoSize = true;
+            this.L_Cr_Lis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Cr_Lis.Location = new System.Drawing.Point(38, 33);
+            this.L_Cr_Lis.Name = "L_Cr_Lis";
+            this.L_Cr_Lis.Size = new System.Drawing.Size(105, 17);
+            this.L_Cr_Lis.TabIndex = 15;
+            this.L_Cr_Lis.Text = "Create Listener";
             // 
             // Pool_Details_Page
             // 
-            this.Pool_Details_Page.Controls.Add(this.comboBox3);
-            this.Pool_Details_Page.Controls.Add(this.comboBox2);
-            this.Pool_Details_Page.Controls.Add(this.button9);
-            this.Pool_Details_Page.Controls.Add(this.button10);
-            this.Pool_Details_Page.Controls.Add(this.label21);
-            this.Pool_Details_Page.Controls.Add(this.button7);
-            this.Pool_Details_Page.Controls.Add(this.button8);
-            this.Pool_Details_Page.Controls.Add(this.label20);
-            this.Pool_Details_Page.Controls.Add(this.textBox14);
-            this.Pool_Details_Page.Controls.Add(this.label19);
-            this.Pool_Details_Page.Controls.Add(this.label18);
-            this.Pool_Details_Page.Controls.Add(this.label17);
-            this.Pool_Details_Page.Controls.Add(this.textBox11);
-            this.Pool_Details_Page.Controls.Add(this.label16);
-            this.Pool_Details_Page.Controls.Add(this.textBox10);
-            this.Pool_Details_Page.Controls.Add(this.label15);
-            this.Pool_Details_Page.Controls.Add(this.button5);
-            this.Pool_Details_Page.Controls.Add(this.button6);
-            this.Pool_Details_Page.Controls.Add(this.label14);
+            this.Pool_Details_Page.Controls.Add(this.cob_Pool_Session);
+            this.Pool_Details_Page.Controls.Add(this.cob_Pool_Algorithm);
+            this.Pool_Details_Page.Controls.Add(this.B_Pool_ASUp_Yes);
+            this.Pool_Details_Page.Controls.Add(this.B_Pool_ASUp_No);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_ASUp);
+            this.Pool_Details_Page.Controls.Add(this.B_Pool_TLFEn_Yes);
+            this.Pool_Details_Page.Controls.Add(this.B_Pool_TLFEn_No);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_TLFEn);
+            this.Pool_Details_Page.Controls.Add(this.tb_Pool_Cookie_Name);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_Cookie_Name);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_Session);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_Algorithm);
+            this.Pool_Details_Page.Controls.Add(this.tb_Pool_Des);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_Des);
+            this.Pool_Details_Page.Controls.Add(this.tb_Pool_Name);
+            this.Pool_Details_Page.Controls.Add(this.L_Pool_Name);
+            this.Pool_Details_Page.Controls.Add(this.B_Cr_Pool_Yes);
+            this.Pool_Details_Page.Controls.Add(this.B_Cr_Pool_No);
+            this.Pool_Details_Page.Controls.Add(this.L_Cr_Pool);
             this.Pool_Details_Page.Location = new System.Drawing.Point(4, 5);
             this.Pool_Details_Page.Name = "Pool_Details_Page";
             this.Pool_Details_Page.Padding = new System.Windows.Forms.Padding(3);
@@ -850,10 +860,198 @@
             this.Pool_Details_Page.Text = "tabPage3";
             this.Pool_Details_Page.UseVisualStyleBackColor = true;
             // 
+            // cob_Pool_Session
+            // 
+            this.cob_Pool_Session.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Pool_Session.FormattingEnabled = true;
+            this.cob_Pool_Session.Location = new System.Drawing.Point(40, 352);
+            this.cob_Pool_Session.Name = "cob_Pool_Session";
+            this.cob_Pool_Session.Size = new System.Drawing.Size(200, 24);
+            this.cob_Pool_Session.TabIndex = 42;
+            // 
+            // cob_Pool_Algorithm
+            // 
+            this.cob_Pool_Algorithm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Pool_Algorithm.FormattingEnabled = true;
+            this.cob_Pool_Algorithm.Location = new System.Drawing.Point(40, 251);
+            this.cob_Pool_Algorithm.Name = "cob_Pool_Algorithm";
+            this.cob_Pool_Algorithm.Size = new System.Drawing.Size(200, 24);
+            this.cob_Pool_Algorithm.TabIndex = 41;
+            // 
+            // B_Pool_ASUp_Yes
+            // 
+            this.B_Pool_ASUp_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Pool_ASUp_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Pool_ASUp_Yes.Location = new System.Drawing.Point(292, 446);
+            this.B_Pool_ASUp_Yes.Name = "B_Pool_ASUp_Yes";
+            this.B_Pool_ASUp_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Pool_ASUp_Yes.TabIndex = 40;
+            this.B_Pool_ASUp_Yes.Text = "Yes";
+            this.B_Pool_ASUp_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Pool_ASUp_No
+            // 
+            this.B_Pool_ASUp_No.BackColor = System.Drawing.Color.White;
+            this.B_Pool_ASUp_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Pool_ASUp_No.Location = new System.Drawing.Point(353, 446);
+            this.B_Pool_ASUp_No.Name = "B_Pool_ASUp_No";
+            this.B_Pool_ASUp_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Pool_ASUp_No.TabIndex = 39;
+            this.B_Pool_ASUp_No.Text = "No";
+            this.B_Pool_ASUp_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Pool_ASUp
+            // 
+            this.L_Pool_ASUp.AutoSize = true;
+            this.L_Pool_ASUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_ASUp.Location = new System.Drawing.Point(289, 413);
+            this.L_Pool_ASUp.Name = "L_Pool_ASUp";
+            this.L_Pool_ASUp.Size = new System.Drawing.Size(106, 17);
+            this.L_Pool_ASUp.TabIndex = 38;
+            this.L_Pool_ASUp.Text = "Admin State Up";
+            // 
+            // B_Pool_TLFEn_Yes
+            // 
+            this.B_Pool_TLFEn_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Pool_TLFEn_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Pool_TLFEn_Yes.Location = new System.Drawing.Point(40, 446);
+            this.B_Pool_TLFEn_Yes.Name = "B_Pool_TLFEn_Yes";
+            this.B_Pool_TLFEn_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Pool_TLFEn_Yes.TabIndex = 37;
+            this.B_Pool_TLFEn_Yes.Text = "Yes";
+            this.B_Pool_TLFEn_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Pool_TLFEn_No
+            // 
+            this.B_Pool_TLFEn_No.BackColor = System.Drawing.Color.White;
+            this.B_Pool_TLFEn_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Pool_TLFEn_No.Location = new System.Drawing.Point(101, 446);
+            this.B_Pool_TLFEn_No.Name = "B_Pool_TLFEn_No";
+            this.B_Pool_TLFEn_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Pool_TLFEn_No.TabIndex = 36;
+            this.B_Pool_TLFEn_No.Text = "No";
+            this.B_Pool_TLFEn_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Pool_TLFEn
+            // 
+            this.L_Pool_TLFEn.AutoSize = true;
+            this.L_Pool_TLFEn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_TLFEn.Location = new System.Drawing.Point(37, 413);
+            this.L_Pool_TLFEn.Name = "L_Pool_TLFEn";
+            this.L_Pool_TLFEn.Size = new System.Drawing.Size(90, 17);
+            this.L_Pool_TLFEn.TabIndex = 35;
+            this.L_Pool_TLFEn.Text = "TLS Enabled";
+            // 
+            // tb_Pool_Cookie_Name
+            // 
+            this.tb_Pool_Cookie_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Pool_Cookie_Name.Location = new System.Drawing.Point(292, 353);
+            this.tb_Pool_Cookie_Name.Name = "tb_Pool_Cookie_Name";
+            this.tb_Pool_Cookie_Name.Size = new System.Drawing.Size(200, 23);
+            this.tb_Pool_Cookie_Name.TabIndex = 34;
+            // 
+            // L_Pool_Cookie_Name
+            // 
+            this.L_Pool_Cookie_Name.AutoSize = true;
+            this.L_Pool_Cookie_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_Cookie_Name.Location = new System.Drawing.Point(289, 317);
+            this.L_Pool_Cookie_Name.Name = "L_Pool_Cookie_Name";
+            this.L_Pool_Cookie_Name.Size = new System.Drawing.Size(92, 17);
+            this.L_Pool_Cookie_Name.TabIndex = 33;
+            this.L_Pool_Cookie_Name.Text = "Cookie Name";
+            // 
+            // L_Pool_Session
+            // 
+            this.L_Pool_Session.AutoSize = true;
+            this.L_Pool_Session.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_Session.Location = new System.Drawing.Point(37, 317);
+            this.L_Pool_Session.Name = "L_Pool_Session";
+            this.L_Pool_Session.Size = new System.Drawing.Size(136, 17);
+            this.L_Pool_Session.TabIndex = 31;
+            this.L_Pool_Session.Text = "Session Persistence";
+            // 
+            // L_Pool_Algorithm
+            // 
+            this.L_Pool_Algorithm.AutoSize = true;
+            this.L_Pool_Algorithm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_Algorithm.Location = new System.Drawing.Point(37, 215);
+            this.L_Pool_Algorithm.Name = "L_Pool_Algorithm";
+            this.L_Pool_Algorithm.Size = new System.Drawing.Size(71, 17);
+            this.L_Pool_Algorithm.TabIndex = 29;
+            this.L_Pool_Algorithm.Text = "Algorithm ";
+            // 
+            // tb_Pool_Des
+            // 
+            this.tb_Pool_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Pool_Des.Location = new System.Drawing.Point(292, 154);
+            this.tb_Pool_Des.Name = "tb_Pool_Des";
+            this.tb_Pool_Des.Size = new System.Drawing.Size(200, 23);
+            this.tb_Pool_Des.TabIndex = 28;
+            // 
+            // L_Pool_Des
+            // 
+            this.L_Pool_Des.AutoSize = true;
+            this.L_Pool_Des.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_Des.Location = new System.Drawing.Point(289, 118);
+            this.L_Pool_Des.Name = "L_Pool_Des";
+            this.L_Pool_Des.Size = new System.Drawing.Size(79, 17);
+            this.L_Pool_Des.TabIndex = 27;
+            this.L_Pool_Des.Text = "Description";
+            // 
+            // tb_Pool_Name
+            // 
+            this.tb_Pool_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Pool_Name.Location = new System.Drawing.Point(40, 154);
+            this.tb_Pool_Name.Name = "tb_Pool_Name";
+            this.tb_Pool_Name.Size = new System.Drawing.Size(200, 23);
+            this.tb_Pool_Name.TabIndex = 26;
+            // 
+            // L_Pool_Name
+            // 
+            this.L_Pool_Name.AutoSize = true;
+            this.L_Pool_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Pool_Name.Location = new System.Drawing.Point(37, 118);
+            this.L_Pool_Name.Name = "L_Pool_Name";
+            this.L_Pool_Name.Size = new System.Drawing.Size(45, 17);
+            this.L_Pool_Name.TabIndex = 25;
+            this.L_Pool_Name.Text = "Name";
+            // 
+            // B_Cr_Pool_Yes
+            // 
+            this.B_Cr_Pool_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Cr_Pool_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Pool_Yes.Location = new System.Drawing.Point(40, 66);
+            this.B_Cr_Pool_Yes.Name = "B_Cr_Pool_Yes";
+            this.B_Cr_Pool_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Pool_Yes.TabIndex = 20;
+            this.B_Cr_Pool_Yes.Text = "Yes";
+            this.B_Cr_Pool_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Cr_Pool_No
+            // 
+            this.B_Cr_Pool_No.BackColor = System.Drawing.Color.White;
+            this.B_Cr_Pool_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Pool_No.Location = new System.Drawing.Point(101, 66);
+            this.B_Cr_Pool_No.Name = "B_Cr_Pool_No";
+            this.B_Cr_Pool_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Pool_No.TabIndex = 19;
+            this.B_Cr_Pool_No.Text = "No";
+            this.B_Cr_Pool_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Cr_Pool
+            // 
+            this.L_Cr_Pool.AutoSize = true;
+            this.L_Cr_Pool.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Cr_Pool.Location = new System.Drawing.Point(37, 33);
+            this.L_Cr_Pool.Name = "L_Cr_Pool";
+            this.L_Cr_Pool.Size = new System.Drawing.Size(82, 17);
+            this.L_Cr_Pool.TabIndex = 18;
+            this.L_Cr_Pool.Text = "Create Pool";
+            // 
             // Pool_Mem_Page
             // 
-            this.Pool_Mem_Page.Controls.Add(this.dataGridView2);
-            this.Pool_Mem_Page.Controls.Add(this.dataGridView1);
+            this.Pool_Mem_Page.Controls.Add(this.DGV_Choose_PoolMem);
+            this.Pool_Mem_Page.Controls.Add(this.DGV_Choosed_PoolMem);
             this.Pool_Mem_Page.Location = new System.Drawing.Point(4, 5);
             this.Pool_Mem_Page.Name = "Pool_Mem_Page";
             this.Pool_Mem_Page.Padding = new System.Windows.Forms.Padding(3);
@@ -862,32 +1060,50 @@
             this.Pool_Mem_Page.Text = "tabPage4";
             this.Pool_Mem_Page.UseVisualStyleBackColor = true;
             // 
+            // DGV_Choose_PoolMem
+            // 
+            this.DGV_Choose_PoolMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Choose_PoolMem.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DGV_Choose_PoolMem.Location = new System.Drawing.Point(3, 203);
+            this.DGV_Choose_PoolMem.Name = "DGV_Choose_PoolMem";
+            this.DGV_Choose_PoolMem.Size = new System.Drawing.Size(726, 316);
+            this.DGV_Choose_PoolMem.TabIndex = 1;
+            // 
+            // DGV_Choosed_PoolMem
+            // 
+            this.DGV_Choosed_PoolMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Choosed_PoolMem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DGV_Choosed_PoolMem.Location = new System.Drawing.Point(3, 3);
+            this.DGV_Choosed_PoolMem.Name = "DGV_Choosed_PoolMem";
+            this.DGV_Choosed_PoolMem.Size = new System.Drawing.Size(726, 200);
+            this.DGV_Choosed_PoolMem.TabIndex = 0;
+            // 
             // Mon_Details_Page
             // 
-            this.Mon_Details_Page.Controls.Add(this.comboBox5);
-            this.Mon_Details_Page.Controls.Add(this.comboBox4);
-            this.Mon_Details_Page.Controls.Add(this.button13);
-            this.Mon_Details_Page.Controls.Add(this.button14);
-            this.Mon_Details_Page.Controls.Add(this.label32);
-            this.Mon_Details_Page.Controls.Add(this.textBox21);
-            this.Mon_Details_Page.Controls.Add(this.label29);
-            this.Mon_Details_Page.Controls.Add(this.textBox22);
-            this.Mon_Details_Page.Controls.Add(this.label30);
-            this.Mon_Details_Page.Controls.Add(this.label31);
-            this.Mon_Details_Page.Controls.Add(this.textBox18);
-            this.Mon_Details_Page.Controls.Add(this.label26);
-            this.Mon_Details_Page.Controls.Add(this.textBox19);
-            this.Mon_Details_Page.Controls.Add(this.label27);
-            this.Mon_Details_Page.Controls.Add(this.textBox20);
-            this.Mon_Details_Page.Controls.Add(this.label28);
-            this.Mon_Details_Page.Controls.Add(this.textBox17);
-            this.Mon_Details_Page.Controls.Add(this.label25);
-            this.Mon_Details_Page.Controls.Add(this.label24);
-            this.Mon_Details_Page.Controls.Add(this.textBox15);
-            this.Mon_Details_Page.Controls.Add(this.label23);
-            this.Mon_Details_Page.Controls.Add(this.button11);
-            this.Mon_Details_Page.Controls.Add(this.button12);
-            this.Mon_Details_Page.Controls.Add(this.label22);
+            this.Mon_Details_Page.Controls.Add(this.cob_Mon_HTTPMethod);
+            this.Mon_Details_Page.Controls.Add(this.cob_Mon_Type);
+            this.Mon_Details_Page.Controls.Add(this.B_Mon_ASUp_Yes);
+            this.Mon_Details_Page.Controls.Add(this.B_Mon_ASUp_No);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_ASUp);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_URL);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_URL);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Codes);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_Codes);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_HTTPMethod);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Timeout);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_Timeeout);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_MaxRetry);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_MaxRetry);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Delay);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_Delay);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_MaxRetryDown);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_MaxRetryDown);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_Type);
+            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Name);
+            this.Mon_Details_Page.Controls.Add(this.L_Mon_Name);
+            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_Yes);
+            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_No);
+            this.Mon_Details_Page.Controls.Add(this.L_Cr_Mon);
             this.Mon_Details_Page.Location = new System.Drawing.Point(4, 5);
             this.Mon_Details_Page.Name = "Mon_Details_Page";
             this.Mon_Details_Page.Padding = new System.Windows.Forms.Padding(3);
@@ -896,449 +1112,233 @@
             this.Mon_Details_Page.Text = "tabPage5";
             this.Mon_Details_Page.UseVisualStyleBackColor = true;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Location = new System.Drawing.Point(545, 394);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 122);
-            this.panel2.TabIndex = 28;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button5.Location = new System.Drawing.Point(40, 66);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(50, 25);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "Yes";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button6.Location = new System.Drawing.Point(101, 66);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(50, 25);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "No";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label14.Location = new System.Drawing.Point(37, 33);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(82, 17);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Create Pool";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label15.Location = new System.Drawing.Point(37, 118);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(45, 17);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Name";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox10.Location = new System.Drawing.Point(40, 154);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 23);
-            this.textBox10.TabIndex = 26;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox11.Location = new System.Drawing.Point(292, 154);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 23);
-            this.textBox11.TabIndex = 28;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label16.Location = new System.Drawing.Point(289, 118);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(79, 17);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Description";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label17.Location = new System.Drawing.Point(37, 215);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 17);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Algorithm ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label18.Location = new System.Drawing.Point(37, 317);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(136, 17);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "Session Persistence";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox14.Location = new System.Drawing.Point(292, 353);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(200, 23);
-            this.textBox14.TabIndex = 34;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label19.Location = new System.Drawing.Point(289, 317);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 17);
-            this.label19.TabIndex = 33;
-            this.label19.Text = "Cookie Name";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button7.Location = new System.Drawing.Point(40, 446);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(50, 25);
-            this.button7.TabIndex = 37;
-            this.button7.Text = "Yes";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button8.Location = new System.Drawing.Point(101, 446);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(50, 25);
-            this.button8.TabIndex = 36;
-            this.button8.Text = "No";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label20.Location = new System.Drawing.Point(37, 413);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(90, 17);
-            this.label20.TabIndex = 35;
-            this.label20.Text = "TLS Enabled";
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button9.Location = new System.Drawing.Point(292, 446);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(50, 25);
-            this.button9.TabIndex = 40;
-            this.button9.Text = "Yes";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button10.Location = new System.Drawing.Point(353, 446);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(50, 25);
-            this.button10.TabIndex = 39;
-            this.button10.Text = "No";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label21.Location = new System.Drawing.Point(289, 413);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 17);
-            this.label21.TabIndex = 38;
-            this.label21.Text = "Admin State Up";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(726, 200);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 203);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(726, 316);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.Silver;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button11.Location = new System.Drawing.Point(30, 66);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(50, 25);
-            this.button11.TabIndex = 20;
-            this.button11.Text = "Yes";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button12.Location = new System.Drawing.Point(91, 66);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 25);
-            this.button12.TabIndex = 19;
-            this.button12.Text = "No";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label22.Location = new System.Drawing.Point(27, 33);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(146, 17);
-            this.label22.TabIndex = 18;
-            this.label22.Text = "Create Health Monitor";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label23.Location = new System.Drawing.Point(27, 125);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 17);
-            this.label23.TabIndex = 39;
-            this.label23.Text = "Name";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox15.Location = new System.Drawing.Point(30, 154);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(200, 23);
-            this.textBox15.TabIndex = 40;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label24.Location = new System.Drawing.Point(263, 125);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 17);
-            this.label24.TabIndex = 41;
-            this.label24.Text = "Type ";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox17.Location = new System.Drawing.Point(502, 154);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(200, 23);
-            this.textBox17.TabIndex = 44;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label25.Location = new System.Drawing.Point(499, 125);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(121, 17);
-            this.label25.TabIndex = 43;
-            this.label25.Text = "Max Retries Down";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox18.Location = new System.Drawing.Point(502, 251);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(200, 23);
-            this.textBox18.TabIndex = 50;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label26.Location = new System.Drawing.Point(499, 222);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(95, 17);
-            this.label26.TabIndex = 49;
-            this.label26.Text = "Timeout (sec)";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox19.Location = new System.Drawing.Point(266, 251);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(200, 23);
-            this.textBox19.TabIndex = 48;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label27.Location = new System.Drawing.Point(263, 222);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(82, 17);
-            this.label27.TabIndex = 47;
-            this.label27.Text = "Max Retries";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox20.Location = new System.Drawing.Point(30, 251);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(200, 23);
-            this.textBox20.TabIndex = 46;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label28.Location = new System.Drawing.Point(27, 222);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(80, 17);
-            this.label28.TabIndex = 45;
-            this.label28.Text = "Delay (sec)";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox21.Location = new System.Drawing.Point(502, 349);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(200, 23);
-            this.textBox21.TabIndex = 56;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label29.Location = new System.Drawing.Point(499, 320);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(69, 17);
-            this.label29.TabIndex = 55;
-            this.label29.Text = "URL Path";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox22.Location = new System.Drawing.Point(266, 349);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(200, 23);
-            this.textBox22.TabIndex = 54;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label30.Location = new System.Drawing.Point(263, 320);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(110, 17);
-            this.label30.TabIndex = 53;
-            this.label30.Text = "Expected Codes";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label31.Location = new System.Drawing.Point(27, 320);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(96, 17);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "HTTP Method";
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.Silver;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button13.Location = new System.Drawing.Point(30, 449);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(50, 25);
-            this.button13.TabIndex = 59;
-            this.button13.Text = "Yes";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.White;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button14.Location = new System.Drawing.Point(91, 449);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(50, 25);
-            this.button14.TabIndex = 58;
-            this.button14.Text = "No";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label32.Location = new System.Drawing.Point(27, 416);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(106, 17);
-            this.label32.TabIndex = 57;
-            this.label32.Text = "Admin State Up";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(40, 251);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 24);
-            this.comboBox2.TabIndex = 41;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(40, 352);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(200, 24);
-            this.comboBox3.TabIndex = 42;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(266, 154);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(200, 24);
-            this.comboBox4.TabIndex = 60;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(30, 349);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(200, 24);
-            this.comboBox5.TabIndex = 61;
+            // cob_Mon_HTTPMethod
+            // 
+            this.cob_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Mon_HTTPMethod.FormattingEnabled = true;
+            this.cob_Mon_HTTPMethod.Location = new System.Drawing.Point(30, 349);
+            this.cob_Mon_HTTPMethod.Name = "cob_Mon_HTTPMethod";
+            this.cob_Mon_HTTPMethod.Size = new System.Drawing.Size(200, 24);
+            this.cob_Mon_HTTPMethod.TabIndex = 61;
+            // 
+            // cob_Mon_Type
+            // 
+            this.cob_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Mon_Type.FormattingEnabled = true;
+            this.cob_Mon_Type.Location = new System.Drawing.Point(266, 154);
+            this.cob_Mon_Type.Name = "cob_Mon_Type";
+            this.cob_Mon_Type.Size = new System.Drawing.Size(200, 24);
+            this.cob_Mon_Type.TabIndex = 60;
+            // 
+            // B_Mon_ASUp_Yes
+            // 
+            this.B_Mon_ASUp_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Mon_ASUp_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Mon_ASUp_Yes.Location = new System.Drawing.Point(30, 449);
+            this.B_Mon_ASUp_Yes.Name = "B_Mon_ASUp_Yes";
+            this.B_Mon_ASUp_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Mon_ASUp_Yes.TabIndex = 59;
+            this.B_Mon_ASUp_Yes.Text = "Yes";
+            this.B_Mon_ASUp_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Mon_ASUp_No
+            // 
+            this.B_Mon_ASUp_No.BackColor = System.Drawing.Color.White;
+            this.B_Mon_ASUp_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Mon_ASUp_No.Location = new System.Drawing.Point(91, 449);
+            this.B_Mon_ASUp_No.Name = "B_Mon_ASUp_No";
+            this.B_Mon_ASUp_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Mon_ASUp_No.TabIndex = 58;
+            this.B_Mon_ASUp_No.Text = "No";
+            this.B_Mon_ASUp_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Mon_ASUp
+            // 
+            this.L_Mon_ASUp.AutoSize = true;
+            this.L_Mon_ASUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_ASUp.Location = new System.Drawing.Point(27, 416);
+            this.L_Mon_ASUp.Name = "L_Mon_ASUp";
+            this.L_Mon_ASUp.Size = new System.Drawing.Size(106, 17);
+            this.L_Mon_ASUp.TabIndex = 57;
+            this.L_Mon_ASUp.Text = "Admin State Up";
+            // 
+            // tb_Mon_URL
+            // 
+            this.tb_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_URL.Location = new System.Drawing.Point(502, 349);
+            this.tb_Mon_URL.Name = "tb_Mon_URL";
+            this.tb_Mon_URL.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_URL.TabIndex = 56;
+            // 
+            // L_Mon_URL
+            // 
+            this.L_Mon_URL.AutoSize = true;
+            this.L_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_URL.Location = new System.Drawing.Point(499, 320);
+            this.L_Mon_URL.Name = "L_Mon_URL";
+            this.L_Mon_URL.Size = new System.Drawing.Size(69, 17);
+            this.L_Mon_URL.TabIndex = 55;
+            this.L_Mon_URL.Text = "URL Path";
+            // 
+            // tb_Mon_Codes
+            // 
+            this.tb_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Codes.Location = new System.Drawing.Point(266, 349);
+            this.tb_Mon_Codes.Name = "tb_Mon_Codes";
+            this.tb_Mon_Codes.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Codes.TabIndex = 54;
+            // 
+            // L_Mon_Codes
+            // 
+            this.L_Mon_Codes.AutoSize = true;
+            this.L_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Codes.Location = new System.Drawing.Point(263, 320);
+            this.L_Mon_Codes.Name = "L_Mon_Codes";
+            this.L_Mon_Codes.Size = new System.Drawing.Size(110, 17);
+            this.L_Mon_Codes.TabIndex = 53;
+            this.L_Mon_Codes.Text = "Expected Codes";
+            // 
+            // L_Mon_HTTPMethod
+            // 
+            this.L_Mon_HTTPMethod.AutoSize = true;
+            this.L_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_HTTPMethod.Location = new System.Drawing.Point(27, 320);
+            this.L_Mon_HTTPMethod.Name = "L_Mon_HTTPMethod";
+            this.L_Mon_HTTPMethod.Size = new System.Drawing.Size(96, 17);
+            this.L_Mon_HTTPMethod.TabIndex = 51;
+            this.L_Mon_HTTPMethod.Text = "HTTP Method";
+            // 
+            // tb_Mon_Timeout
+            // 
+            this.tb_Mon_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Timeout.Location = new System.Drawing.Point(502, 251);
+            this.tb_Mon_Timeout.Name = "tb_Mon_Timeout";
+            this.tb_Mon_Timeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Timeout.TabIndex = 50;
+            // 
+            // L_Mon_Timeeout
+            // 
+            this.L_Mon_Timeeout.AutoSize = true;
+            this.L_Mon_Timeeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Timeeout.Location = new System.Drawing.Point(499, 222);
+            this.L_Mon_Timeeout.Name = "L_Mon_Timeeout";
+            this.L_Mon_Timeeout.Size = new System.Drawing.Size(95, 17);
+            this.L_Mon_Timeeout.TabIndex = 49;
+            this.L_Mon_Timeeout.Text = "Timeout (sec)";
+            // 
+            // tb_Mon_MaxRetry
+            // 
+            this.tb_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_MaxRetry.Location = new System.Drawing.Point(266, 251);
+            this.tb_Mon_MaxRetry.Name = "tb_Mon_MaxRetry";
+            this.tb_Mon_MaxRetry.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_MaxRetry.TabIndex = 48;
+            // 
+            // L_Mon_MaxRetry
+            // 
+            this.L_Mon_MaxRetry.AutoSize = true;
+            this.L_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_MaxRetry.Location = new System.Drawing.Point(263, 222);
+            this.L_Mon_MaxRetry.Name = "L_Mon_MaxRetry";
+            this.L_Mon_MaxRetry.Size = new System.Drawing.Size(82, 17);
+            this.L_Mon_MaxRetry.TabIndex = 47;
+            this.L_Mon_MaxRetry.Text = "Max Retries";
+            // 
+            // tb_Mon_Delay
+            // 
+            this.tb_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Delay.Location = new System.Drawing.Point(30, 251);
+            this.tb_Mon_Delay.Name = "tb_Mon_Delay";
+            this.tb_Mon_Delay.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Delay.TabIndex = 46;
+            // 
+            // L_Mon_Delay
+            // 
+            this.L_Mon_Delay.AutoSize = true;
+            this.L_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Delay.Location = new System.Drawing.Point(27, 222);
+            this.L_Mon_Delay.Name = "L_Mon_Delay";
+            this.L_Mon_Delay.Size = new System.Drawing.Size(80, 17);
+            this.L_Mon_Delay.TabIndex = 45;
+            this.L_Mon_Delay.Text = "Delay (sec)";
+            // 
+            // tb_Mon_MaxRetryDown
+            // 
+            this.tb_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_MaxRetryDown.Location = new System.Drawing.Point(502, 154);
+            this.tb_Mon_MaxRetryDown.Name = "tb_Mon_MaxRetryDown";
+            this.tb_Mon_MaxRetryDown.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_MaxRetryDown.TabIndex = 44;
+            // 
+            // L_Mon_MaxRetryDown
+            // 
+            this.L_Mon_MaxRetryDown.AutoSize = true;
+            this.L_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_MaxRetryDown.Location = new System.Drawing.Point(499, 125);
+            this.L_Mon_MaxRetryDown.Name = "L_Mon_MaxRetryDown";
+            this.L_Mon_MaxRetryDown.Size = new System.Drawing.Size(121, 17);
+            this.L_Mon_MaxRetryDown.TabIndex = 43;
+            this.L_Mon_MaxRetryDown.Text = "Max Retries Down";
+            // 
+            // L_Mon_Type
+            // 
+            this.L_Mon_Type.AutoSize = true;
+            this.L_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Type.Location = new System.Drawing.Point(263, 125);
+            this.L_Mon_Type.Name = "L_Mon_Type";
+            this.L_Mon_Type.Size = new System.Drawing.Size(44, 17);
+            this.L_Mon_Type.TabIndex = 41;
+            this.L_Mon_Type.Text = "Type ";
+            // 
+            // tb_Mon_Name
+            // 
+            this.tb_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Name.Location = new System.Drawing.Point(30, 154);
+            this.tb_Mon_Name.Name = "tb_Mon_Name";
+            this.tb_Mon_Name.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Name.TabIndex = 40;
+            // 
+            // L_Mon_Name
+            // 
+            this.L_Mon_Name.AutoSize = true;
+            this.L_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Name.Location = new System.Drawing.Point(27, 125);
+            this.L_Mon_Name.Name = "L_Mon_Name";
+            this.L_Mon_Name.Size = new System.Drawing.Size(45, 17);
+            this.L_Mon_Name.TabIndex = 39;
+            this.L_Mon_Name.Text = "Name";
+            // 
+            // B_Cr_Mon_Yes
+            // 
+            this.B_Cr_Mon_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Cr_Mon_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Mon_Yes.Location = new System.Drawing.Point(30, 66);
+            this.B_Cr_Mon_Yes.Name = "B_Cr_Mon_Yes";
+            this.B_Cr_Mon_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Mon_Yes.TabIndex = 20;
+            this.B_Cr_Mon_Yes.Text = "Yes";
+            this.B_Cr_Mon_Yes.UseVisualStyleBackColor = false;
+            // 
+            // B_Cr_Mon_No
+            // 
+            this.B_Cr_Mon_No.BackColor = System.Drawing.Color.White;
+            this.B_Cr_Mon_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Mon_No.Location = new System.Drawing.Point(91, 66);
+            this.B_Cr_Mon_No.Name = "B_Cr_Mon_No";
+            this.B_Cr_Mon_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Mon_No.TabIndex = 19;
+            this.B_Cr_Mon_No.Text = "No";
+            this.B_Cr_Mon_No.UseVisualStyleBackColor = false;
+            // 
+            // L_Cr_Mon
+            // 
+            this.L_Cr_Mon.AutoSize = true;
+            this.L_Cr_Mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Cr_Mon.Location = new System.Drawing.Point(27, 33);
+            this.L_Cr_Mon.Name = "L_Cr_Mon";
+            this.L_Cr_Mon.Size = new System.Drawing.Size(146, 17);
+            this.L_Cr_Mon.TabIndex = 18;
+            this.L_Cr_Mon.Text = "Create Health Monitor";
             // 
             // CreateLoadBalancer
             // 
@@ -1363,21 +1363,21 @@
             this.LB_Details_Page.PerformLayout();
             this.Lis_Details_Page.ResumeLayout(false);
             this.Lis_Details_Page.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.P_Lis_L_B_ASUp.ResumeLayout(false);
+            this.P_Lis_L_B_ASUp.PerformLayout();
+            this.P_Lis_L_cb_Insert_Header.ResumeLayout(false);
+            this.P_Lis_L_cb_Insert_Header.PerformLayout();
+            this.P_Lis_Detail_Information.ResumeLayout(false);
+            this.P_Lis_Detail_Information.PerformLayout();
+            this.P_Lis_L_tb_Name_Des.ResumeLayout(false);
+            this.P_Lis_L_tb_Name_Des.PerformLayout();
             this.Pool_Details_Page.ResumeLayout(false);
             this.Pool_Details_Page.PerformLayout();
             this.Pool_Mem_Page.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Choose_PoolMem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Choosed_PoolMem)).EndInit();
             this.Mon_Details_Page.ResumeLayout(false);
             this.Mon_Details_Page.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1417,84 +1417,84 @@
         private System.Windows.Forms.Label L_LB_Subnet;
         private System.Windows.Forms.ComboBox cB_LB_Flavour;
         private System.Windows.Forms.Label L_LB_Flavour;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.TextBox tb_Lis_Des;
+        private System.Windows.Forms.Label L_Lis_Des;
+        private System.Windows.Forms.TextBox tb_Lis_Name;
+        private System.Windows.Forms.Label L_Lis_Name;
+        private System.Windows.Forms.Button B_Cr_Lis_Yes;
+        private System.Windows.Forms.Button B_Cr_Lis_No;
+        private System.Windows.Forms.Label L_Cr_Lis;
+        private System.Windows.Forms.Panel P_Lis_Detail_Information;
+        private System.Windows.Forms.TextBox tb_Lis_TCPTimeout;
+        private System.Windows.Forms.Label L_Lis_ClientTimeout;
+        private System.Windows.Forms.Label L_Lis_TCPTimeout;
+        private System.Windows.Forms.TextBox tb_Lis_ClientTimeout;
+        private System.Windows.Forms.ComboBox cob_Lis_Proto;
+        private System.Windows.Forms.TextBox tb_Lis_Port;
+        private System.Windows.Forms.Label L_Lis_Proto;
+        private System.Windows.Forms.Label L_Lis_Port;
+        private System.Windows.Forms.Panel P_Lis_L_tb_Name_Des;
+        private System.Windows.Forms.Button B_Lis_ASUp_Yes;
+        private System.Windows.Forms.Button B_Lis_ASUp_No;
+        private System.Windows.Forms.Label L_Lis_ASUp;
+        private System.Windows.Forms.Panel P_Lis_L_cb_Insert_Header;
+        private System.Windows.Forms.CheckBox cb_Lis_XForwProto;
+        private System.Windows.Forms.CheckBox cb_Lis_XForwPort;
+        private System.Windows.Forms.CheckBox cb_Lis_XForwFor;
+        private System.Windows.Forms.Label L_Lis_Insert_Header;
+        private System.Windows.Forms.TextBox tb_Lis_Allow_cidr;
+        private System.Windows.Forms.Label L_Lis_Con_Limit;
+        private System.Windows.Forms.Label L_Lis_Allow_cidr;
+        private System.Windows.Forms.TextBox tb_Lis_Con_Limit;
+        private System.Windows.Forms.TextBox tb_Lis_Mem_Timeout;
+        private System.Windows.Forms.Label L_Lis_Mem_Con_Timeout;
+        private System.Windows.Forms.Label L_Lis_Mem_Timeout;
+        private System.Windows.Forms.TextBox tb_Lis_Mem_Con_Timeout;
+        private System.Windows.Forms.Panel P_Lis_L_B_ASUp;
+        private System.Windows.Forms.Button B_Pool_ASUp_Yes;
+        private System.Windows.Forms.Button B_Pool_ASUp_No;
+        private System.Windows.Forms.Label L_Pool_ASUp;
+        private System.Windows.Forms.Button B_Pool_TLFEn_Yes;
+        private System.Windows.Forms.Button B_Pool_TLFEn_No;
+        private System.Windows.Forms.Label L_Pool_TLFEn;
+        private System.Windows.Forms.TextBox tb_Pool_Cookie_Name;
+        private System.Windows.Forms.Label L_Pool_Cookie_Name;
+        private System.Windows.Forms.Label L_Pool_Session;
+        private System.Windows.Forms.Label L_Pool_Algorithm;
+        private System.Windows.Forms.TextBox tb_Pool_Des;
+        private System.Windows.Forms.Label L_Pool_Des;
+        private System.Windows.Forms.TextBox tb_Pool_Name;
+        private System.Windows.Forms.Label L_Pool_Name;
+        private System.Windows.Forms.Button B_Cr_Pool_Yes;
+        private System.Windows.Forms.Button B_Cr_Pool_No;
+        private System.Windows.Forms.Label L_Cr_Pool;
+        private System.Windows.Forms.DataGridView DGV_Choose_PoolMem;
+        private System.Windows.Forms.DataGridView DGV_Choosed_PoolMem;
+        private System.Windows.Forms.Button B_Mon_ASUp_Yes;
+        private System.Windows.Forms.Button B_Mon_ASUp_No;
+        private System.Windows.Forms.Label L_Mon_ASUp;
+        private System.Windows.Forms.TextBox tb_Mon_URL;
+        private System.Windows.Forms.Label L_Mon_URL;
+        private System.Windows.Forms.TextBox tb_Mon_Codes;
+        private System.Windows.Forms.Label L_Mon_Codes;
+        private System.Windows.Forms.Label L_Mon_HTTPMethod;
+        private System.Windows.Forms.TextBox tb_Mon_Timeout;
+        private System.Windows.Forms.Label L_Mon_Timeeout;
+        private System.Windows.Forms.TextBox tb_Mon_MaxRetry;
+        private System.Windows.Forms.Label L_Mon_MaxRetry;
+        private System.Windows.Forms.TextBox tb_Mon_Delay;
+        private System.Windows.Forms.Label L_Mon_Delay;
+        private System.Windows.Forms.TextBox tb_Mon_MaxRetryDown;
+        private System.Windows.Forms.Label L_Mon_MaxRetryDown;
+        private System.Windows.Forms.Label L_Mon_Type;
+        private System.Windows.Forms.TextBox tb_Mon_Name;
+        private System.Windows.Forms.Label L_Mon_Name;
+        private System.Windows.Forms.Button B_Cr_Mon_Yes;
+        private System.Windows.Forms.Button B_Cr_Mon_No;
+        private System.Windows.Forms.Label L_Cr_Mon;
+        private System.Windows.Forms.ComboBox cob_Pool_Session;
+        private System.Windows.Forms.ComboBox cob_Pool_Algorithm;
+        private System.Windows.Forms.ComboBox cob_Mon_HTTPMethod;
+        private System.Windows.Forms.ComboBox cob_Mon_Type;
     }
 }
