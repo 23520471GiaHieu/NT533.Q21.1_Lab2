@@ -63,6 +63,7 @@
     <Compile Include="Compute\ImageService.cs" />
     <Compile Include="Compute\InstanceService.cs" />
     <Compile Include="Compute\KeyPairService.cs" />
+    <Compile Include="Compute\PortService.cs" />
     <Compile Include="CreateInstance.cs">
       <SubType>Form</SubType>
     </Compile>

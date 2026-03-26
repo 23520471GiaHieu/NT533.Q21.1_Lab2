@@ -27,6 +27,7 @@ namespace NT533.Q21._1_Lab2.Network
             public string gateway_ip { get; set; }
             public string cidr { get; set; }
             public string ip_version { get; set; }
+            public string network_id {  get; set; }
         }
 
         public async Task<(bool, string)> GetSubnetAsync(string token, string id = null)

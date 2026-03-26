@@ -1946,7 +1946,16 @@ namespace NT533.Q21._1_Lab2
 
         private void B_Cr_LoadBalancer_Click(object sender, EventArgs e)
         {
+            CreateLoadBalancer createLoadBalancer = new CreateLoadBalancer();
 
+            if (createLoadBalancer.ShowDialog() == DialogResult.OK)
+            {
+                bool addresult = createLoadBalancer.Result;
+                if (addresult)
+                {
+                    LoadLoadBalancerPage();
+                }
+            }
         }
         private void B_Del_LoadBalancer_Click(object sender, EventArgs e)
         {
