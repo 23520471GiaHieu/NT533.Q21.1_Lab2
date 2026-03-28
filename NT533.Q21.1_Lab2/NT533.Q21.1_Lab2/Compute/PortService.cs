@@ -20,6 +20,7 @@ namespace NT533.Q21._1_Lab2.Compute
             public string id { get; set; }
             public string network_id { get; set; }
             public List<FixedIP> fixed_ips { get; set; }
+            public string device_owner { get; set; }
         }
 
         public class FixedIP
@@ -34,12 +35,17 @@ namespace NT533.Q21._1_Lab2.Compute
             _httpClient = new HttpClient();
         }
 
-        public async Task<List<Port>> GetPortsByInstance(string token, string instanceId)
+        public async Task<List<Port>> GetPorts(string token, string instanceId = null)
         {
             try
             {
                 // 🔥 URL Neutron (chỉnh lại endpoint của bạn)
-                string url = $"https://cloud-network.uitiot.vn/v2.0/ports?device_id={instanceId}";
+
+                string url = $"https://cloud-network.uitiot.vn/v2.0/ports";
+                if(instanceId != null)
+                {
+                    url = $"https://cloud-network.uitiot.vn/v2.0/ports?device_id={instanceId}";
+                }
 
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
 

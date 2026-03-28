@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createloadbalancer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createloadbalancer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\network\\subnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\network\\subnetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\createinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\createinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|d:\\github\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\nt533.q21.1_lab2\\compute\\portservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BCF4BB0-A993-4C1E-8168-70B0DA743B79}|NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2.csproj|solutionrelative:nt533.q21.1_lab2\\compute\\portservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,113 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PortService.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Compute\\PortService.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Compute\\PortService.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Compute\\PortService.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\Compute\\PortService.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwCkAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T13:15:51.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateLoadBalancer.Designer.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateLoadBalancer.Designer.cs",
-              "ViewState": "AgIAAFQDAAAAAAAAAAAgwIoEAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T11:08:15.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Main.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\Main.cs",
-              "ViewState": "AgIAANMGAAAAAAAAAAA0wKAHAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T09:16:21.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SubnetService.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Network\\SubnetService.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Network\\SubnetService.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Network\\SubnetService.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\Network\\SubnetService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T09:15:53.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateInstance.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateInstance.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateInstance.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateInstance.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateInstance.cs",
-              "ViewState": "AgIAAIEFAAAAAAAAAAAkwJIFAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T08:35:43.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateLoadBalancer.cs",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "ViewState": "AgIAAJsCAAAAAAAAAADwvx4AAACQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T08:33:34.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateLoadBalancer.cs [Design]",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\CreateLoadBalancer.cs [Design]",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\CreateLoadBalancer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T08:33:29.509Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs",
-              "RelativeDocumentMoniker": "NT533.Q21.1_Lab2\\Main.cs",
-              "ToolTip": "D:\\github\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\NT533.Q21.1_Lab2\\Main.cs [Design]",
-              "RelativeToolTip": "NT533.Q21.1_Lab2\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T08:33:49.204Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

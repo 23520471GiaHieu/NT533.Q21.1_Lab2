@@ -3,10 +3,13 @@ using NT533.Q21._1_Lab2.Auth;
 using NT533.Q21._1_Lab2.HttpHelper;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using static NT533.Q21._1_Lab2.Compute.KeyPairService;
+using static NT533.Q21._1_Lab2.Network.PoolMemberService;
 using static NT533.Q21._1_Lab2.Network.RouterService;
 
 namespace NT533.Q21._1_Lab2.Network
@@ -86,15 +89,27 @@ namespace NT533.Q21._1_Lab2.Network
 
             return (false, lastError == "" ? "Retry thất bại sau 5 lần" : lastError);
         }
-        public async Task<(bool, string)> PostLoadBalancerAsync(string token, string subnetid, string routerid, string fixip = null)
-        {
+        public async Task<(bool, string)> PostLoadBalancerAsync(
+                string token,
+                string subnetid,
+                string name,
+                string description,
+                bool adminStateUp,
+                string fixip = null)
+            {
             int maxRetry = 5;
             int delay = 500;
             string lastError = "";
 
             var body = new
             {
-                subnet_id = subnetid,
+                loadbalancer = new
+                {
+                    name = name,
+                    description = description,
+                    vip_subnet_id = subnetid,
+                    admin_state_up = adminStateUp
+                }
             };
 
             string json = JsonConvert.SerializeObject(body);
@@ -103,7 +118,7 @@ namespace NT533.Q21._1_Lab2.Network
 
             for (int i = 0; i < maxRetry; i++)
             {
-                var response = await http.PutAsync(url, json, token);
+                var response = await http.PostAsync(url, json, token);
 
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
                 {
@@ -126,25 +141,26 @@ namespace NT533.Q21._1_Lab2.Network
                 if (response.IsSuccessStatusCode)
                 {
                     string content = await response.Content.ReadAsStringAsync();
-                    if (fixip != null)
+                    if (!string.IsNullOrEmpty(fixip))
                     {
                         dynamic data = Newtonsoft.Json.Linq.JObject.Parse(content);
-                        string portId = data.port_id;
+                        string portId = data.loadbalancer.vip_port_id;
 
                         var body1 = new
                         {
                             port = new
                             {
                                 fixed_ips = new[]
-                                {
-                                    new
-                                    {
-                                         ip_address = fixip,
-                                         subnet_id = subnetid
-                                    }
-                                }
+                                        {
+                    new
+                    {
+                        ip_address = fixip,
+                        subnet_id = subnetid
+                    }
+                }
                             }
                         };
+
                         string json1 = JsonConvert.SerializeObject(body1);
 
                         string url1 = "https://cloud-network.uitiot.vn/v2.0/ports/" + portId;
@@ -163,27 +179,109 @@ namespace NT533.Q21._1_Lab2.Network
 
             return (false, lastError == "" ? "Retry thất bại sau 5 lần" : lastError);
         }
-        public async Task<(bool, string)> DeleteLoadBalancerAsync(string token, string[] subnetids, string routerid)
+
+        public async Task<(bool, string)> DeleteLoadBalancerAsync(string token, string[] loadbalancerids)
         {
-            foreach (var subnetid in subnetids)
+            var lbService = new LoadBalancerService();
+
+            foreach (var lbId in loadbalancerids)
             {
-                int maxRetry = 5;
-                int delay = 500;
+                // =====================
+                // 1. GET LB DETAIL
+                // =====================
+                var lbRes = await lbService.GetLoadBalancerAsync(token, lbId);
+                if (!lbRes.Item1)
+                    return lbRes;
+
+                dynamic lbData = JsonConvert.DeserializeObject(lbRes.Item2);
+
+                // =====================
+                // 2. DELETE ALL POOLS (MEMBERS + MONITOR)
+                // =====================
+                if (lbData.loadbalancer.pools != null)
+                {
+                    foreach (var pool in lbData.loadbalancer.pools)
+                    {
+                        string poolId = pool.id;
+
+                        // ---- GET POOL DETAIL ----
+                        var resPool = await http.GetAsync(
+                            $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/pools/{poolId}",
+                            token);
+
+                        if (!resPool.IsSuccessStatusCode)
+                            return (false, await resPool.Content.ReadAsStringAsync());
+
+                        dynamic poolData = JsonConvert.DeserializeObject(await resPool.Content.ReadAsStringAsync());
+
+                        // ---- DELETE MEMBERS ----
+                        if (poolData.pool.members != null)
+                        {
+                            foreach (var mem in poolData.pool.members)
+                            {
+                                string memId = mem.id;
+
+                                await http.DeleteAsync(
+                                    $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/pools/{poolId}/members/{memId}",
+                                    token);
+                            }
+
+                            var waitMem = await WaitForActive(lbId);
+                            if (!waitMem.Item1) return waitMem;
+                        }
+
+                        // ---- DELETE MONITOR ----
+                        if (poolData.pool.healthmonitor_id != null)
+                        {
+                            await http.DeleteAsync(
+                                $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/healthmonitors/{poolData.pool.healthmonitor_id}",
+                                token);
+
+                            var waitMon = await WaitForActive(lbId);
+                            if (!waitMon.Item1) return waitMon;
+                        }
+
+                        // ---- DELETE POOL ----
+                        await http.DeleteAsync(
+                            $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/pools/{poolId}",
+                            token);
+
+                        var waitPool = await WaitForActive(lbId);
+                        if (!waitPool.Item1) return waitPool;
+                    }
+                }
+
+                // =====================
+                // 3. DELETE LISTENERS
+                // =====================
+                if (lbData.loadbalancer.listeners != null)
+                {
+                    foreach (var listener in lbData.loadbalancer.listeners)
+                    {
+                        string listenerId = listener.id;
+
+                        await http.DeleteAsync(
+                            $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/listeners/{listenerId}",
+                            token);
+
+                        var waitLis = await WaitForActive(lbId);
+                        if (!waitLis.Item1) return waitLis;
+                    }
+                }
+
+                // =====================
+                // 4. DELETE LOADBALANCER
+                // =====================
+                int maxRetry = 10;
+                int delay = 2000;
+                bool isDeleted = false;
                 string lastError = "";
 
-                var body = new
-                {
-                    subnet_id = subnetid,
-                };
-                bool isDeleted = false;
-
-                string json = JsonConvert.SerializeObject(body);
-
-                string url = URL;
+                string url = URL + "/" + lbId;
 
                 for (int i = 0; i < maxRetry; i++)
                 {
-                    var response = await http.PutAsync(url, json, token);
+                    var response = await http.DeleteAsync(url, token);
 
                     if (response.StatusCode == HttpStatusCode.Unauthorized)
                     {
@@ -191,13 +289,9 @@ namespace NT533.Q21._1_Lab2.Network
                         var tokenResponse = await tokenService.GetTokenAsync(Main._username, Main._password);
 
                         if (tokenResponse.Item1)
-                        {
                             token = tokenResponse.Item2;
-                        }
                         else
-                        {
                             lastError = "Không lấy được token mới";
-                        }
 
                         await Task.Delay(delay);
                         continue;
@@ -208,45 +302,85 @@ namespace NT533.Q21._1_Lab2.Network
                         isDeleted = true;
                         break;
                     }
-                    lastError = response.ReasonPhrase;
-                    break;
+
+                    lastError = await response.Content.ReadAsStringAsync();
+
+                    // nếu còn bị lock thì chờ rồi retry
+                    await Task.Delay(delay);
                 }
+
                 if (!isDeleted)
                 {
-                    return (false, $"Xóa interface '{subnetid}' thất bại: {lastError}");
+                    return (false, $"Xóa loadbalancer '{lbId}' thất bại: {lastError}");
                 }
             }
+
             return (true, null);
         }
-        public async Task<(bool, string)> AddMemberToPool(
-    string token,
-    string poolId,
-    string ip,
-    string subnetId,
-    int port = 80)
+
+        private async Task<(bool, string)> WaitForActive(string lbId)
         {
-            string url = $"https://cloud-loadbalancer.uitiot.vn/v2/lbaas/pools/{poolId}/members";
+            var lbService = new LoadBalancerService();
 
-            var body = new
+            for (int i = 0; i < 20; i++)
             {
-                member = new
-                {
-                    address = ip,
-                    protocol_port = port,
-                    subnet_id = subnetId
-                }
-            };
+                var res = await lbService.GetLoadBalancerAsync(Main._token, lbId);
 
-            string json = JsonConvert.SerializeObject(body);
+                if (!res.Item1)
+                    return res;
 
-            var response = await http.PostAsync(url, json, token);
+                dynamic data = JsonConvert.DeserializeObject(res.Item2);
+                string status = data.loadbalancer.provisioning_status;
 
-            if (response.IsSuccessStatusCode)
-            {
-                return (true, await response.Content.ReadAsStringAsync());
+                if (status == "ACTIVE")
+                    return (true, null);
+
+                if (status == "ERROR")
+                    return (false, "LB bị ERROR");
+
+                await Task.Delay(3000);
             }
 
-            return (false, await response.Content.ReadAsStringAsync());
+            return (false, "Timeout chờ ACTIVE");
         }
+        public async Task RemoveInstanceFromAllPools(string token, string ip, string subnetId)
+        {
+            try
+            {
+                PoolMemberService poolMemberService = new PoolMemberService();
+                // Bước A: Lấy danh sách tất cả các Pool
+                // URL: GET v2/lbaas/pools
+                var pools = await poolMemberService.GetAllPools(token);
+
+                foreach (var pool in pools)
+                {
+                    // Bước B: Lấy danh sách Member của từng Pool
+                    // URL: GET v2/lbaas/pools/{pool_id}/members
+                    var members = await poolMemberService.GetPoolMemberAsync(token, pool.Id);
+                    if(members.Item1)
+                    {
+                        var memberdata = Newtonsoft.Json.JsonConvert.DeserializeObject<PoolMemberResponse>(members.Item2);
+
+                        // Bước C: Tìm member khớp IP và Subnet
+                        var targetMember = memberdata.members.FirstOrDefault(m => m.address == ip && m.subnet_id == subnetId);
+
+                        if (targetMember != null)
+                        {
+                            // Bước D: Xóa Member này khỏi Pool
+                            // URL: DELETE v2/lbaas/pools/{pool_id}/members/{member_id}
+                            await poolMemberService.RemoveMemberFromPool(token, pool.Id, pool.loadbalancers[0].id,new string[] { targetMember.id});
+                        }
+                    }
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                // Log lỗi hoặc bỏ qua để tiếp tục xóa Instance
+                Debug.WriteLine("Lỗi khi dọn dẹp LB: " + ex.Message);
+            }
+        }
+
+
     }
 }

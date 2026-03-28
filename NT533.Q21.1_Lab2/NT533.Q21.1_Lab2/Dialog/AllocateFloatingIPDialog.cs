@@ -99,5 +99,6 @@ namespace NT533.Q21._1_Lab2.Dialog
             form.ShowDialog();
             return result;
         }
+
     }
 }

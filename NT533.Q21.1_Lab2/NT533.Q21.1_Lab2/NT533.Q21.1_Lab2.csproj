@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddRule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,8 @@
     <Compile Include="Dialog\CreateNetworkDialog.cs" />
     <Compile Include="Dialog\CreateRouterDialog.cs" />
     <Compile Include="Dialog\CreateSubnetDialog.cs" />
+    <Compile Include="Dialog\DisassociateFloatingIPDialog.cs" />
+    <Compile Include="Dialog\ManageFloatingIPDialog.cs" />
     <Compile Include="Identity\AuthService.cs" />
     <Compile Include="Identity\TokenService.cs" />
     <Compile Include="HttpHelper\HttpHelperService.cs" />
@@ -98,10 +106,17 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialog\CreateSecurityGroupDialog.cs" />
+    <Compile Include="ManageFloatingIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFloatingIP.Designer.cs">
+      <DependentUpon>ManageFloatingIP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Network\FloatingIPService.cs" />
     <Compile Include="Network\InterfaceService.cs" />
     <Compile Include="Network\LoadBalancerService.cs" />
     <Compile Include="Network\NetworkService.cs" />
+    <Compile Include="Network\PoolMemberService.cs" />
     <Compile Include="Network\RouterService.cs" />
     <Compile Include="Network\RuleService.cs" />
     <Compile Include="Network\SecurityGroupService.cs" />
@@ -117,6 +132,9 @@
     </Compile>
     <Compile Include="Volume\AvailabilityZoneService.cs" />
     <Compile Include="Volume\VolumeService.cs" />
+    <EmbeddedResource Include="AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddRule.resx">
       <DependentUpon>AddRule.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFloatingIP.resx">
+      <DependentUpon>ManageFloatingIP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

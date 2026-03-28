@@ -40,7 +40,6 @@ namespace NT533.Q21._1_Lab2
             }
             cB_SecGroup.SelectedIndex = 0;
         }
-
         private void cB_Rule_SelectedIndexChanged(object sender, EventArgs e)
         {
             int index = cB_Rule.SelectedIndex;

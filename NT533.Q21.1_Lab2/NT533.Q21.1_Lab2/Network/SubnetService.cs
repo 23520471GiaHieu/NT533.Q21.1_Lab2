@@ -3,6 +3,7 @@ using NT533.Q21._1_Lab2.Auth;
 using NT533.Q21._1_Lab2.HttpHelper;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -86,17 +87,21 @@ namespace NT533.Q21._1_Lab2.Network
             int delay = 500;
             string lastError = "";
 
-            var body = new
+            // Tạo một dynamic object
+            dynamic subnetData = new ExpandoObject();
+            subnetData.name = name;
+            subnetData.network_id = networkid;
+            subnetData.ip_version = int.Parse(ipversion);
+            subnetData.cidr = cidr;
+
+            // Kiểm tra gateway: Nếu có giá trị thì mới thêm vào
+            if (!string.IsNullOrWhiteSpace(gateway))
             {
-                subnet = new
-                {
-                    name = name,
-                    network_id = networkid,
-                    ip_version = int.Parse(ipversion),
-                    cidr = cidr,
-                    gateway_ip = gateway
-                }
-            };
+                subnetData.gateway_ip = gateway;
+            }
+
+            // Bọc vào body chính
+            var body = new { subnet = subnetData };
 
             string json = JsonConvert.SerializeObject(body);
 

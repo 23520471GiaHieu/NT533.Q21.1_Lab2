@@ -116,7 +116,27 @@
             this.L_Cr_Pool = new System.Windows.Forms.Label();
             this.Pool_Mem_Page = new System.Windows.Forms.TabPage();
             this.DGV_Choose_PoolMem = new System.Windows.Forms.DataGridView();
+            this.PMem_Choose_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_cobIP = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.PMem_Choose_Col_tbIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_SubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_SubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choose_Col_Add = new System.Windows.Forms.DataGridViewButtonColumn();
             this.DGV_Choosed_PoolMem = new System.Windows.Forms.DataGridView();
+            this.PMem_Choosed_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_cobIP = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.PMem_Choosed_Col_tbIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_SubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_SubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PMem_Choosed_Col_Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Mon_Details_Page = new System.Windows.Forms.TabPage();
             this.cob_Mon_HTTPMethod = new System.Windows.Forms.ComboBox();
             this.cob_Mon_Type = new System.Windows.Forms.ComboBox();
@@ -142,26 +162,8 @@
             this.B_Cr_Mon_Yes = new System.Windows.Forms.Button();
             this.B_Cr_Mon_No = new System.Windows.Forms.Button();
             this.L_Cr_Mon = new System.Windows.Forms.Label();
-            this.PMem_Choose_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_cobIP = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.PMem_Choose_Col_tbIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_SubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_SubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choose_Col_Add = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.PMem_Choosed_Col_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_cobIP = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.PMem_Choosed_Col_tbIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_SubName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_SubID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_Port = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PMem_Choosed_Col_Remove = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.P_L_tb_Method_Code_URL = new System.Windows.Forms.Panel();
+            this.P_Mon_Item = new System.Windows.Forms.Panel();
             this.P_L_Cr_LB.SuspendLayout();
             this.P_B_Cr_Cancel_LB.SuspendLayout();
             this.P_Menu.SuspendLayout();
@@ -183,6 +185,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Choose_PoolMem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Choosed_PoolMem)).BeginInit();
             this.Mon_Details_Page.SuspendLayout();
+            this.P_L_tb_Method_Code_URL.SuspendLayout();
+            this.P_Mon_Item.SuspendLayout();
             this.SuspendLayout();
             // 
             // P_L_Cr_LB
@@ -1157,312 +1161,6 @@
             this.DGV_Choose_PoolMem.TabIndex = 1;
             this.DGV_Choose_PoolMem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choose_PoolMem_CellContentClick);
             // 
-            // DGV_Choosed_PoolMem
-            // 
-            this.DGV_Choosed_PoolMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV_Choosed_PoolMem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.PMem_Choosed_Col_ID,
-            this.PMem_Choosed_Col_Name,
-            this.PMem_Choosed_Col_cobIP,
-            this.PMem_Choosed_Col_tbIP,
-            this.PMem_Choosed_Col_SubName,
-            this.PMem_Choosed_Col_SubID,
-            this.PMem_Choosed_Col_Port,
-            this.PMem_Choosed_Col_Weight,
-            this.PMem_Choosed_Col_STT,
-            this.PMem_Choosed_Col_Remove});
-            this.DGV_Choosed_PoolMem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DGV_Choosed_PoolMem.Location = new System.Drawing.Point(3, 3);
-            this.DGV_Choosed_PoolMem.Name = "DGV_Choosed_PoolMem";
-            this.DGV_Choosed_PoolMem.Size = new System.Drawing.Size(726, 200);
-            this.DGV_Choosed_PoolMem.TabIndex = 0;
-            this.DGV_Choosed_PoolMem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_PoolMem_CellContentClick);
-            // 
-            // Mon_Details_Page
-            // 
-            this.Mon_Details_Page.Controls.Add(this.cob_Mon_HTTPMethod);
-            this.Mon_Details_Page.Controls.Add(this.cob_Mon_Type);
-            this.Mon_Details_Page.Controls.Add(this.B_Mon_ASUp_Yes);
-            this.Mon_Details_Page.Controls.Add(this.B_Mon_ASUp_No);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_ASUp);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_URL);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_URL);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Codes);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_Codes);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_HTTPMethod);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Timeout);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_Timeeout);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_MaxRetry);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_MaxRetry);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Delay);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_Delay);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_MaxRetryDown);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_MaxRetryDown);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_Type);
-            this.Mon_Details_Page.Controls.Add(this.tb_Mon_Name);
-            this.Mon_Details_Page.Controls.Add(this.L_Mon_Name);
-            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_Yes);
-            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_No);
-            this.Mon_Details_Page.Controls.Add(this.L_Cr_Mon);
-            this.Mon_Details_Page.Location = new System.Drawing.Point(4, 5);
-            this.Mon_Details_Page.Name = "Mon_Details_Page";
-            this.Mon_Details_Page.Padding = new System.Windows.Forms.Padding(3);
-            this.Mon_Details_Page.Size = new System.Drawing.Size(732, 522);
-            this.Mon_Details_Page.TabIndex = 4;
-            this.Mon_Details_Page.Text = "tabPage5";
-            this.Mon_Details_Page.UseVisualStyleBackColor = true;
-            // 
-            // cob_Mon_HTTPMethod
-            // 
-            this.cob_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cob_Mon_HTTPMethod.FormattingEnabled = true;
-            this.cob_Mon_HTTPMethod.Items.AddRange(new object[] {
-            "GET",
-            "HEAD",
-            "POST",
-            "PUT",
-            "DELETE",
-            "TRACE",
-            "OPTIONS",
-            "PATCH",
-            "CONNECT"});
-            this.cob_Mon_HTTPMethod.Location = new System.Drawing.Point(30, 349);
-            this.cob_Mon_HTTPMethod.Name = "cob_Mon_HTTPMethod";
-            this.cob_Mon_HTTPMethod.Size = new System.Drawing.Size(200, 24);
-            this.cob_Mon_HTTPMethod.TabIndex = 61;
-            // 
-            // cob_Mon_Type
-            // 
-            this.cob_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cob_Mon_Type.FormattingEnabled = true;
-            this.cob_Mon_Type.Items.AddRange(new object[] {
-            "HTTP",
-            "HTTPS",
-            "PING",
-            "TCP",
-            "TLS-HELLO",
-            "UDP-CONNECT",
-            "SCTP"});
-            this.cob_Mon_Type.Location = new System.Drawing.Point(266, 154);
-            this.cob_Mon_Type.Name = "cob_Mon_Type";
-            this.cob_Mon_Type.Size = new System.Drawing.Size(200, 24);
-            this.cob_Mon_Type.TabIndex = 60;
-            this.cob_Mon_Type.SelectedIndexChanged += new System.EventHandler(this.cob_Mon_Type_SelectedIndexChanged);
-            // 
-            // B_Mon_ASUp_Yes
-            // 
-            this.B_Mon_ASUp_Yes.BackColor = System.Drawing.Color.Silver;
-            this.B_Mon_ASUp_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.B_Mon_ASUp_Yes.Location = new System.Drawing.Point(30, 449);
-            this.B_Mon_ASUp_Yes.Name = "B_Mon_ASUp_Yes";
-            this.B_Mon_ASUp_Yes.Size = new System.Drawing.Size(50, 25);
-            this.B_Mon_ASUp_Yes.TabIndex = 59;
-            this.B_Mon_ASUp_Yes.Text = "Yes";
-            this.B_Mon_ASUp_Yes.UseVisualStyleBackColor = false;
-            this.B_Mon_ASUp_Yes.Click += new System.EventHandler(this.B_Mon_ASUp_Yes_Click);
-            // 
-            // B_Mon_ASUp_No
-            // 
-            this.B_Mon_ASUp_No.BackColor = System.Drawing.Color.White;
-            this.B_Mon_ASUp_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.B_Mon_ASUp_No.Location = new System.Drawing.Point(91, 449);
-            this.B_Mon_ASUp_No.Name = "B_Mon_ASUp_No";
-            this.B_Mon_ASUp_No.Size = new System.Drawing.Size(50, 25);
-            this.B_Mon_ASUp_No.TabIndex = 58;
-            this.B_Mon_ASUp_No.Text = "No";
-            this.B_Mon_ASUp_No.UseVisualStyleBackColor = false;
-            this.B_Mon_ASUp_No.Click += new System.EventHandler(this.B_Mon_ASUp_No_Click);
-            // 
-            // L_Mon_ASUp
-            // 
-            this.L_Mon_ASUp.AutoSize = true;
-            this.L_Mon_ASUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_ASUp.Location = new System.Drawing.Point(27, 416);
-            this.L_Mon_ASUp.Name = "L_Mon_ASUp";
-            this.L_Mon_ASUp.Size = new System.Drawing.Size(106, 17);
-            this.L_Mon_ASUp.TabIndex = 57;
-            this.L_Mon_ASUp.Text = "Admin State Up";
-            // 
-            // tb_Mon_URL
-            // 
-            this.tb_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_URL.Location = new System.Drawing.Point(502, 349);
-            this.tb_Mon_URL.Name = "tb_Mon_URL";
-            this.tb_Mon_URL.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_URL.TabIndex = 56;
-            // 
-            // L_Mon_URL
-            // 
-            this.L_Mon_URL.AutoSize = true;
-            this.L_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_URL.Location = new System.Drawing.Point(499, 320);
-            this.L_Mon_URL.Name = "L_Mon_URL";
-            this.L_Mon_URL.Size = new System.Drawing.Size(69, 17);
-            this.L_Mon_URL.TabIndex = 55;
-            this.L_Mon_URL.Text = "URL Path";
-            // 
-            // tb_Mon_Codes
-            // 
-            this.tb_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_Codes.Location = new System.Drawing.Point(266, 349);
-            this.tb_Mon_Codes.Name = "tb_Mon_Codes";
-            this.tb_Mon_Codes.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_Codes.TabIndex = 54;
-            // 
-            // L_Mon_Codes
-            // 
-            this.L_Mon_Codes.AutoSize = true;
-            this.L_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_Codes.Location = new System.Drawing.Point(263, 320);
-            this.L_Mon_Codes.Name = "L_Mon_Codes";
-            this.L_Mon_Codes.Size = new System.Drawing.Size(110, 17);
-            this.L_Mon_Codes.TabIndex = 53;
-            this.L_Mon_Codes.Text = "Expected Codes";
-            // 
-            // L_Mon_HTTPMethod
-            // 
-            this.L_Mon_HTTPMethod.AutoSize = true;
-            this.L_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_HTTPMethod.Location = new System.Drawing.Point(27, 320);
-            this.L_Mon_HTTPMethod.Name = "L_Mon_HTTPMethod";
-            this.L_Mon_HTTPMethod.Size = new System.Drawing.Size(96, 17);
-            this.L_Mon_HTTPMethod.TabIndex = 51;
-            this.L_Mon_HTTPMethod.Text = "HTTP Method";
-            // 
-            // tb_Mon_Timeout
-            // 
-            this.tb_Mon_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_Timeout.Location = new System.Drawing.Point(502, 251);
-            this.tb_Mon_Timeout.Name = "tb_Mon_Timeout";
-            this.tb_Mon_Timeout.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_Timeout.TabIndex = 50;
-            // 
-            // L_Mon_Timeeout
-            // 
-            this.L_Mon_Timeeout.AutoSize = true;
-            this.L_Mon_Timeeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_Timeeout.Location = new System.Drawing.Point(499, 222);
-            this.L_Mon_Timeeout.Name = "L_Mon_Timeeout";
-            this.L_Mon_Timeeout.Size = new System.Drawing.Size(95, 17);
-            this.L_Mon_Timeeout.TabIndex = 49;
-            this.L_Mon_Timeeout.Text = "Timeout (sec)";
-            // 
-            // tb_Mon_MaxRetry
-            // 
-            this.tb_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_MaxRetry.Location = new System.Drawing.Point(266, 251);
-            this.tb_Mon_MaxRetry.Name = "tb_Mon_MaxRetry";
-            this.tb_Mon_MaxRetry.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_MaxRetry.TabIndex = 48;
-            // 
-            // L_Mon_MaxRetry
-            // 
-            this.L_Mon_MaxRetry.AutoSize = true;
-            this.L_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_MaxRetry.Location = new System.Drawing.Point(263, 222);
-            this.L_Mon_MaxRetry.Name = "L_Mon_MaxRetry";
-            this.L_Mon_MaxRetry.Size = new System.Drawing.Size(82, 17);
-            this.L_Mon_MaxRetry.TabIndex = 47;
-            this.L_Mon_MaxRetry.Text = "Max Retries";
-            // 
-            // tb_Mon_Delay
-            // 
-            this.tb_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_Delay.Location = new System.Drawing.Point(30, 251);
-            this.tb_Mon_Delay.Name = "tb_Mon_Delay";
-            this.tb_Mon_Delay.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_Delay.TabIndex = 46;
-            // 
-            // L_Mon_Delay
-            // 
-            this.L_Mon_Delay.AutoSize = true;
-            this.L_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_Delay.Location = new System.Drawing.Point(27, 222);
-            this.L_Mon_Delay.Name = "L_Mon_Delay";
-            this.L_Mon_Delay.Size = new System.Drawing.Size(80, 17);
-            this.L_Mon_Delay.TabIndex = 45;
-            this.L_Mon_Delay.Text = "Delay (sec)";
-            // 
-            // tb_Mon_MaxRetryDown
-            // 
-            this.tb_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_MaxRetryDown.Location = new System.Drawing.Point(502, 154);
-            this.tb_Mon_MaxRetryDown.Name = "tb_Mon_MaxRetryDown";
-            this.tb_Mon_MaxRetryDown.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_MaxRetryDown.TabIndex = 44;
-            // 
-            // L_Mon_MaxRetryDown
-            // 
-            this.L_Mon_MaxRetryDown.AutoSize = true;
-            this.L_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_MaxRetryDown.Location = new System.Drawing.Point(499, 125);
-            this.L_Mon_MaxRetryDown.Name = "L_Mon_MaxRetryDown";
-            this.L_Mon_MaxRetryDown.Size = new System.Drawing.Size(121, 17);
-            this.L_Mon_MaxRetryDown.TabIndex = 43;
-            this.L_Mon_MaxRetryDown.Text = "Max Retries Down";
-            // 
-            // L_Mon_Type
-            // 
-            this.L_Mon_Type.AutoSize = true;
-            this.L_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_Type.Location = new System.Drawing.Point(263, 125);
-            this.L_Mon_Type.Name = "L_Mon_Type";
-            this.L_Mon_Type.Size = new System.Drawing.Size(44, 17);
-            this.L_Mon_Type.TabIndex = 41;
-            this.L_Mon_Type.Text = "Type ";
-            // 
-            // tb_Mon_Name
-            // 
-            this.tb_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tb_Mon_Name.Location = new System.Drawing.Point(30, 154);
-            this.tb_Mon_Name.Name = "tb_Mon_Name";
-            this.tb_Mon_Name.Size = new System.Drawing.Size(200, 23);
-            this.tb_Mon_Name.TabIndex = 40;
-            // 
-            // L_Mon_Name
-            // 
-            this.L_Mon_Name.AutoSize = true;
-            this.L_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Mon_Name.Location = new System.Drawing.Point(27, 125);
-            this.L_Mon_Name.Name = "L_Mon_Name";
-            this.L_Mon_Name.Size = new System.Drawing.Size(45, 17);
-            this.L_Mon_Name.TabIndex = 39;
-            this.L_Mon_Name.Text = "Name";
-            // 
-            // B_Cr_Mon_Yes
-            // 
-            this.B_Cr_Mon_Yes.BackColor = System.Drawing.Color.Silver;
-            this.B_Cr_Mon_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.B_Cr_Mon_Yes.Location = new System.Drawing.Point(30, 66);
-            this.B_Cr_Mon_Yes.Name = "B_Cr_Mon_Yes";
-            this.B_Cr_Mon_Yes.Size = new System.Drawing.Size(50, 25);
-            this.B_Cr_Mon_Yes.TabIndex = 20;
-            this.B_Cr_Mon_Yes.Text = "Yes";
-            this.B_Cr_Mon_Yes.UseVisualStyleBackColor = false;
-            this.B_Cr_Mon_Yes.Click += new System.EventHandler(this.B_Cr_Mon_Yes_Click);
-            // 
-            // B_Cr_Mon_No
-            // 
-            this.B_Cr_Mon_No.BackColor = System.Drawing.Color.White;
-            this.B_Cr_Mon_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.B_Cr_Mon_No.Location = new System.Drawing.Point(91, 66);
-            this.B_Cr_Mon_No.Name = "B_Cr_Mon_No";
-            this.B_Cr_Mon_No.Size = new System.Drawing.Size(50, 25);
-            this.B_Cr_Mon_No.TabIndex = 19;
-            this.B_Cr_Mon_No.Text = "No";
-            this.B_Cr_Mon_No.UseVisualStyleBackColor = false;
-            this.B_Cr_Mon_No.Click += new System.EventHandler(this.B_Cr_Mon_No_Click);
-            // 
-            // L_Cr_Mon
-            // 
-            this.L_Cr_Mon.AutoSize = true;
-            this.L_Cr_Mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.L_Cr_Mon.Location = new System.Drawing.Point(27, 33);
-            this.L_Cr_Mon.Name = "L_Cr_Mon";
-            this.L_Cr_Mon.Size = new System.Drawing.Size(146, 17);
-            this.L_Cr_Mon.TabIndex = 18;
-            this.L_Cr_Mon.Text = "Create Health Monitor";
-            // 
             // PMem_Choose_Col_ID
             // 
             this.PMem_Choose_Col_ID.HeaderText = "ID";
@@ -1526,6 +1224,27 @@
             this.PMem_Choose_Col_Add.Text = "Add";
             this.PMem_Choose_Col_Add.UseColumnTextForButtonValue = true;
             // 
+            // DGV_Choosed_PoolMem
+            // 
+            this.DGV_Choosed_PoolMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Choosed_PoolMem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PMem_Choosed_Col_ID,
+            this.PMem_Choosed_Col_Name,
+            this.PMem_Choosed_Col_cobIP,
+            this.PMem_Choosed_Col_tbIP,
+            this.PMem_Choosed_Col_SubName,
+            this.PMem_Choosed_Col_SubID,
+            this.PMem_Choosed_Col_Port,
+            this.PMem_Choosed_Col_Weight,
+            this.PMem_Choosed_Col_STT,
+            this.PMem_Choosed_Col_Remove});
+            this.DGV_Choosed_PoolMem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DGV_Choosed_PoolMem.Location = new System.Drawing.Point(3, 3);
+            this.DGV_Choosed_PoolMem.Name = "DGV_Choosed_PoolMem";
+            this.DGV_Choosed_PoolMem.Size = new System.Drawing.Size(726, 200);
+            this.DGV_Choosed_PoolMem.TabIndex = 0;
+            this.DGV_Choosed_PoolMem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Choosed_PoolMem_CellContentClick);
+            // 
             // PMem_Choosed_Col_ID
             // 
             this.PMem_Choosed_Col_ID.HeaderText = "ID";
@@ -1584,6 +1303,307 @@
             this.PMem_Choosed_Col_Remove.Text = "Remove";
             this.PMem_Choosed_Col_Remove.UseColumnTextForButtonValue = true;
             // 
+            // Mon_Details_Page
+            // 
+            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_Yes);
+            this.Mon_Details_Page.Controls.Add(this.B_Cr_Mon_No);
+            this.Mon_Details_Page.Controls.Add(this.L_Cr_Mon);
+            this.Mon_Details_Page.Controls.Add(this.P_Mon_Item);
+            this.Mon_Details_Page.Location = new System.Drawing.Point(4, 5);
+            this.Mon_Details_Page.Name = "Mon_Details_Page";
+            this.Mon_Details_Page.Padding = new System.Windows.Forms.Padding(3);
+            this.Mon_Details_Page.Size = new System.Drawing.Size(732, 522);
+            this.Mon_Details_Page.TabIndex = 4;
+            this.Mon_Details_Page.Text = "tabPage5";
+            this.Mon_Details_Page.UseVisualStyleBackColor = true;
+            // 
+            // cob_Mon_HTTPMethod
+            // 
+            this.cob_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Mon_HTTPMethod.FormattingEnabled = true;
+            this.cob_Mon_HTTPMethod.Items.AddRange(new object[] {
+            "GET",
+            "HEAD",
+            "POST",
+            "PUT",
+            "DELETE",
+            "TRACE",
+            "OPTIONS",
+            "PATCH",
+            "CONNECT"});
+            this.cob_Mon_HTTPMethod.Location = new System.Drawing.Point(24, 40);
+            this.cob_Mon_HTTPMethod.Name = "cob_Mon_HTTPMethod";
+            this.cob_Mon_HTTPMethod.Size = new System.Drawing.Size(200, 24);
+            this.cob_Mon_HTTPMethod.TabIndex = 61;
+            // 
+            // cob_Mon_Type
+            // 
+            this.cob_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cob_Mon_Type.FormattingEnabled = true;
+            this.cob_Mon_Type.Items.AddRange(new object[] {
+            "HTTP",
+            "HTTPS",
+            "PING",
+            "TCP",
+            "TLS-HELLO",
+            "UDP-CONNECT",
+            "SCTP"});
+            this.cob_Mon_Type.Location = new System.Drawing.Point(259, 56);
+            this.cob_Mon_Type.Name = "cob_Mon_Type";
+            this.cob_Mon_Type.Size = new System.Drawing.Size(200, 24);
+            this.cob_Mon_Type.TabIndex = 60;
+            this.cob_Mon_Type.SelectedIndexChanged += new System.EventHandler(this.cob_Mon_Type_SelectedIndexChanged);
+            // 
+            // B_Mon_ASUp_Yes
+            // 
+            this.B_Mon_ASUp_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Mon_ASUp_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Mon_ASUp_Yes.Location = new System.Drawing.Point(23, 351);
+            this.B_Mon_ASUp_Yes.Name = "B_Mon_ASUp_Yes";
+            this.B_Mon_ASUp_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Mon_ASUp_Yes.TabIndex = 59;
+            this.B_Mon_ASUp_Yes.Text = "Yes";
+            this.B_Mon_ASUp_Yes.UseVisualStyleBackColor = false;
+            this.B_Mon_ASUp_Yes.Click += new System.EventHandler(this.B_Mon_ASUp_Yes_Click);
+            // 
+            // B_Mon_ASUp_No
+            // 
+            this.B_Mon_ASUp_No.BackColor = System.Drawing.Color.White;
+            this.B_Mon_ASUp_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Mon_ASUp_No.Location = new System.Drawing.Point(84, 351);
+            this.B_Mon_ASUp_No.Name = "B_Mon_ASUp_No";
+            this.B_Mon_ASUp_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Mon_ASUp_No.TabIndex = 58;
+            this.B_Mon_ASUp_No.Text = "No";
+            this.B_Mon_ASUp_No.UseVisualStyleBackColor = false;
+            this.B_Mon_ASUp_No.Click += new System.EventHandler(this.B_Mon_ASUp_No_Click);
+            // 
+            // L_Mon_ASUp
+            // 
+            this.L_Mon_ASUp.AutoSize = true;
+            this.L_Mon_ASUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_ASUp.Location = new System.Drawing.Point(20, 318);
+            this.L_Mon_ASUp.Name = "L_Mon_ASUp";
+            this.L_Mon_ASUp.Size = new System.Drawing.Size(106, 17);
+            this.L_Mon_ASUp.TabIndex = 57;
+            this.L_Mon_ASUp.Text = "Admin State Up";
+            // 
+            // tb_Mon_URL
+            // 
+            this.tb_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_URL.Location = new System.Drawing.Point(496, 40);
+            this.tb_Mon_URL.Name = "tb_Mon_URL";
+            this.tb_Mon_URL.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_URL.TabIndex = 56;
+            // 
+            // L_Mon_URL
+            // 
+            this.L_Mon_URL.AutoSize = true;
+            this.L_Mon_URL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_URL.Location = new System.Drawing.Point(493, 11);
+            this.L_Mon_URL.Name = "L_Mon_URL";
+            this.L_Mon_URL.Size = new System.Drawing.Size(69, 17);
+            this.L_Mon_URL.TabIndex = 55;
+            this.L_Mon_URL.Text = "URL Path";
+            // 
+            // tb_Mon_Codes
+            // 
+            this.tb_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Codes.Location = new System.Drawing.Point(260, 40);
+            this.tb_Mon_Codes.Name = "tb_Mon_Codes";
+            this.tb_Mon_Codes.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Codes.TabIndex = 54;
+            // 
+            // L_Mon_Codes
+            // 
+            this.L_Mon_Codes.AutoSize = true;
+            this.L_Mon_Codes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Codes.Location = new System.Drawing.Point(257, 11);
+            this.L_Mon_Codes.Name = "L_Mon_Codes";
+            this.L_Mon_Codes.Size = new System.Drawing.Size(110, 17);
+            this.L_Mon_Codes.TabIndex = 53;
+            this.L_Mon_Codes.Text = "Expected Codes";
+            // 
+            // L_Mon_HTTPMethod
+            // 
+            this.L_Mon_HTTPMethod.AutoSize = true;
+            this.L_Mon_HTTPMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_HTTPMethod.Location = new System.Drawing.Point(21, 11);
+            this.L_Mon_HTTPMethod.Name = "L_Mon_HTTPMethod";
+            this.L_Mon_HTTPMethod.Size = new System.Drawing.Size(96, 17);
+            this.L_Mon_HTTPMethod.TabIndex = 51;
+            this.L_Mon_HTTPMethod.Text = "HTTP Method";
+            // 
+            // tb_Mon_Timeout
+            // 
+            this.tb_Mon_Timeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Timeout.Location = new System.Drawing.Point(495, 153);
+            this.tb_Mon_Timeout.Name = "tb_Mon_Timeout";
+            this.tb_Mon_Timeout.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Timeout.TabIndex = 50;
+            // 
+            // L_Mon_Timeeout
+            // 
+            this.L_Mon_Timeeout.AutoSize = true;
+            this.L_Mon_Timeeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Timeeout.Location = new System.Drawing.Point(492, 124);
+            this.L_Mon_Timeeout.Name = "L_Mon_Timeeout";
+            this.L_Mon_Timeeout.Size = new System.Drawing.Size(95, 17);
+            this.L_Mon_Timeeout.TabIndex = 49;
+            this.L_Mon_Timeeout.Text = "Timeout (sec)";
+            // 
+            // tb_Mon_MaxRetry
+            // 
+            this.tb_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_MaxRetry.Location = new System.Drawing.Point(259, 153);
+            this.tb_Mon_MaxRetry.Name = "tb_Mon_MaxRetry";
+            this.tb_Mon_MaxRetry.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_MaxRetry.TabIndex = 48;
+            // 
+            // L_Mon_MaxRetry
+            // 
+            this.L_Mon_MaxRetry.AutoSize = true;
+            this.L_Mon_MaxRetry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_MaxRetry.Location = new System.Drawing.Point(256, 124);
+            this.L_Mon_MaxRetry.Name = "L_Mon_MaxRetry";
+            this.L_Mon_MaxRetry.Size = new System.Drawing.Size(82, 17);
+            this.L_Mon_MaxRetry.TabIndex = 47;
+            this.L_Mon_MaxRetry.Text = "Max Retries";
+            // 
+            // tb_Mon_Delay
+            // 
+            this.tb_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Delay.Location = new System.Drawing.Point(23, 153);
+            this.tb_Mon_Delay.Name = "tb_Mon_Delay";
+            this.tb_Mon_Delay.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Delay.TabIndex = 46;
+            // 
+            // L_Mon_Delay
+            // 
+            this.L_Mon_Delay.AutoSize = true;
+            this.L_Mon_Delay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Delay.Location = new System.Drawing.Point(20, 124);
+            this.L_Mon_Delay.Name = "L_Mon_Delay";
+            this.L_Mon_Delay.Size = new System.Drawing.Size(80, 17);
+            this.L_Mon_Delay.TabIndex = 45;
+            this.L_Mon_Delay.Text = "Delay (sec)";
+            // 
+            // tb_Mon_MaxRetryDown
+            // 
+            this.tb_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_MaxRetryDown.Location = new System.Drawing.Point(495, 56);
+            this.tb_Mon_MaxRetryDown.Name = "tb_Mon_MaxRetryDown";
+            this.tb_Mon_MaxRetryDown.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_MaxRetryDown.TabIndex = 44;
+            // 
+            // L_Mon_MaxRetryDown
+            // 
+            this.L_Mon_MaxRetryDown.AutoSize = true;
+            this.L_Mon_MaxRetryDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_MaxRetryDown.Location = new System.Drawing.Point(492, 27);
+            this.L_Mon_MaxRetryDown.Name = "L_Mon_MaxRetryDown";
+            this.L_Mon_MaxRetryDown.Size = new System.Drawing.Size(121, 17);
+            this.L_Mon_MaxRetryDown.TabIndex = 43;
+            this.L_Mon_MaxRetryDown.Text = "Max Retries Down";
+            // 
+            // L_Mon_Type
+            // 
+            this.L_Mon_Type.AutoSize = true;
+            this.L_Mon_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Type.Location = new System.Drawing.Point(256, 27);
+            this.L_Mon_Type.Name = "L_Mon_Type";
+            this.L_Mon_Type.Size = new System.Drawing.Size(44, 17);
+            this.L_Mon_Type.TabIndex = 41;
+            this.L_Mon_Type.Text = "Type ";
+            // 
+            // tb_Mon_Name
+            // 
+            this.tb_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tb_Mon_Name.Location = new System.Drawing.Point(23, 56);
+            this.tb_Mon_Name.Name = "tb_Mon_Name";
+            this.tb_Mon_Name.Size = new System.Drawing.Size(200, 23);
+            this.tb_Mon_Name.TabIndex = 40;
+            // 
+            // L_Mon_Name
+            // 
+            this.L_Mon_Name.AutoSize = true;
+            this.L_Mon_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Mon_Name.Location = new System.Drawing.Point(20, 27);
+            this.L_Mon_Name.Name = "L_Mon_Name";
+            this.L_Mon_Name.Size = new System.Drawing.Size(45, 17);
+            this.L_Mon_Name.TabIndex = 39;
+            this.L_Mon_Name.Text = "Name";
+            // 
+            // B_Cr_Mon_Yes
+            // 
+            this.B_Cr_Mon_Yes.BackColor = System.Drawing.Color.Silver;
+            this.B_Cr_Mon_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Mon_Yes.Location = new System.Drawing.Point(30, 66);
+            this.B_Cr_Mon_Yes.Name = "B_Cr_Mon_Yes";
+            this.B_Cr_Mon_Yes.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Mon_Yes.TabIndex = 20;
+            this.B_Cr_Mon_Yes.Text = "Yes";
+            this.B_Cr_Mon_Yes.UseVisualStyleBackColor = false;
+            this.B_Cr_Mon_Yes.Click += new System.EventHandler(this.B_Cr_Mon_Yes_Click);
+            // 
+            // B_Cr_Mon_No
+            // 
+            this.B_Cr_Mon_No.BackColor = System.Drawing.Color.White;
+            this.B_Cr_Mon_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.B_Cr_Mon_No.Location = new System.Drawing.Point(91, 66);
+            this.B_Cr_Mon_No.Name = "B_Cr_Mon_No";
+            this.B_Cr_Mon_No.Size = new System.Drawing.Size(50, 25);
+            this.B_Cr_Mon_No.TabIndex = 19;
+            this.B_Cr_Mon_No.Text = "No";
+            this.B_Cr_Mon_No.UseVisualStyleBackColor = false;
+            this.B_Cr_Mon_No.Click += new System.EventHandler(this.B_Cr_Mon_No_Click);
+            // 
+            // L_Cr_Mon
+            // 
+            this.L_Cr_Mon.AutoSize = true;
+            this.L_Cr_Mon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.L_Cr_Mon.Location = new System.Drawing.Point(27, 33);
+            this.L_Cr_Mon.Name = "L_Cr_Mon";
+            this.L_Cr_Mon.Size = new System.Drawing.Size(146, 17);
+            this.L_Cr_Mon.TabIndex = 18;
+            this.L_Cr_Mon.Text = "Create Health Monitor";
+            // 
+            // P_L_tb_Method_Code_URL
+            // 
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.tb_Mon_URL);
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.cob_Mon_HTTPMethod);
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.L_Mon_HTTPMethod);
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.L_Mon_Codes);
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.tb_Mon_Codes);
+            this.P_L_tb_Method_Code_URL.Controls.Add(this.L_Mon_URL);
+            this.P_L_tb_Method_Code_URL.Location = new System.Drawing.Point(1, 211);
+            this.P_L_tb_Method_Code_URL.Name = "P_L_tb_Method_Code_URL";
+            this.P_L_tb_Method_Code_URL.Size = new System.Drawing.Size(718, 83);
+            this.P_L_tb_Method_Code_URL.TabIndex = 62;
+            // 
+            // P_Mon_Item
+            // 
+            this.P_Mon_Item.Controls.Add(this.P_L_tb_Method_Code_URL);
+            this.P_Mon_Item.Controls.Add(this.tb_Mon_MaxRetry);
+            this.P_Mon_Item.Controls.Add(this.cob_Mon_Type);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_Name);
+            this.P_Mon_Item.Controls.Add(this.B_Mon_ASUp_Yes);
+            this.P_Mon_Item.Controls.Add(this.tb_Mon_Name);
+            this.P_Mon_Item.Controls.Add(this.B_Mon_ASUp_No);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_Type);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_ASUp);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_MaxRetryDown);
+            this.P_Mon_Item.Controls.Add(this.tb_Mon_Timeout);
+            this.P_Mon_Item.Controls.Add(this.tb_Mon_MaxRetryDown);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_Timeeout);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_Delay);
+            this.P_Mon_Item.Controls.Add(this.tb_Mon_Delay);
+            this.P_Mon_Item.Controls.Add(this.L_Mon_MaxRetry);
+            this.P_Mon_Item.Location = new System.Drawing.Point(8, 110);
+            this.P_Mon_Item.Name = "P_Mon_Item";
+            this.P_Mon_Item.Size = new System.Drawing.Size(718, 394);
+            this.P_Mon_Item.TabIndex = 63;
+            // 
             // CreateLoadBalancer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1626,6 +1646,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Choosed_PoolMem)).EndInit();
             this.Mon_Details_Page.ResumeLayout(false);
             this.Mon_Details_Page.PerformLayout();
+            this.P_L_tb_Method_Code_URL.ResumeLayout(false);
+            this.P_L_tb_Method_Code_URL.PerformLayout();
+            this.P_Mon_Item.ResumeLayout(false);
+            this.P_Mon_Item.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1766,5 +1790,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PMem_Choosed_Col_Weight;
         private System.Windows.Forms.DataGridViewTextBoxColumn PMem_Choosed_Col_STT;
         private System.Windows.Forms.DataGridViewButtonColumn PMem_Choosed_Col_Remove;
+        private System.Windows.Forms.Panel P_L_tb_Method_Code_URL;
+        private System.Windows.Forms.Panel P_Mon_Item;
     }
 }

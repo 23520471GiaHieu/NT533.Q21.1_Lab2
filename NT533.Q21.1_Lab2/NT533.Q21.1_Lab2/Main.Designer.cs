@@ -32,37 +32,37 @@ namespace NT533.Q21._1_Lab2
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Tokens");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Identity", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Flavors");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Images");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Instances");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Key Pairs");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Compute", new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6});
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Volumes");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Volume", new System.Windows.Forms.TreeNode[] {
-            treeNode8});
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Networks");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Routers");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Security Groups");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Floating IPs");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Load Balancers");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Network", new System.Windows.Forms.TreeNode[] {
-            treeNode10,
-            treeNode11,
-            treeNode12,
-            treeNode13,
-            treeNode14});
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Tokens");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Identity", new System.Windows.Forms.TreeNode[] {
+            treeNode31});
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Flavors");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Images");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Instances");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Key Pairs");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Compute", new System.Windows.Forms.TreeNode[] {
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36});
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Volumes");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Volume", new System.Windows.Forms.TreeNode[] {
+            treeNode38});
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Networks");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Routers");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Security Groups");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Floating IPs");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Load Balancers");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Network", new System.Windows.Forms.TreeNode[] {
+            treeNode40,
+            treeNode41,
+            treeNode42,
+            treeNode43,
+            treeNode44});
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.SplitContainer = new System.Windows.Forms.SplitContainer();
             this.TrView_Menu = new System.Windows.Forms.TreeView();
             this.PageControl = new System.Windows.Forms.TabControl();
@@ -102,17 +102,6 @@ namespace NT533.Q21._1_Lab2
             this.InstancePage = new System.Windows.Forms.TabPage();
             this.P_DGV_Instances = new System.Windows.Forms.Panel();
             this.DGV_Instances = new System.Windows.Forms.DataGridView();
-            this.In_Col_Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.In_Col_Inname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_Imname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_Flavor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_KeyPair = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_Task = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_PS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.In_Col_Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.P_B_Cr_Del_Instances = new System.Windows.Forms.Panel();
             this.B_Del_Instances = new System.Windows.Forms.Button();
             this.B_Cr_Instances = new System.Windows.Forms.Button();
@@ -212,13 +201,6 @@ namespace NT533.Q21._1_Lab2
             this.LoadBalancerPage = new System.Windows.Forms.TabPage();
             this.P_DGV_LoadBalancer = new System.Windows.Forms.Panel();
             this.DGV_LoadBalancer = new System.Windows.Forms.DataGridView();
-            this.LB_Col_Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.LB_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_Col_IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_Col_AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_Col_OS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_Col_PS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_Col_ASU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.P_B_Cr_Del_LoadBalancer = new System.Windows.Forms.Panel();
             this.B_Del_LoadBalancer = new System.Windows.Forms.Button();
             this.B_Cr_LoadBalancer = new System.Windows.Forms.Button();
@@ -284,11 +266,31 @@ namespace NT533.Q21._1_Lab2
             this.PoolMem_Col_OS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PoolMem_Col_PS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PoolMem_Col_ASUp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.P_B_Cr_Del_PoolMem = new System.Windows.Forms.Panel();
-            this.B_Del_PoolMem = new System.Windows.Forms.Button();
-            this.B_Cr_PoolMem = new System.Windows.Forms.Button();
+            this.P_B_Add_Remove_PoolMem = new System.Windows.Forms.Panel();
+            this.B_Remove_PoolMem = new System.Windows.Forms.Button();
+            this.B_Add_PoolMem = new System.Windows.Forms.Button();
             this.P_L_PoolMem_Pool_Name = new System.Windows.Forms.Panel();
             this.L_PoolMem_Pool_Name = new System.Windows.Forms.Label();
+            this.In_Col_Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.In_Col_Inname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_Imname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_Flavor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_KeyPair = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_Task = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_PS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.In_Col_AddFloatingIP = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.LB_Col_Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.LB_Col_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_IP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_AZ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_OS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_PS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_ASU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LB_Col_AddFloatingIP = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.SplitContainer)).BeginInit();
             this.SplitContainer.Panel1.SuspendLayout();
             this.SplitContainer.Panel2.SuspendLayout();
@@ -366,7 +368,7 @@ namespace NT533.Q21._1_Lab2
             this.LBPoolMemPage.SuspendLayout();
             this.P_DGV_PoolMem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_PoolMem)).BeginInit();
-            this.P_B_Cr_Del_PoolMem.SuspendLayout();
+            this.P_B_Add_Remove_PoolMem.SuspendLayout();
             this.P_L_PoolMem_Pool_Name.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -394,41 +396,41 @@ namespace NT533.Q21._1_Lab2
             this.TrView_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.TrView_Menu.Location = new System.Drawing.Point(0, 0);
             this.TrView_Menu.Name = "TrView_Menu";
-            treeNode1.Name = "Tokens";
-            treeNode1.Text = "Tokens";
-            treeNode2.Name = "Identity";
-            treeNode2.Text = "Identity";
-            treeNode3.Name = "Flavors";
-            treeNode3.Text = "Flavors";
-            treeNode4.Name = "Images";
-            treeNode4.Text = "Images";
-            treeNode5.Name = "Instances";
-            treeNode5.Text = "Instances";
-            treeNode6.Name = "Key Pairs";
-            treeNode6.Text = "Key Pairs";
-            treeNode7.Name = "Compute";
-            treeNode7.Text = "Compute";
-            treeNode8.Name = "Volumes";
-            treeNode8.Text = "Volumes";
-            treeNode9.Name = "Volume";
-            treeNode9.Text = "Volume";
-            treeNode10.Name = "Networks";
-            treeNode10.Text = "Networks";
-            treeNode11.Name = "Routers";
-            treeNode11.Text = "Routers";
-            treeNode12.Name = "Security Groups";
-            treeNode12.Text = "Security Groups";
-            treeNode13.Name = "Floating IPs";
-            treeNode13.Text = "Floating IPs";
-            treeNode14.Name = "Load Balancers";
-            treeNode14.Text = "Load Balancers";
-            treeNode15.Name = "Network";
-            treeNode15.Text = "Network";
+            treeNode31.Name = "Tokens";
+            treeNode31.Text = "Tokens";
+            treeNode32.Name = "Identity";
+            treeNode32.Text = "Identity";
+            treeNode33.Name = "Flavors";
+            treeNode33.Text = "Flavors";
+            treeNode34.Name = "Images";
+            treeNode34.Text = "Images";
+            treeNode35.Name = "Instances";
+            treeNode35.Text = "Instances";
+            treeNode36.Name = "Key Pairs";
+            treeNode36.Text = "Key Pairs";
+            treeNode37.Name = "Compute";
+            treeNode37.Text = "Compute";
+            treeNode38.Name = "Volumes";
+            treeNode38.Text = "Volumes";
+            treeNode39.Name = "Volume";
+            treeNode39.Text = "Volume";
+            treeNode40.Name = "Networks";
+            treeNode40.Text = "Networks";
+            treeNode41.Name = "Routers";
+            treeNode41.Text = "Routers";
+            treeNode42.Name = "Security Groups";
+            treeNode42.Text = "Security Groups";
+            treeNode43.Name = "Floating IPs";
+            treeNode43.Text = "Floating IPs";
+            treeNode44.Name = "Load Balancers";
+            treeNode44.Text = "Load Balancers";
+            treeNode45.Name = "Network";
+            treeNode45.Text = "Network";
             this.TrView_Menu.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode7,
-            treeNode9,
-            treeNode15});
+            treeNode32,
+            treeNode37,
+            treeNode39,
+            treeNode45});
             this.TrView_Menu.Size = new System.Drawing.Size(313, 501);
             this.TrView_Menu.TabIndex = 0;
             this.TrView_Menu.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TrView_Menu_AfterSelect);
@@ -823,88 +825,14 @@ namespace NT533.Q21._1_Lab2
             this.In_Col_AZ,
             this.In_Col_Task,
             this.In_Col_PS,
-            this.In_Col_Age});
+            this.In_Col_Age,
+            this.In_Col_AddFloatingIP});
             this.DGV_Instances.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_Instances.Location = new System.Drawing.Point(0, 0);
             this.DGV_Instances.Name = "DGV_Instances";
             this.DGV_Instances.Size = new System.Drawing.Size(613, 336);
             this.DGV_Instances.TabIndex = 0;
-            // 
-            // In_Col_Select
-            // 
-            this.In_Col_Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Select.HeaderText = "Select";
-            this.In_Col_Select.Name = "In_Col_Select";
-            this.In_Col_Select.Width = 43;
-            // 
-            // In_Col_Inname
-            // 
-            this.In_Col_Inname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Inname.HeaderText = "Instance Name";
-            this.In_Col_Inname.Name = "In_Col_Inname";
-            this.In_Col_Inname.Width = 96;
-            // 
-            // In_Col_Imname
-            // 
-            this.In_Col_Imname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Imname.HeaderText = "Image Name";
-            this.In_Col_Imname.Name = "In_Col_Imname";
-            this.In_Col_Imname.Width = 85;
-            // 
-            // In_Col_IP
-            // 
-            this.In_Col_IP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_IP.HeaderText = "IP Address";
-            this.In_Col_IP.Name = "In_Col_IP";
-            this.In_Col_IP.Width = 77;
-            // 
-            // In_Col_Flavor
-            // 
-            this.In_Col_Flavor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Flavor.HeaderText = "Flavor";
-            this.In_Col_Flavor.Name = "In_Col_Flavor";
-            this.In_Col_Flavor.Width = 61;
-            // 
-            // In_Col_KeyPair
-            // 
-            this.In_Col_KeyPair.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_KeyPair.HeaderText = "Key Pair";
-            this.In_Col_KeyPair.Name = "In_Col_KeyPair";
-            this.In_Col_KeyPair.Width = 50;
-            // 
-            // In_Col_Status
-            // 
-            this.In_Col_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Status.HeaderText = "Status";
-            this.In_Col_Status.Name = "In_Col_Status";
-            this.In_Col_Status.Width = 62;
-            // 
-            // In_Col_AZ
-            // 
-            this.In_Col_AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_AZ.HeaderText = "Availability Zone";
-            this.In_Col_AZ.Name = "In_Col_AZ";
-            // 
-            // In_Col_Task
-            // 
-            this.In_Col_Task.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Task.HeaderText = "Task";
-            this.In_Col_Task.Name = "In_Col_Task";
-            this.In_Col_Task.Width = 56;
-            // 
-            // In_Col_PS
-            // 
-            this.In_Col_PS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_PS.HeaderText = "Power State";
-            this.In_Col_PS.Name = "In_Col_PS";
-            this.In_Col_PS.Width = 83;
-            // 
-            // In_Col_Age
-            // 
-            this.In_Col_Age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.In_Col_Age.HeaderText = "Age";
-            this.In_Col_Age.Name = "In_Col_Age";
-            this.In_Col_Age.Width = 51;
+            this.DGV_Instances.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_Instances_CellContentClick);
             // 
             // P_B_Cr_Del_Instances
             // 
@@ -1311,10 +1239,10 @@ namespace NT533.Q21._1_Lab2
             // Net_Col_Name
             // 
             this.Net_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Net_Col_Name.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Net_Col_Name.DefaultCellStyle = dataGridViewCellStyle11;
             this.Net_Col_Name.HeaderText = "Name";
             this.Net_Col_Name.Name = "Net_Col_Name";
             this.Net_Col_Name.ReadOnly = true;
@@ -1878,68 +1806,14 @@ namespace NT533.Q21._1_Lab2
             this.LB_Col_AZ,
             this.LB_Col_OS,
             this.LB_Col_PS,
-            this.LB_Col_ASU});
+            this.LB_Col_ASU,
+            this.LB_Col_AddFloatingIP});
             this.DGV_LoadBalancer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGV_LoadBalancer.Location = new System.Drawing.Point(0, 0);
             this.DGV_LoadBalancer.Name = "DGV_LoadBalancer";
             this.DGV_LoadBalancer.Size = new System.Drawing.Size(613, 336);
             this.DGV_LoadBalancer.TabIndex = 0;
-            // 
-            // LB_Col_Select
-            // 
-            this.LB_Col_Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_Select.Frozen = true;
-            this.LB_Col_Select.HeaderText = "Select";
-            this.LB_Col_Select.Name = "LB_Col_Select";
-            this.LB_Col_Select.Width = 43;
-            // 
-            // LB_Col_Name
-            // 
-            this.LB_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_Name.HeaderText = "Name";
-            this.LB_Col_Name.Name = "LB_Col_Name";
-            this.LB_Col_Name.ReadOnly = true;
-            this.LB_Col_Name.Width = 60;
-            // 
-            // LB_Col_IP
-            // 
-            this.LB_Col_IP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_IP.HeaderText = "IP Address";
-            this.LB_Col_IP.Name = "LB_Col_IP";
-            this.LB_Col_IP.ReadOnly = true;
-            this.LB_Col_IP.Width = 77;
-            // 
-            // LB_Col_AZ
-            // 
-            this.LB_Col_AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_AZ.HeaderText = "Availability Zones";
-            this.LB_Col_AZ.Name = "LB_Col_AZ";
-            this.LB_Col_AZ.ReadOnly = true;
-            this.LB_Col_AZ.Width = 105;
-            // 
-            // LB_Col_OS
-            // 
-            this.LB_Col_OS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_OS.HeaderText = "Operating Status";
-            this.LB_Col_OS.Name = "LB_Col_OS";
-            this.LB_Col_OS.ReadOnly = true;
-            this.LB_Col_OS.Width = 102;
-            // 
-            // LB_Col_PS
-            // 
-            this.LB_Col_PS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_PS.HeaderText = "Provisioning Status";
-            this.LB_Col_PS.Name = "LB_Col_PS";
-            this.LB_Col_PS.ReadOnly = true;
-            this.LB_Col_PS.Width = 112;
-            // 
-            // LB_Col_ASU
-            // 
-            this.LB_Col_ASU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.LB_Col_ASU.HeaderText = "Admin State Up";
-            this.LB_Col_ASU.Name = "LB_Col_ASU";
-            this.LB_Col_ASU.ReadOnly = true;
-            this.LB_Col_ASU.Width = 85;
+            this.DGV_LoadBalancer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_LoadBalancer_CellContentClick);
             // 
             // P_B_Cr_Del_LoadBalancer
             // 
@@ -2053,10 +1927,10 @@ namespace NT533.Q21._1_Lab2
             // Sub_Col_Name
             // 
             this.Sub_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Sub_Col_Name.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Sub_Col_Name.DefaultCellStyle = dataGridViewCellStyle12;
             this.Sub_Col_Name.HeaderText = "Name";
             this.Sub_Col_Name.Name = "Sub_Col_Name";
             this.Sub_Col_Name.ReadOnly = true;
@@ -2208,10 +2082,10 @@ namespace NT533.Q21._1_Lab2
             // RI_Col_Name
             // 
             this.RI_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.RI_Col_Name.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.RI_Col_Name.DefaultCellStyle = dataGridViewCellStyle13;
             this.RI_Col_Name.HeaderText = "Name";
             this.RI_Col_Name.Name = "RI_Col_Name";
             this.RI_Col_Name.ReadOnly = true;
@@ -2371,10 +2245,10 @@ namespace NT533.Q21._1_Lab2
             // Ru_Col_Direction
             // 
             this.Ru_Col_Direction.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.Ru_Col_Direction.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.Ru_Col_Direction.DefaultCellStyle = dataGridViewCellStyle14;
             this.Ru_Col_Direction.HeaderText = "Direction";
             this.Ru_Col_Direction.Name = "Ru_Col_Direction";
             this.Ru_Col_Direction.ReadOnly = true;
@@ -2475,7 +2349,7 @@ namespace NT533.Q21._1_Lab2
             // LBPoolMemPage
             // 
             this.LBPoolMemPage.Controls.Add(this.P_DGV_PoolMem);
-            this.LBPoolMemPage.Controls.Add(this.P_B_Cr_Del_PoolMem);
+            this.LBPoolMemPage.Controls.Add(this.P_B_Add_Remove_PoolMem);
             this.LBPoolMemPage.Controls.Add(this.P_L_PoolMem_Pool_Name);
             this.LBPoolMemPage.Location = new System.Drawing.Point(4, 5);
             this.LBPoolMemPage.Name = "LBPoolMemPage";
@@ -2496,6 +2370,7 @@ namespace NT533.Q21._1_Lab2
             // 
             // DGV_PoolMem
             // 
+            this.DGV_PoolMem.AllowUserToAddRows = false;
             this.DGV_PoolMem.BackgroundColor = System.Drawing.Color.White;
             this.DGV_PoolMem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_PoolMem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -2525,10 +2400,10 @@ namespace NT533.Q21._1_Lab2
             // PoolMem_Col_Name
             // 
             this.PoolMem_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.PoolMem_Col_Name.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.PoolMem_Col_Name.DefaultCellStyle = dataGridViewCellStyle15;
             this.PoolMem_Col_Name.HeaderText = "Name";
             this.PoolMem_Col_Name.Name = "PoolMem_Col_Name";
             this.PoolMem_Col_Name.ReadOnly = true;
@@ -2580,33 +2455,36 @@ namespace NT533.Q21._1_Lab2
             this.PoolMem_Col_ASUp.HeaderText = "Admin State Up";
             this.PoolMem_Col_ASUp.Name = "PoolMem_Col_ASUp";
             // 
-            // P_B_Cr_Del_PoolMem
+            // P_B_Add_Remove_PoolMem
             // 
-            this.P_B_Cr_Del_PoolMem.Controls.Add(this.B_Del_PoolMem);
-            this.P_B_Cr_Del_PoolMem.Controls.Add(this.B_Cr_PoolMem);
-            this.P_B_Cr_Del_PoolMem.Dock = System.Windows.Forms.DockStyle.Top;
-            this.P_B_Cr_Del_PoolMem.Location = new System.Drawing.Point(3, 78);
-            this.P_B_Cr_Del_PoolMem.Name = "P_B_Cr_Del_PoolMem";
-            this.P_B_Cr_Del_PoolMem.Size = new System.Drawing.Size(613, 75);
-            this.P_B_Cr_Del_PoolMem.TabIndex = 9;
+            this.P_B_Add_Remove_PoolMem.Controls.Add(this.B_Remove_PoolMem);
+            this.P_B_Add_Remove_PoolMem.Controls.Add(this.B_Add_PoolMem);
+            this.P_B_Add_Remove_PoolMem.Dock = System.Windows.Forms.DockStyle.Top;
+            this.P_B_Add_Remove_PoolMem.Location = new System.Drawing.Point(3, 78);
+            this.P_B_Add_Remove_PoolMem.Name = "P_B_Add_Remove_PoolMem";
+            this.P_B_Add_Remove_PoolMem.Size = new System.Drawing.Size(613, 75);
+            this.P_B_Add_Remove_PoolMem.TabIndex = 9;
+            this.P_B_Add_Remove_PoolMem.Resize += new System.EventHandler(this.P_B_Add_Remove_PoolMem_Resize);
             // 
-            // B_Del_PoolMem
+            // B_Remove_PoolMem
             // 
-            this.B_Del_PoolMem.Location = new System.Drawing.Point(516, 18);
-            this.B_Del_PoolMem.Name = "B_Del_PoolMem";
-            this.B_Del_PoolMem.Size = new System.Drawing.Size(80, 35);
-            this.B_Del_PoolMem.TabIndex = 2;
-            this.B_Del_PoolMem.Text = "Delete";
-            this.B_Del_PoolMem.UseVisualStyleBackColor = true;
+            this.B_Remove_PoolMem.Location = new System.Drawing.Point(516, 18);
+            this.B_Remove_PoolMem.Name = "B_Remove_PoolMem";
+            this.B_Remove_PoolMem.Size = new System.Drawing.Size(80, 35);
+            this.B_Remove_PoolMem.TabIndex = 2;
+            this.B_Remove_PoolMem.Text = "Remove";
+            this.B_Remove_PoolMem.UseVisualStyleBackColor = true;
+            this.B_Remove_PoolMem.Click += new System.EventHandler(this.B_Remove_PoolMem_Click);
             // 
-            // B_Cr_PoolMem
+            // B_Add_PoolMem
             // 
-            this.B_Cr_PoolMem.Location = new System.Drawing.Point(416, 18);
-            this.B_Cr_PoolMem.Name = "B_Cr_PoolMem";
-            this.B_Cr_PoolMem.Size = new System.Drawing.Size(80, 35);
-            this.B_Cr_PoolMem.TabIndex = 1;
-            this.B_Cr_PoolMem.Text = "Create";
-            this.B_Cr_PoolMem.UseVisualStyleBackColor = true;
+            this.B_Add_PoolMem.Location = new System.Drawing.Point(416, 18);
+            this.B_Add_PoolMem.Name = "B_Add_PoolMem";
+            this.B_Add_PoolMem.Size = new System.Drawing.Size(80, 35);
+            this.B_Add_PoolMem.TabIndex = 1;
+            this.B_Add_PoolMem.Text = "Add";
+            this.B_Add_PoolMem.UseVisualStyleBackColor = true;
+            this.B_Add_PoolMem.Click += new System.EventHandler(this.B_Add_PoolMem_Click);
             // 
             // P_L_PoolMem_Pool_Name
             // 
@@ -2616,6 +2494,7 @@ namespace NT533.Q21._1_Lab2
             this.P_L_PoolMem_Pool_Name.Name = "P_L_PoolMem_Pool_Name";
             this.P_L_PoolMem_Pool_Name.Size = new System.Drawing.Size(613, 75);
             this.P_L_PoolMem_Pool_Name.TabIndex = 7;
+            this.P_L_PoolMem_Pool_Name.Resize += new System.EventHandler(this.P_L_PoolMem_Pool_Name_Resize);
             // 
             // L_PoolMem_Pool_Name
             // 
@@ -2626,6 +2505,152 @@ namespace NT533.Q21._1_Lab2
             this.L_PoolMem_Pool_Name.Size = new System.Drawing.Size(82, 20);
             this.L_PoolMem_Pool_Name.TabIndex = 0;
             this.L_PoolMem_Pool_Name.Text = "PoolName";
+            // 
+            // In_Col_Select
+            // 
+            this.In_Col_Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Select.HeaderText = "Select";
+            this.In_Col_Select.Name = "In_Col_Select";
+            this.In_Col_Select.Width = 43;
+            // 
+            // In_Col_Inname
+            // 
+            this.In_Col_Inname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Inname.HeaderText = "Instance Name";
+            this.In_Col_Inname.Name = "In_Col_Inname";
+            this.In_Col_Inname.Width = 96;
+            // 
+            // In_Col_Imname
+            // 
+            this.In_Col_Imname.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Imname.HeaderText = "Image Name";
+            this.In_Col_Imname.Name = "In_Col_Imname";
+            this.In_Col_Imname.Width = 85;
+            // 
+            // In_Col_IP
+            // 
+            this.In_Col_IP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_IP.HeaderText = "IP Address";
+            this.In_Col_IP.Name = "In_Col_IP";
+            this.In_Col_IP.Width = 77;
+            // 
+            // In_Col_Flavor
+            // 
+            this.In_Col_Flavor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Flavor.HeaderText = "Flavor";
+            this.In_Col_Flavor.Name = "In_Col_Flavor";
+            this.In_Col_Flavor.Width = 61;
+            // 
+            // In_Col_KeyPair
+            // 
+            this.In_Col_KeyPair.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_KeyPair.HeaderText = "Key Pair";
+            this.In_Col_KeyPair.Name = "In_Col_KeyPair";
+            this.In_Col_KeyPair.Width = 50;
+            // 
+            // In_Col_Status
+            // 
+            this.In_Col_Status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Status.HeaderText = "Status";
+            this.In_Col_Status.Name = "In_Col_Status";
+            this.In_Col_Status.Width = 62;
+            // 
+            // In_Col_AZ
+            // 
+            this.In_Col_AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_AZ.HeaderText = "Availability Zone";
+            this.In_Col_AZ.Name = "In_Col_AZ";
+            // 
+            // In_Col_Task
+            // 
+            this.In_Col_Task.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Task.HeaderText = "Task";
+            this.In_Col_Task.Name = "In_Col_Task";
+            this.In_Col_Task.Width = 56;
+            // 
+            // In_Col_PS
+            // 
+            this.In_Col_PS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_PS.HeaderText = "Power State";
+            this.In_Col_PS.Name = "In_Col_PS";
+            this.In_Col_PS.Width = 83;
+            // 
+            // In_Col_Age
+            // 
+            this.In_Col_Age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.In_Col_Age.HeaderText = "Age";
+            this.In_Col_Age.Name = "In_Col_Age";
+            this.In_Col_Age.Width = 51;
+            // 
+            // In_Col_AddFloatingIP
+            // 
+            this.In_Col_AddFloatingIP.HeaderText = "";
+            this.In_Col_AddFloatingIP.Name = "In_Col_AddFloatingIP";
+            this.In_Col_AddFloatingIP.Text = "AddFloatingIP";
+            // 
+            // LB_Col_Select
+            // 
+            this.LB_Col_Select.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_Select.Frozen = true;
+            this.LB_Col_Select.HeaderText = "Select";
+            this.LB_Col_Select.Name = "LB_Col_Select";
+            this.LB_Col_Select.Width = 43;
+            // 
+            // LB_Col_Name
+            // 
+            this.LB_Col_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_Name.HeaderText = "Name";
+            this.LB_Col_Name.Name = "LB_Col_Name";
+            this.LB_Col_Name.ReadOnly = true;
+            this.LB_Col_Name.Width = 60;
+            // 
+            // LB_Col_IP
+            // 
+            this.LB_Col_IP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_IP.HeaderText = "IP Address";
+            this.LB_Col_IP.Name = "LB_Col_IP";
+            this.LB_Col_IP.ReadOnly = true;
+            this.LB_Col_IP.Width = 83;
+            // 
+            // LB_Col_AZ
+            // 
+            this.LB_Col_AZ.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_AZ.HeaderText = "Availability Zones";
+            this.LB_Col_AZ.Name = "LB_Col_AZ";
+            this.LB_Col_AZ.ReadOnly = true;
+            this.LB_Col_AZ.Width = 105;
+            // 
+            // LB_Col_OS
+            // 
+            this.LB_Col_OS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_OS.HeaderText = "Operating Status";
+            this.LB_Col_OS.Name = "LB_Col_OS";
+            this.LB_Col_OS.ReadOnly = true;
+            this.LB_Col_OS.Width = 102;
+            // 
+            // LB_Col_PS
+            // 
+            this.LB_Col_PS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_PS.HeaderText = "Provisioning Status";
+            this.LB_Col_PS.Name = "LB_Col_PS";
+            this.LB_Col_PS.ReadOnly = true;
+            this.LB_Col_PS.Width = 112;
+            // 
+            // LB_Col_ASU
+            // 
+            this.LB_Col_ASU.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.LB_Col_ASU.HeaderText = "Admin State Up";
+            this.LB_Col_ASU.Name = "LB_Col_ASU";
+            this.LB_Col_ASU.ReadOnly = true;
+            this.LB_Col_ASU.Width = 85;
+            // 
+            // LB_Col_AddFloatingIP
+            // 
+            this.LB_Col_AddFloatingIP.HeaderText = "";
+            this.LB_Col_AddFloatingIP.Name = "LB_Col_AddFloatingIP";
+            this.LB_Col_AddFloatingIP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.LB_Col_AddFloatingIP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.LB_Col_AddFloatingIP.Text = "AddFloatingIP";
             // 
             // Main
             // 
@@ -2728,7 +2753,7 @@ namespace NT533.Q21._1_Lab2
             this.LBPoolMemPage.ResumeLayout(false);
             this.P_DGV_PoolMem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_PoolMem)).EndInit();
-            this.P_B_Cr_Del_PoolMem.ResumeLayout(false);
+            this.P_B_Add_Remove_PoolMem.ResumeLayout(false);
             this.P_L_PoolMem_Pool_Name.ResumeLayout(false);
             this.P_L_PoolMem_Pool_Name.PerformLayout();
             this.ResumeLayout(false);
@@ -2865,17 +2890,6 @@ namespace NT533.Q21._1_Lab2
         private DataGridViewTextBoxColumn Im_Col_ContainerFormat;
         private DataGridViewTextBoxColumn Im_Col_Owner;
         private DataGridViewTextBoxColumn Im_Col_Description;
-        private DataGridViewCheckBoxColumn In_Col_Select;
-        private DataGridViewTextBoxColumn In_Col_Inname;
-        private DataGridViewTextBoxColumn In_Col_Imname;
-        private DataGridViewTextBoxColumn In_Col_IP;
-        private DataGridViewTextBoxColumn In_Col_Flavor;
-        private DataGridViewTextBoxColumn In_Col_KeyPair;
-        private DataGridViewTextBoxColumn In_Col_Status;
-        private DataGridViewTextBoxColumn In_Col_AZ;
-        private DataGridViewTextBoxColumn In_Col_Task;
-        private DataGridViewTextBoxColumn In_Col_PS;
-        private DataGridViewTextBoxColumn In_Col_Age;
         private DataGridViewCheckBoxColumn KP_Col_Select;
         private DataGridViewTextBoxColumn KP_Col_Name;
         private DataGridViewTextBoxColumn KP_Col_Type;
@@ -2902,13 +2916,6 @@ namespace NT533.Q21._1_Lab2
         private DataGridViewTextBoxColumn SG_Col_SGID;
         private DataGridViewTextBoxColumn SG_Col_Description;
         private DataGridViewTextBoxColumn SG_Col_Shared;
-        private DataGridViewCheckBoxColumn LB_Col_Select;
-        private DataGridViewTextBoxColumn LB_Col_Name;
-        private DataGridViewTextBoxColumn LB_Col_IP;
-        private DataGridViewTextBoxColumn LB_Col_AZ;
-        private DataGridViewTextBoxColumn LB_Col_OS;
-        private DataGridViewTextBoxColumn LB_Col_PS;
-        private DataGridViewTextBoxColumn LB_Col_ASU;
         private DataGridViewCheckBoxColumn Sub_Col_Select;
         private DataGridViewTextBoxColumn Sub_Col_Name;
         private DataGridViewTextBoxColumn Sub_Col_NetAddress;
@@ -2949,9 +2956,9 @@ namespace NT533.Q21._1_Lab2
         private TabPage LBPoolMemPage;
         private Panel P_L_PoolMem_Pool_Name;
         private Label L_PoolMem_Pool_Name;
-        private Panel P_B_Cr_Del_PoolMem;
-        private Button B_Del_PoolMem;
-        private Button B_Cr_PoolMem;
+        private Panel P_B_Add_Remove_PoolMem;
+        private Button B_Remove_PoolMem;
+        private Button B_Add_PoolMem;
         private Panel P_DGV_PoolMem;
         private DataGridView DGV_PoolMem;
         private DataGridViewCheckBoxColumn PoolMem_Col_Select;
@@ -2963,5 +2970,25 @@ namespace NT533.Q21._1_Lab2
         private DataGridViewTextBoxColumn PoolMem_Col_OS;
         private DataGridViewTextBoxColumn PoolMem_Col_PS;
         private DataGridViewTextBoxColumn PoolMem_Col_ASUp;
+        private DataGridViewCheckBoxColumn In_Col_Select;
+        private DataGridViewTextBoxColumn In_Col_Inname;
+        private DataGridViewTextBoxColumn In_Col_Imname;
+        private DataGridViewTextBoxColumn In_Col_IP;
+        private DataGridViewTextBoxColumn In_Col_Flavor;
+        private DataGridViewTextBoxColumn In_Col_KeyPair;
+        private DataGridViewTextBoxColumn In_Col_Status;
+        private DataGridViewTextBoxColumn In_Col_AZ;
+        private DataGridViewTextBoxColumn In_Col_Task;
+        private DataGridViewTextBoxColumn In_Col_PS;
+        private DataGridViewTextBoxColumn In_Col_Age;
+        private DataGridViewButtonColumn In_Col_AddFloatingIP;
+        private DataGridViewCheckBoxColumn LB_Col_Select;
+        private DataGridViewTextBoxColumn LB_Col_Name;
+        private DataGridViewTextBoxColumn LB_Col_IP;
+        private DataGridViewTextBoxColumn LB_Col_AZ;
+        private DataGridViewTextBoxColumn LB_Col_OS;
+        private DataGridViewTextBoxColumn LB_Col_PS;
+        private DataGridViewTextBoxColumn LB_Col_ASU;
+        private DataGridViewButtonColumn LB_Col_AddFloatingIP;
     }
 }

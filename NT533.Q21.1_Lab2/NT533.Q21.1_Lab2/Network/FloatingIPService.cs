@@ -19,6 +19,7 @@ namespace NT533.Q21._1_Lab2.Network
         public class FloatingIPResponse
         {
             public List<FloatingIP> floatingips { get; set; }
+            public FloatingIP floatingip { get; set; }
         }
 
         public class FloatingIP
@@ -31,6 +32,12 @@ namespace NT533.Q21._1_Lab2.Network
             public string fixed_ip_address { get; set; }
             public string floating_network_id { get; set; }
             public string status { get; set; }
+            public string port_id { get; set; }
+            public PortDetails port_details { get; set; }
+        }
+        public class PortDetails
+        {
+            public string device_id { get; set; }
         }
         public async Task<(bool, string)> GetFloatingIPAsync(string token)
         {
@@ -76,23 +83,24 @@ namespace NT533.Q21._1_Lab2.Network
 
             return (false, lastError == "" ? "Retry thất bại sau 5 lần" : lastError);
         }
-        public async Task<(bool, string)> PostFloatingIPAsync(string token,string id=null, string ip=null, string desc=null, string dnsDomain=null, string dnsName=null)
+        public async Task<(bool, string)> PostFloatingIPAsync(string token,string id, string ip=null, string desc=null, string dnsDomain=null, string dnsName=null)
         {
             int maxRetry = 5;
             int delay = 500;
             string lastError = "";
 
-            var body = new
-            {
-                floatingip = new
-                {
-                    floating_network_id = id,
-                    floating_ip_address = ip,
-                    description = desc,
-                    dns_domain = dnsDomain,
-                    dns_name = dnsName
-                }
-            };
+            var data = new Dictionary<string, object>
+    {
+        { "floating_network_id", id },
+        { "floating_ip_address", ip },
+        { "description", desc },
+        { "dns_domain", dnsDomain },
+        { "dns_name", dnsName }
+    };
+            var filteredData = data.Where(pair => pair.Value != null)
+                           .ToDictionary(pair => pair.Key, pair => pair.Value);
+
+            var body = new { floatingip = filteredData };
 
             string json = JsonConvert.SerializeObject(body);
 
@@ -179,6 +187,113 @@ namespace NT533.Q21._1_Lab2.Network
                 }
             }
             return (true, null);
+        }
+        public async Task<(bool, string)> AssociateFloatingIP(string token, string fipId, string portId)
+        {
+            int maxRetry = 5;
+            int delay = 500;
+            string lastError = "";
+
+            var body = new
+            {
+                floatingip = new
+                {
+                    port_id = portId
+                }
+            };
+
+            string url = URL + $"/{fipId}";
+
+            string json = JsonConvert.SerializeObject(body);
+
+            for (int i = 0; i < maxRetry; i++)
+            {
+                var response = await http.PutAsync(url, json, token);
+
+                if (response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    TokenService tokenService = new TokenService();
+                    var tokenResponse = await tokenService.GetTokenAsync(Main._username, Main._password);
+
+                    if (tokenResponse.Item1)
+                    {
+                        token = tokenResponse.Item2;
+                    }
+                    else
+                    {
+                        lastError = "Không lấy được token mới";
+                    }
+
+                    await Task.Delay(delay);
+                    continue;
+                }
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    return (true, content);
+                }
+
+                return (false, response.ReasonPhrase);
+            }
+
+            return (false, lastError == "" ? "Retry thất bại sau 5 lần" : lastError);
+        }
+        public async Task<(bool, string)> DisassociateFloatingIP(string token, string fipId)
+        {
+            int maxRetry = 5;
+            int delay = 500;
+            string lastError = "";
+
+            // Để hủy gán (Disassociate), ta set port_id = null
+            var body = new
+            {
+                floatingip = new
+                {
+                    port_id = (string)null
+                }
+            };
+
+            string url = URL + $"/{fipId}";
+            string json = JsonConvert.SerializeObject(body);
+
+            for (int i = 0; i < maxRetry; i++)
+            {
+                // Vẫn dùng PUT để cập nhật trạng thái Floating IP
+                var response = await http.PutAsync(url, json, token);
+
+                if (response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    TokenService tokenService = new TokenService();
+                    // Lưu ý: Đảm bảo Main._username và Main._password có thể truy cập được ở đây
+                    var tokenResponse = await tokenService.GetTokenAsync(Main._username, Main._password);
+
+                    if (tokenResponse.Item1)
+                    {
+                        token = tokenResponse.Item2;
+                    }
+                    else
+                    {
+                        lastError = "Không lấy được token mới";
+                        // Nếu không lấy được token, có thể break luôn hoặc retry tùy logic của bạn
+                    }
+
+                    await Task.Delay(delay);
+                    continue;
+                }
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = await response.Content.ReadAsStringAsync();
+                    return (true, "Disassociated successfully: " + content);
+                }
+
+                // Nếu lỗi không phải do Unauthorized, trả về lỗi ngay hoặc lưu lại để retry
+                lastError = $"Error {response.StatusCode}: {response.ReasonPhrase}";
+                await Task.Delay(delay);
+            }
+
+            return (false, string.IsNullOrEmpty(lastError) ? "Retry thất bại sau 5 lần" : lastError);
         }
     }
 }

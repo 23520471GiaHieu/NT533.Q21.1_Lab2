@@ -1,6 +1,7 @@
 ﻿using crypto;
 using Microsoft.VisualBasic;
 using Microsoft.VisualBasic.Devices;
+using Newtonsoft.Json;
 using NT533.Q21._1_Lab2.Auth;
 using NT533.Q21._1_Lab2.Compute;
 using NT533.Q21._1_Lab2.Dialog;
@@ -17,6 +18,8 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,10 +28,13 @@ using static NT533.Q21._1_Lab2.Compute.FlavorService;
 using static NT533.Q21._1_Lab2.Compute.ImageService;
 using static NT533.Q21._1_Lab2.Compute.InstanceService;
 using static NT533.Q21._1_Lab2.Compute.KeyPairService;
+using static NT533.Q21._1_Lab2.Compute.PortService;
 using static NT533.Q21._1_Lab2.Dialog.CreateKeyPairDialog;
+using static NT533.Q21._1_Lab2.Network.FloatingIPService;
 using static NT533.Q21._1_Lab2.Network.InterfaceService;
 using static NT533.Q21._1_Lab2.Network.LoadBalancerService;
 using static NT533.Q21._1_Lab2.Network.NetworkService;
+using static NT533.Q21._1_Lab2.Network.PoolMemberService;
 using static NT533.Q21._1_Lab2.Network.RouterService;
 using static NT533.Q21._1_Lab2.Network.RuleService;
 using static NT533.Q21._1_Lab2.Network.SecurityGroupService;
@@ -86,6 +92,8 @@ namespace NT533.Q21._1_Lab2
             P_B_Cr_Del_LoadBalancer_Resize();
             P_L_Rule_Resize();
             P_B_Cr_Del_Rule_Resize();
+            P_L_PoolMem_Pool_Name_Resize();
+            P_B_Add_Remove_PoolMem_Resize();
         }
         #endregion
         // Các phương thức Resize này sẽ được gọi khi form được resize, đảm bảo rằng các label và button luôn được căn giữa trong panel của chúng.
@@ -254,6 +262,18 @@ namespace NT533.Q21._1_Lab2
             B_Del_LoadBalancer.Left = (P_B_Cr_Del_LoadBalancer.Width - B_Del_LoadBalancer.Width) / 2 + 50;
             B_Del_LoadBalancer.Top = (P_B_Cr_Del_LoadBalancer.Height - B_Del_LoadBalancer.Height) / 2;
         }
+        private void P_L_PoolMem_Pool_Name_Resize(object sender = null, EventArgs e = null)
+        {
+            L_PoolMem_Pool_Name.Left = (P_L_PoolMem_Pool_Name.Width - L_PoolMem_Pool_Name.Width) / 2;
+            L_PoolMem_Pool_Name.Top = (P_L_PoolMem_Pool_Name.Height - L_PoolMem_Pool_Name.Height) / 2;
+        }
+        private void P_B_Add_Remove_PoolMem_Resize(object sender = null, EventArgs e = null)
+        {
+            B_Add_PoolMem.Left = (P_B_Add_Remove_PoolMem.Width - B_Add_PoolMem.Width) / 2 - 50;
+            B_Add_PoolMem.Top = (P_B_Add_Remove_PoolMem.Height - B_Add_PoolMem.Height) / 2;
+            B_Remove_PoolMem.Left = (P_B_Add_Remove_PoolMem.Width - B_Remove_PoolMem.Width) / 2 + 50;
+            B_Remove_PoolMem.Top = (P_B_Add_Remove_PoolMem.Height - B_Remove_PoolMem.Height) / 2;
+        }
         #endregion
         //Các phương thức chuyển tab
         #region TabControl
@@ -364,7 +384,7 @@ namespace NT533.Q21._1_Lab2
                 L_In_Router.Text = name;
                 L_In_Router.Tag = id;
                 UnloadPage();
-                LoadRouterPage();
+                LoadInterfacePage();
                 PageControl.SelectedTab = RouterInterfacePage;
             }
         }
@@ -383,6 +403,75 @@ namespace NT533.Q21._1_Lab2
                 PageControl.SelectedTab = RulePage;
                 LoadRulePage();
             }
+        }
+        private async void DGV_LoadBalancer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            string ColSelected = DGV_LoadBalancer.Columns[e.ColumnIndex].Name;
+            if (ColSelected == "LB_Col_Name")
+            {
+                string name = DGV_LoadBalancer.Rows[e.RowIndex].Cells[ColSelected].Value?.ToString();
+                string id = DGV_LoadBalancer.Rows[e.RowIndex].Cells[1].Tag?.ToString();
+                L_PoolMem_Pool_Name.Text = name;
+                L_PoolMem_Pool_Name.Tag = id;
+                UnloadPage();
+                PageControl.SelectedTab = LBPoolMemPage;
+                LoadPoolMemberPage();
+            }
+            
+            else if (e.RowIndex >= 0 && DGV_LoadBalancer.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
+            {
+                DataGridViewRow selectedRow = DGV_LoadBalancer.Rows[e.RowIndex];
+                var btnCell = (DataGridViewButtonCell)selectedRow.Cells["LB_Col_AddFloatingIP"];
+                bool removeoradd = btnCell.Value == "RemoveFloatingIP" ? true : false;
+                if (!removeoradd)
+                {
+                    string lbid = selectedRow.Cells[1].Tag.ToString();
+                    string lbname = selectedRow.Cells[1].Value.ToString();
+                    List<(string id, string ipaddress)> FloatingIP = new List<(string, string)>();
+                    FloatingIP = await LoadFloatingIPs();
+                    List<(string netid, string netname)> PubNet = new List<(string portid, string portname)>();
+                    PubNet = await LoadNets();
+
+                    var result = ManageFloatingIPDialog.AssociateFloatingIPForm(FloatingIP, PubNet);
+                    if (result == null) return;
+                    var data = result.Value;
+                    FloatingIPService floatingIPService = new FloatingIPService();
+                    if (data.netid != null)
+                    {
+                        var flipres1 = await floatingIPService.PostFloatingIPAsync(_token, data.netid);
+                        if (flipres1.Item1)
+                        {
+                            var ipdata = Newtonsoft.Json.JsonConvert.DeserializeObject<FloatingIPResponse>(flipres1.Item2);
+                            data.ipid = ipdata.floatingip.id;
+                        }
+                    }
+                    List<(string portid, string portname)> ports = new List<(string portid, string portname)>();
+                    ports = await LoadPorts("lb-" + lbid, lbname);
+                    var flipres = await floatingIPService.AssociateFloatingIP(_token, data.ipid, ports[0].portid);
+                    if (flipres.Item1)
+                    {
+                        await Task.Delay(3000);
+                        LoadLoadBalancerPage();
+                    }
+                }
+                else
+                {
+                    string lbid = selectedRow.Cells[1].Tag.ToString();
+                    List<(string id, string ipaddress)> FloatingIP = new List<(string, string)>();
+                    FloatingIP = await LoadFloatingIPsByInstance("lb-" + lbid);
+                    FloatingIPService floatingIPService = new FloatingIPService();
+                    var flipres = await floatingIPService.DisassociateFloatingIP(_token, FloatingIP[0].id);
+                    if (flipres.Item1)
+                    {
+                        await Task.Delay(3000);
+                        LoadLoadBalancerPage();
+                    }
+                }
+
+            }
+            
         }
         #endregion
         // Các phương thức Load và Unload dữ liệu cho từng trang khi chuyển tab
@@ -520,11 +609,13 @@ namespace NT533.Q21._1_Lab2
                         }
                     }
                     string imagenames = string.Join(",",imagename.ToArray());
-                    var ipString = string.Join(", ",
-                        server.addresses
-                        .SelectMany(x => x.Value)
-                        .Select(ip => ip.addr)
-                    );
+                    var allIPs = server.addresses.SelectMany(x => x.Value).ToList();
+
+                    var ipString = string.Join(", ", allIPs.Select(ip => ip.addr));
+
+                    // kiểm tra có floating ip không
+                    bool hasFloatingIP = allIPs.Any(ip => ip.type == "floating");
+
                     string flavorname = "";
                     FlavorService flavor = new FlavorService();
                     var flavorresponse = await flavor.GetFlavorAsync(_token,server.flavor.id);
@@ -577,6 +668,9 @@ namespace NT533.Q21._1_Lab2
                         ageText
                     );
                     DGV_Instances.Rows[index].Cells[1].Tag = server.id;
+                    var row = DGV_Instances.Rows[index];
+                    var btnCell = (DataGridViewButtonCell)row.Cells["In_Col_AddFloatingIP"];
+                    btnCell.Value = hasFloatingIP ? "RemoveFloatingIP" : "AddFloatingIP";
                 }
             }
         }
@@ -874,18 +968,34 @@ namespace NT533.Q21._1_Lab2
                 foreach(var data in routerdatas.routers)
                 {
                     NetworkService networkService = new NetworkService();
-                    var networkresponse = await networkService.GetNetworkAsync(_token,data.external_gateway_info.network_id);
-                    if (networkresponse.Item1) {
-                        var networkdata = Newtonsoft.Json.JsonConvert.DeserializeObject<NetworkResponse>(networkresponse.Item2);
-                        
+                    if (data.external_gateway_info != null)
+                    {
+                        var networkresponse = await networkService.GetNetworkAsync(_token, data.external_gateway_info.network_id);
+                        if (networkresponse.Item1)
+                        {
+                            var networkdata = Newtonsoft.Json.JsonConvert.DeserializeObject<NetworkResponse>(networkresponse.Item2);
+
+                            int rowIndex = DGV_Routers.Rows.Add(
+                                                            false,
+                                                            data.name,
+                                                            data.status,
+                                                            networkdata.network.name,
+                                                            data.admin_state_up,
+                                                            "-"
+                                                        );
+                            DGV_Routers.Rows[rowIndex].Cells[1].Tag = data.id;
+                        }
+                    }
+                    else
+                    {
                         int rowIndex = DGV_Routers.Rows.Add(
-                                                        false,
-                                                        data.name,
-                                                        data.status,
-                                                        networkdata.network.name,
-                                                        data.admin_state_up,
-                                                        "-"
-                                                    );
+                                                            false,
+                                                            data.name,
+                                                            data.status,
+                                                            "-",
+                                                            data.admin_state_up,
+                                                            "-"
+                                                        );
                         DGV_Routers.Rows[rowIndex].Cells[1].Tag = data.id;
                     }
                 }
@@ -1132,6 +1242,15 @@ namespace NT533.Q21._1_Lab2
                         item.provisioning_status,
                         item.admin_state_up
                         );
+                    var result = await LoadFloatingIPsByInstance("lb-" + item.id);
+                    bool hasFloatingIP = false;
+                    if (result.Count!=0)
+                    {
+                        hasFloatingIP = true;
+                    }
+                    var row = DGV_LoadBalancer.Rows[index];
+                    var btnCell = (DataGridViewButtonCell)row.Cells["LB_Col_AddFloatingIP"];
+                    btnCell.Value = hasFloatingIP ? "RemoveFloatingIP" : "AddFloatingIP";
                     DGV_LoadBalancer.Rows[index].Cells[1].Tag = item.id;
                 }
             }
@@ -1144,6 +1263,50 @@ namespace NT533.Q21._1_Lab2
         {
             P_L_LoadBalancer.Resize -= P_L_LoadBalancer_Resize;
             P_B_Cr_Del_LoadBalancer.Resize -= P_B_Cr_Del_LoadBalancer_Resize;
+            DGV_LoadBalancer.Rows.Clear();
+        }
+        private async void LoadPoolMemberPage()
+        {
+            P_L_PoolMem_Pool_Name.Resize -= P_L_PoolMem_Pool_Name_Resize;
+            P_B_Add_Remove_PoolMem.Resize -= P_B_Add_Remove_PoolMem_Resize;
+            P_L_PoolMem_Pool_Name.Resize += P_L_PoolMem_Pool_Name_Resize;
+            P_B_Add_Remove_PoolMem.Resize += P_B_Add_Remove_PoolMem_Resize;
+            DGV_PoolMem.Rows.Clear();
+
+            LoadBalancerService loadBalancerService = new LoadBalancerService();
+            var lbres = await loadBalancerService.GetLoadBalancerAsync(_token,L_PoolMem_Pool_Name.Tag.ToString());
+            if(lbres.Item1)
+            {
+                var lbdata = Newtonsoft.Json.JsonConvert.DeserializeObject<LoadBalancerResponse>(lbres.Item2);
+                string poolid = lbdata.loadbalancer.pools[0].id;
+                PoolMemberService poolMemberService = new PoolMemberService();
+                var memres = await poolMemberService.GetPoolMemberAsync(_token,poolid);
+                if (memres.Item1) {
+                    var memdata = Newtonsoft.Json.JsonConvert.DeserializeObject<PoolMemberResponse>(memres.Item2);
+                    foreach (var mem in memdata.members)
+                    {
+                        int index = DGV_PoolMem.Rows.Add(
+                        false,
+                        mem.name,
+                        mem.address,
+                        mem.protocol_port,
+                        mem.weight,
+                        mem.backup,
+                        mem.operating_status,
+                        mem.provisioning_status,
+                        mem.admin_state_up
+                            );
+                        DGV_PoolMem.Rows[index].Cells[1].Tag = mem.id;
+                        DGV_PoolMem.Rows[index].Cells[0].Tag = L_PoolMem_Pool_Name.Tag.ToString() + "|"+ poolid;
+                    }
+                }
+            }
+        }
+        private void UnloadPoolMemberPage()
+        {
+            P_L_PoolMem_Pool_Name.Resize -= P_L_PoolMem_Pool_Name_Resize;
+            P_B_Add_Remove_PoolMem.Resize -= P_B_Add_Remove_PoolMem_Resize;
+            DGV_PoolMem.Rows.Clear();
         }
         #endregion
         // Phương thức UnloadPage sẽ được gọi trước khi chuyển sang tab mới, giúp xóa dữ liệu khỏi tab hiện tại để tránh việc dữ liệu cũ vẫn hiển thị khi quay lại tab đó.
@@ -1194,10 +1357,12 @@ namespace NT533.Q21._1_Lab2
                 case "RulePage":
                     UnloadRulePage();
                     break;
+                case "LBPoolMemPage":
+                    UnloadPoolMemberPage();
+                    break;
             }
         }
         #endregion
-
         #endregion
         // Các phương thức xử lý sự kiện cho các button trên từng trang
         #region ButtonEventHandlers
@@ -1217,7 +1382,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Cập nhật Token thất bại!\n" + result.message);
             }
         }
-
         private void B_Cr_Instances_Click(object sender, EventArgs e)
         {
             CreateInstance createInstance = new CreateInstance(this);
@@ -1244,27 +1408,41 @@ namespace NT533.Q21._1_Lab2
                 return;
             }
 
-            string[] insids = selectedRows
-                .Select(r => r.Cells[1].Tag.ToString())
-                .ToArray();
-
             var InstanceService = new InstanceService();
-            var result = await InstanceService.DeleteInstanceAsync(_token, insids);
-
-            if (result.Item1)
+            var lbService = new LoadBalancerService();
+            PortService portService = new PortService();
+            foreach (var row in selectedRows)
             {
-                foreach (var row in selectedRows)
+                string insId = row.Cells[1].Tag.ToString();
+                
+                // 1. Lấy thông tin IP và Subnet của Instance từ Row (nên lưu sẵn trong Tag hoặc Cell)
+                // Giả sử bạn lưu đối tượng Instance trong Tag của Row
+                var portresult = await portService.GetPorts(_token, insId);
+                foreach(var port in portresult)
+                {
+                    string instanceip = port.fixed_ips[0].ip_address;
+                    string instancesubnet = port.fixed_ips[0].subnet_id;
+                    // 2. Tự động dọn dẹp LB Member trước khi xóa Instance
+                    if (!string.IsNullOrEmpty(instanceip))
+                    {
+                        await lbService.RemoveInstanceFromAllPools(_token, instanceip, instancesubnet);
+                    }
+                }
+
+                // 3. Xóa Instance
+                var result = await InstanceService.DeleteInstanceAsync(_token, new string[] { insId });
+
+                if (result.Item1)
                 {
                     DGV_Instances.Rows.Remove(row);
                 }
-            }
-            else
-            {
-                LoadInstancePage();
-                MessageBox.Show("Xóa Instances thất bại!\n" + result.Item2);
+                else
+                {
+                    LoadInstancePage();
+                    MessageBox.Show($"Xóa Instance {insId} thất bại!\n" + result.Item2);
+                }
             }
         }
-
         public async void B_Create_KeyPair_Click(object sender, EventArgs e)
         {
             string keyName = Interaction.InputBox(
@@ -1396,7 +1574,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa Key Pairs thất bại!\n" + result.Item2);
             }
         }
-
         private void B_Create_Volume_Click(object sender, EventArgs e)
         {
             CreateVolume volume = new CreateVolume();
@@ -1444,7 +1621,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa Volumes thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_Cr_Net_Click(object sender, EventArgs e)
         {
             var networkresult = CreateNetworkDialog.CreateNetworkForm();
@@ -1584,7 +1760,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa subnet thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_Cr_Routers_Click(object sender, EventArgs e)
         {
             var result = await CreateRouterDialog.CreateRouterForm(_token);
@@ -1620,6 +1795,20 @@ namespace NT533.Q21._1_Lab2
                 .Select(r => r.Cells[1].Tag?.ToString())
                 .Where(id => !string.IsNullOrEmpty(id))
                 .ToArray();
+
+            foreach(var id in ids)
+            {
+                InterfaceService interfaceService = new InterfaceService();
+                var interfaceres = await interfaceService.GetInterfaceAsync(_token, id);
+                if(interfaceres.Item1)
+                {
+                    var interfacedata = Newtonsoft.Json.JsonConvert.DeserializeObject<InterfaceResponse>(interfaceres.Item2);
+                    foreach(var inter in interfacedata.ports)
+                    {
+                        var delres = await interfaceService.DeleteInterfaceAsync(_token, new string[] { inter.fixed_ips[0].subnet_id }, id);
+                    }
+                }
+            }
 
             var RouterService = new RouterService();
             var result = await RouterService.DeleteRouterAsync(_token, ids);
@@ -1744,7 +1933,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa interface thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_Cr_SecurityGroup_Click(object sender, EventArgs e)
         {
             var sg = CreateSecurityGroupDialog.CreateSecurityGroupForm();
@@ -1859,7 +2047,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa Rule thất bại!\n" + result.Item2);
             }
         }
-
         private async void B_AllocateIP_Click(object sender, EventArgs e)
         {
             NetworkService networkService = new NetworkService();
@@ -1943,7 +2130,6 @@ namespace NT533.Q21._1_Lab2
                 MessageBox.Show("Xóa FloatingIP thất bại!\n" + result.Item2);
             }
         }
-
         private void B_Cr_LoadBalancer_Click(object sender, EventArgs e)
         {
             CreateLoadBalancer createLoadBalancer = new CreateLoadBalancer();
@@ -1957,12 +2143,264 @@ namespace NT533.Q21._1_Lab2
                 }
             }
         }
-        private void B_Del_LoadBalancer_Click(object sender, EventArgs e)
+        private async void B_Del_LoadBalancer_Click(object sender, EventArgs e)
         {
+            var selectedRows = DGV_LoadBalancer.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
+                .ToList();
 
+            if (selectedRows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn loadbalancer nào!");
+                return;
+            }
+
+            string[] ids = selectedRows
+                .Select(r => r.Cells[1].Tag?.ToString())
+                .Where(id => !string.IsNullOrEmpty(id))
+                .ToArray();
+
+            var LoadBalancerService = new LoadBalancerService();
+            var result = await LoadBalancerService.DeleteLoadBalancerAsync(_token, ids);
+
+            if (result.Item1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    DGV_LoadBalancer.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                LoadLoadBalancerPage();
+                MessageBox.Show("Xóa loadbalancer thất bại!\n" + result.Item2);
+            }
+        }
+        private void B_Add_PoolMem_Click(object sender, EventArgs e)
+        {
+            List<string>ipaddress = new List<string>();
+            foreach (DataGridViewRow row in DGV_PoolMem.Rows)
+            {
+                ipaddress.Add(row.Cells[2].Value.ToString());
+            }
+            string[] lbidandpoolid = DGV_PoolMem.Rows[0].Cells[0].Tag.ToString().Split('|'); 
+            AddMember addMember = new AddMember(ipaddress, lbidandpoolid[1], lbidandpoolid[0]);
+
+            if (addMember.ShowDialog() == DialogResult.OK)
+            {
+                bool addresult = addMember.Result;
+                if (addresult)
+                {
+                    LoadPoolMemberPage();
+                }
+            }
+        }
+        private async void B_Remove_PoolMem_Click(object sender, EventArgs e)
+        {
+            var selectedRows = DGV_PoolMem.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => Convert.ToBoolean(r.Cells[0].Value) == true)
+                .ToList();
+
+            if (selectedRows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn member nào!");
+                return;
+            }
+
+            string[] ids = selectedRows
+                .Select(r => r.Cells[1].Tag?.ToString())
+                .Where(id => !string.IsNullOrEmpty(id))
+                .ToArray();
+            string[] lbidandpoolid = DGV_PoolMem.Rows[0].Cells[0].Tag.ToString().Split('|');
+            var PoolMemberService = new PoolMemberService();
+            var result = await PoolMemberService.RemoveMemberFromPool(_token, lbidandpoolid[1], lbidandpoolid[0], ids);
+
+            if (result.Item1)
+            {
+                foreach (var row in selectedRows)
+                {
+                    DGV_PoolMem.Rows.Remove(row);
+                }
+            }
+            else
+            {
+                LoadPoolMemberPage();
+                MessageBox.Show("Xóa member thất bại!\n" + result.Item2);
+            }
+        }
+
+        #endregion
+
+        private async void DGV_Instances_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && DGV_Instances.Columns[e.ColumnIndex] is DataGridViewButtonColumn)
+            {
+                DataGridViewRow selectedRow = DGV_Instances.Rows[e.RowIndex];
+                var btnCell = (DataGridViewButtonCell)selectedRow.Cells["In_Col_AddFloatingIP"];
+                bool removeoradd = btnCell.Value == "RemoveFloatingIP"? true : false;
+                if (!removeoradd)
+                {
+                    string insid = selectedRow.Cells[1].Tag.ToString();
+                    string insname = selectedRow.Cells[1].Value.ToString();
+                    List<(string id, string ipaddress)> FloatingIP = new List<(string, string)>();
+                    FloatingIP = await LoadFloatingIPs();
+                    List<(string portid, string portname)> Port = new List<(string portid, string portname)>();
+                    Port = await LoadPorts(insid, insname);
+
+                    var result = ManageFloatingIPDialog.ShowManageFloatingIP(FloatingIP, Port);
+                    if (result == null) return;
+                    var data = result.Value;
+                    FloatingIPService floatingIPService = new FloatingIPService();
+                    var flipres = await floatingIPService.AssociateFloatingIP(_token, data.fipid, data.portid);
+                    if (flipres.Item1)
+                    {
+                        await Task.Delay(3000);
+                        LoadInstancePage();
+                    }
+                }
+                else
+                {
+                    string insid = selectedRow.Cells[1].Tag.ToString();
+                    List<(string id, string ipaddress)> FloatingIP = new List<(string, string)>();
+                    FloatingIP = await LoadFloatingIPsByInstance(insid);
+                    var result = DisassociateFloatingIPDialog.DisassociateFloatingIPForm(FloatingIP);
+                    if (result == null) return;
+                    var data = result.Value;
+                    FloatingIPService floatingIPService = new FloatingIPService();
+                    var flipres = await floatingIPService.DisassociateFloatingIP(_token, data.floatingIpid);
+                    if (flipres.Item1)
+                    {
+                        if (data.releaseIp)
+                        {
+                            string[] ids = new string[1];
+                            ids[0] = data.floatingIpid;
+                            var flipres1 = await floatingIPService.DeleteFloatingIPAsync(_token, ids);
+                        }
+                        await Task.Delay(3000);
+                        LoadInstancePage();
+                    }
+                }
+            }
+        }
+        private async Task<List<(string id, string ipaddress)>> LoadFloatingIPsByInstance(string insid)
+        {
+            var service = new FloatingIPService();
+            var res = await service.GetFloatingIPAsync(Main._token);
+
+            if (res.Item1)
+            {
+                var data = Newtonsoft.Json.JsonConvert.DeserializeObject<FloatingIPResponse>(res.Item2);
+
+                List<(string id, string ipaddress)> result = new List<(string, string)>();
+
+                foreach (var fip in data.floatingips)
+                {
+                    // check floating ip đã gán cho instance này
+                    if (fip.port_details != null && fip.port_details.device_id == insid)
+                    {
+                        result.Add((fip.id, fip.floating_ip_address));
+                    }
+                }
+
+                return result;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        private async Task<List<(string id, string ipaddress)>> LoadFloatingIPs()
+        {
+            var service = new FloatingIPService();
+            var res = await service.GetFloatingIPAsync(Main._token);
+
+            if (res.Item1)
+            {
+                var data = Newtonsoft.Json.JsonConvert.DeserializeObject<FloatingIPResponse>(res.Item2);
+                List<(string id, string ipaddress)> FloatingIP = new List<(string, string)>();
+                foreach (var fip in data.floatingips)
+                {
+                    if (fip.port_id == null)
+                    {
+                        FloatingIP.Add((fip.id, fip.floating_ip_address));
+                    }
+                }
+                return FloatingIP;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 
-        #endregion
+        private async Task<List<(string portid, string portname)>> LoadPorts(string insid,string insname)
+        {
+            List<(string portid, string portname)> Ports = new List<(string portid, string portname)>();
+            var portService = new PortService();
+
+            // =====================
+            // 2. LẤY SUBNET CÓ ROUTER
+            // =====================
+            var res = await portService.GetPorts(Main._token);
+            var validSubnetIds = new HashSet<string>();
+
+            foreach (var port in res)
+            {
+                // 🔥 router interface
+                if (port.device_owner == "network:router_interface")
+                {
+                    foreach (var ip in port.fixed_ips)
+                    {
+                        validSubnetIds.Add((string)ip.subnet_id);
+                    }
+                }
+            }
+
+            // =====================
+            // 3. LOAD PORT VM
+            // =====================
+
+            var res1 = await portService.GetPorts(Main._token, insid);
+            foreach (var port in res1)
+            {
+
+                foreach (var ip in port.fixed_ips)
+                {
+                    string subnetId = ip.subnet_id;
+                    string ipAddr = ip.ip_address;
+
+                    if (!validSubnetIds.Contains(subnetId))
+                        continue;
+
+                    Ports.Add((port.id, insname + ": " + ipAddr));
+                }
+            }
+            return Ports;
+        }
+
+        private async Task<List<(string netid, string netname)>> LoadNets()
+        {
+            List<(string netid, string netname)> nets = new List<(string netid, string netname)>();
+            NetworkService networkService = new NetworkService();
+            var netres = await networkService.GetNetworkAsync(_token);
+            if(netres.Item1)
+            {
+                var netdata = Newtonsoft.Json.JsonConvert.DeserializeObject<NetworkResponse>(netres.Item2);
+                foreach (var net in netdata.networks)
+                {
+                    if(net.external == "true")
+                    {
+                        nets.Add((net.id,net.name));
+                    }
+                }
+
+            }
+            return nets;
+        }
     }
 }
+

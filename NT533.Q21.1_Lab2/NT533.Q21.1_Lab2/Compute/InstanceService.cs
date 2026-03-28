@@ -190,13 +190,37 @@ namespace NT533.Q21._1_Lab2.Compute
             if (!string.IsNullOrEmpty(keyname))
                 server["key_name"] = keyname;
 
-            // USER DATA
-            if (!string.IsNullOrEmpty(customscript))
+            // USER DATA (ALWAYS INCLUDE BASE SCRIPT)
+            string baseScript = @"#!/bin/bash
+
+# ===== FIX HOSTNAME =====
+HOSTNAME=$(hostname)
+echo ""127.0.0.1 $HOSTNAME"" | tee -a /etc/hosts
+
+# ===== FIX DNS =====
+echo ""nameserver 8.8.8.8"" > /etc/resolv.conf
+echo ""nameserver 1.1.1.1"" >> /etc/resolv.conf
+";
+
+            // Nếu user có nhập script
+            if (!string.IsNullOrWhiteSpace(customscript))
             {
-                server["user_data"] = Convert.ToBase64String(
-                    Encoding.UTF8.GetBytes(customscript)
-                );
+                string userScript = customscript.Trim();
+
+                // ❌ Xóa shebang nếu user có nhập
+                if (userScript.StartsWith("#!/bin/bash"))
+                {
+                    userScript = userScript.Substring("#!/bin/bash".Length).Trim();
+                }
+
+                // Gộp script
+                baseScript += "\n# ===== USER SCRIPT =====\n" + userScript + "\n";
             }
+
+            // Encode luôn dù user có nhập hay không
+            server["user_data"] = Convert.ToBase64String(
+                Encoding.UTF8.GetBytes(baseScript)
+            );
 
             // AZ
             if (!string.IsNullOrEmpty(detail.insazone))

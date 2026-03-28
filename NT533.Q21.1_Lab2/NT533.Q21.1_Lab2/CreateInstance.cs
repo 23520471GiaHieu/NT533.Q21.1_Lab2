@@ -693,7 +693,8 @@ namespace NT533.Q21._1_Lab2
                         {
                             var lbdata = JsonConvert.DeserializeObject<LoadBalancerResponse>(lbres.Item2);
                             string poolId = lbdata.loadbalancer.pools[0].id;
-                            var addResult = await lbService.AddMemberToPool(token, poolId, ip, subnetid, 80);
+                            PoolMemberService poolService = new PoolMemberService();
+                            var addResult = await poolService.AddMemberToPool(token, poolId, ip, subnetid, instanceName,1 ,80);
                             if (!addResult.Item1)
                             {
                                 MessageBox.Show($"Add vào LB lỗi: {addResult.Item2}");

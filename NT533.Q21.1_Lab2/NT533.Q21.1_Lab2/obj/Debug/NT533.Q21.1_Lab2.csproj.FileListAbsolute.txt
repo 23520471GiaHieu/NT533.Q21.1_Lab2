@@ -67,3 +67,5 @@ D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q21
 D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q2.7A55E695.Up2Date
 D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q21.1_Lab2.exe
 D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q21.1_Lab2.pdb
+D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q21._1_Lab2.AddMember.resources
+D:\github\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\NT533.Q21.1_Lab2\obj\Debug\NT533.Q21._1_Lab2.ManageFloatingIP.resources
